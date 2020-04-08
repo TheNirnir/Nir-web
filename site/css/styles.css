@@ -127,10 +127,6 @@ h1 {
 	border: none;
 }
 
-.text-center {
-	text-align: center;
-}
-
 @media (min-width: 768px) {
 
 	.PurpleBack {

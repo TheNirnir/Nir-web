@@ -60,12 +60,9 @@ h1 {
 	border-radius: 15px;
 }
 
-#page-on {
+#page-on a{
 	background-color: #00ffff;
 	border-radius: 15px;
-}
-
-#page-on a {
 	color: black;
 }
 

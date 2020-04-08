@@ -2,17 +2,28 @@ body {
 	background-color: #38E0F2;
 }
 
-h1, img.Logo {
-	float: left;
+/*.row {
+	background-color: white;
+}*/
+
+#header-row {
+	background-color: white;
+}
+
+#picture-link {
+	margin: 10px 0; 
 }
 
 h1 {
+	margin: 15px 0;
+	text-align: center;
 	font-weight: bold;
-	font-size: 5vw;
+	font-size: 3vw;
+	color: #d580ff;
 }
 
 .Logo {
-	margin: 15px 10px 15px 15px;
+	margin-top: 10px;
 	width: 12.337vw;/* 135.125px;*/
 	height: 9vw;/* 87.625px;*/
 }
@@ -23,8 +34,7 @@ h1 {
 }
 
 #collapsable-nav {
-	/*text-align: center;*/
-	/*position: relative;*/
+	margin-top: 10px;
 }
 
 #OptionsUl {
@@ -36,7 +46,7 @@ h1 {
 #nav-list {
 	clear: left;
 	text-align: center;
-	margin: 0 auto 10px;
+	margin: 10px auto 10px;
 	/*margin: auto;*/
 	/*display: inline-block;
 	position: relative;*/
@@ -83,14 +93,20 @@ h1 {
 	margin-right: 5px;
 }
 
+#main-title {
+	text-align: center;
+	font-weight: 300;
+	margin: 0px auto 15px;
+}
+
 #main-content {
 	padding: 0px 15px 15px 15px;
 	margin-bottom: 10px;
 }
 
 #main-image {
-	/*width: 100%;*/
-	box-shadow: 0px 0px 50px 25px black;
+	/*width: 100%;
+	box-shadow: 0px 0px 50px 25px black;*/
 	border: 2px solid black;
 	padding: 0;
 	margin-bottom: 20px;
@@ -146,6 +162,10 @@ h1 {
 		font-size: 14px;
 	}
 
+	h1 {
+		font-size: 3.5vw;
+	}
+
 	.Logo {
 		width: 27.7575vw;/* 135.125px;*/
 		height: 18vw;/* 87.625px;*/
@@ -165,11 +185,6 @@ h1 {
 	#nav-list a {
 		padding: 1px 10px 1px 10px;
 	}
-		.Logo {
-		width: 27.7575vw;/* 135.125px;*/
-		height: 18vw;/* 87.625px;*/
-	}
-
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -188,4 +203,25 @@ h1 {
 	#nav-list a {
 		padding: 2px 18px 2px 18px;
 	}
+}
+
+/****super extra small****/
+@media (max-width: 560px) {
+	.col-xxs-2, .col-xxs-4, .col-xxs-7 {
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		float: left;
+	}
+
+	.col-xxs-2 {
+  		width: 16.66666667%;
+	}
+	.col-xxs-3 {
+  		width: 25%;
+	}
+	.col-xxs-7 {
+ 		 width: 58.33333333%;
+	}	
 }

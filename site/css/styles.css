@@ -92,6 +92,7 @@ h1 {
 
 .prom-container {
 	margin-top: 10px;
+	float: right;
 }
 
 .prom-text, .low-container {
@@ -102,27 +103,32 @@ h1 {
 }
 
 .prom-text p {
-	font-size: 15px;
+	font-size: 16px;
 }
 
-#research-prom {
-
+#main-content {
+	margin-bottom: 10px;
 }
 
-.read-more {
+.read-more:link, .read-more:visited {
 	color: white;
 	font-size: 1.2em;
 	margin-bottom: 5px;
 	text-decoration: none;
 }
 
-.read-more:hover {
+.read-more:hover, .read-more:active {
 	cursor: pointer;
 	color: red;
 }
 
-.low-container {
-	clear: both;
+.panel-footer {
+	background-color: white;
+	border: none;
+}
+
+.text-center {
+	text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -141,6 +147,11 @@ h1 {
 	.Logo {
 		width: 27.7575vw;/* 135.125px;*/
 		height: 18vw;/* 87.625px;*/
+	}
+
+	#nav-list a{
+		width: 20%;
+		margin: 0 auto;
 	}
 }
 

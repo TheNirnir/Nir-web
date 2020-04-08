@@ -10,10 +10,6 @@ body {
 	background-color: white;
 }
 
-#picture-link {
-	margin: 10px 0; 
-}
-
 h1 {
 	margin: 15px 0;
 	text-align: center;
@@ -23,7 +19,7 @@ h1 {
 }
 
 .Logo {
-	margin-top: 10px;
+	margin: 10px 0;
 	width: 12.337vw;/* 135.125px;*/
 	height: 9vw;/* 87.625px;*/
 }

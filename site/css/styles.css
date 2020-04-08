@@ -19,7 +19,7 @@ body {
 	color: #d580ff;
 }
 
-h2 {
+#main-title {
 	margin-bottom: 15px;
 }
 
@@ -179,7 +179,7 @@ h2 {
 		font-size: 14px;
 	}
 
-	h1 {
+	#big-title {
 		font-size: 3.5vw;
 	}
 

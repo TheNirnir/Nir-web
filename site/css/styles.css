@@ -101,11 +101,15 @@ h1 {
 	float: right;
 }
 
-.prom-text, .low-container {
+.prom-text {
 	background-color: #6600ff;
 	border-radius: 15px;
 	color: white;
 	padding: 3px 10px;
+}
+
+.prom-text h3 {
+	font-weight: bold;
 }
 
 .prom-text p {

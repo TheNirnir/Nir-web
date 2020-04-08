@@ -2,7 +2,7 @@ body {
 	background-color: #00ffd0;
 }
 
-h1, img {
+h1, img.Logo {
 	float: left;
 }
 
@@ -35,8 +35,8 @@ h1 {
 
 #nav-list {
 	clear: left;
-	margin-bottom: 10px;
 	text-align: center;
+	margin: 0 auto 10px;
 	/*margin: auto;*/
 	/*display: inline-block;
 	position: relative;*/
@@ -90,11 +90,35 @@ h1 {
 	margin-bottom: 20px;
 }
 
-.side-text, .low-container {
+.prom-container {
+	margin-top: 10px;
+}
+
+.prom-text, .low-container {
 	background-color: #6600ff;
 	border-radius: 15px;
 	color: white;
-	padding: 10px;
+	padding: 3px 10px;
+}
+
+.prom-text p {
+	font-size: 15px;
+}
+
+#research-prom {
+
+}
+
+.read-more {
+	color: white;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+	text-decoration: none;
+}
+
+.read-more:hover {
+	cursor: pointer;
+	color: red;
 }
 
 .low-container {
@@ -131,6 +155,7 @@ h1 {
 		width: 27.7575vw;/* 135.125px;*/
 		height: 18vw;/* 87.625px;*/
 	}
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {

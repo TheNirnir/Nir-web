@@ -10,18 +10,31 @@ body {
 	background-color: white;
 }
 
-h1 {
+#big-title {
 	margin: 15px 0;
+	padding: 0 15px 0 0;
 	text-align: center;
 	font-weight: bold;
 	font-size: 3vw;
 	color: #d580ff;
 }
 
+h2 {
+	margin-bottom: 15px;
+}
+
+#main-hr {
+	width: 80%;
+}
+
 .Logo {
 	margin: 10px 0;
 	width: 12.337vw;/* 135.125px;*/
 	height: 9vw;/* 87.625px;*/
+}
+
+#logo-link {
+	text-align: right;
 }
 
 .navbar {
@@ -140,6 +153,14 @@ h1 {
 	color: red;
 }
 
+#about-img {
+	margin-bottom: 10px;
+}
+
+#about-p {
+
+}
+
 .panel-footer {
 	background-color: white;
 	border: none;
@@ -214,10 +235,10 @@ h1 {
 	.col-xxs-2 {
   		width: 16.66666667%;
 	}
-	.col-xxs-3 {
-  		width: 25%;
+	.col-xxs-4 {
+  		width: 33.33333333%;
 	}
-	.col-xxs-7 {
- 		 width: 58.33333333%;
+	.col-xxs-6 {
+ 		width: 50%;
 	}	
 }

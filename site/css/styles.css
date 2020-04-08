@@ -1,5 +1,5 @@
 body {
-	background-color: #00ffd0;
+	background-color: #38E0F2;
 }
 
 h1, img.Logo {
@@ -83,9 +83,9 @@ h1 {
 	margin-right: 5px;
 }
 
-.container .jumbotron {
-	background-color: #00ffd0;
+#main-content {
 	padding: 0px 15px 15px 15px;
+	margin-bottom: 10px;
 }
 
 #main-image {
@@ -114,10 +114,6 @@ h1 {
 
 .prom-text p {
 	font-size: 16px;
-}
-
-#main-content {
-	margin-bottom: 10px;
 }
 
 .read-more:link, .read-more:visited {

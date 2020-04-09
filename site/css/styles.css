@@ -2,10 +2,7 @@ body {
 	background-color: #38E0F2;
 }
 
-/*.row {
-	background-color: white;
-}*/
-
+/*****header*****/
 #header-row {
 	background-color: white;
 }
@@ -101,18 +98,22 @@ body {
 	font-size: 1em;
 	margin-right: 5px;
 }
+/*****end header*****/
 
+/*****main-content title*****/
 #main-title {
 	text-align: center;
 	font-weight: 300;
 	margin: 0px auto 15px;
 }
+/*****end main-contnent title*****/
 
 #main-content {
 	padding: 0px 15px 15px 15px;
 	margin-bottom: 10px;
 }
 
+/*****home page*****/
 #main-image {
 	/*width: 100%;
 	box-shadow: 0px 0px 50px 25px black;*/
@@ -152,20 +153,33 @@ body {
 	cursor: pointer;
 	color: red;
 }
+/*****end home page*****/
 
+/*****about page*****/
 #about-img {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 #about-p {
 
 }
+/*****end about page*****/
 
+/*****contact page*****/
+.text-bold {
+	font-weight: bold;
+}
+/*****end contact page*****/
+
+/*****footer*****/
 .panel-footer {
 	background-color: white;
 	border: none;
 }
+/*****end footer*****/
 
+/***************media queries***************/
+/*****all devices except extra small*****/
 @media (min-width: 768px) {
 
 	.PurpleBack {
@@ -174,6 +188,9 @@ body {
 		padding: 10px; 
 	}
 }
+/*****end all devices except extra small*****/
+
+/*****extra small devices only*****/
 @media (max-width: 767px) {
 	#nav-list {
 		font-size: 14px;
@@ -193,8 +210,13 @@ body {
 		margin: 0 auto;
 		text-align: center;
 	}
+	#contact-content {
+		margin-bottom: 15px;
+	}
 }
+/*****end extra small devices only*****/
 
+/*****small devices only*****/
 @media (min-width: 768px) and (max-width: 991px) {
 	#nav-list {
 		font-size: 11px;
@@ -202,8 +224,12 @@ body {
 	#nav-list a {
 		padding: 1px 10px 1px 10px;
 	}
+	#contact-img, #contact-content {
+		padding-bottom: 15px;
 }
+/*****end small devices only*****/
 
+/*****medium devices only*****/
 @media (min-width: 992px) and (max-width: 1199px) {
 	#nav-list {
 		font-size: 14px;
@@ -212,7 +238,9 @@ body {
 		padding: 1.5px 15px 1.5px 15px;
 	}
 }
+/*****end medium devices only*****/
 
+/*****large devices only*****/
 @media (min-width: 1200px) {
 	#nav-list {
 		font-size: 17px;
@@ -221,6 +249,7 @@ body {
 		padding: 2px 18px 2px 18px;
 	}
 }
+/*****end large devices only*****/
 
 /****super extra small****/
 @media (max-width: 560px) {
@@ -242,3 +271,4 @@ body {
  		width: 50%;
 	}	
 }
+/*****end super extra small devices only*****/

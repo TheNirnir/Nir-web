@@ -20,7 +20,7 @@ body {
 	margin-bottom: 15px;
 }
 
-#main-hr {
+.main-hr {
 	width: 80%;
 }
 
@@ -48,7 +48,7 @@ body {
 	margin: 0 auto;
 }
 
-#OptionsUl>#nav-list {
+div#collapsable-nav>div#OptionsUl>ul#nav-list {
 	clear: left;
 	text-align: center;
 	margin: 10px auto;
@@ -172,17 +172,17 @@ body {
 }
 /*****end about page*****/
 
-/*****People page*****/
-#people-options-row {
+/*****People and Research options page*****/
+#options-row {
 	padding: 0 20px;
 }
 
-.people-options {
+.options {
 	padding: 10px;
 	text-align: center;
 }
 
-.people-options>a {
+.options>a {
 	display: block;
 	margin: 0 auto;
 	font-size: 1.2em;
@@ -194,17 +194,17 @@ body {
 	border-radius: 10px;
 }
 
-.people-options>a:hover {
+.options>a:hover {
 	box-shadow: 0 0 20px 10px black;
 }
 
-.people-options span {
+.options span {
 	color: black;
 	position: absolute;
 	right: 0;
 	top: 25px;
 }
-/*****end People page*****/
+/*****end People and Research options page*****/
 
 /*****Publication page*****/
 #Publication-content, #Publication-link, #Publication-img {
@@ -234,6 +234,39 @@ body {
 }
 /*****end Publication page*****/
 
+/*****Research pages*****/
+#research-explanation {
+	font-weight: bold;
+}
+
+.research-content, .research-img {
+	float: right;
+}
+
+.research-content div {
+	margin-bottom: 8px;
+	font-size: 1.3em;
+}
+/*****end Research pages*****/
+
+/*****News page*****/
+.other-news-container {
+	background-color: #6600ff;
+	border-radius: 15px;
+	margin-top: 10px;
+	padding: 10px;
+	color: white;
+}
+
+#news-content, #other-news-content {
+	float: right;
+}
+
+#news-content p {
+	font-size: 1.5em;
+}
+/*****end News page*****/
+
 /*****Media page*****/
 #media-content {
 	height: 250px;
@@ -244,10 +277,6 @@ body {
 	color: black;
 	font-weight: bold;
 	font-size: 1.5em;
-}
-
-.media-hr {
-	width: 80%;
 }
 /*****end Media page*****/
 
@@ -271,6 +300,11 @@ body {
 	.PurpleBack {
 		background-color: #6600ff;
 		border-radius: 15px;
+	}
+	#other-news-title {
+		font-weight: bold;
+		color: #fff;
+		font-size: 1.3em;
 	}
 }
 /*****end all devices except extra small*****/
@@ -311,6 +345,12 @@ body {
 		float: right;
 	}
 	.people-options>a.right-option {
+		float: left;
+	}
+	#other-news-title {
+		font-size: 1.6em;
+	}
+	.research-content, .research-img {
 		float: left;
 	}
 }

@@ -31,7 +31,7 @@ body {
 }
 
 #logo-link {
-	text-align: right;
+	text-align: center;
 }
 
 .navbar {
@@ -317,10 +317,15 @@ body {
 		height: 18vw;/* 87.625px;*/
 	}
 
+	#logo-link {
+		text-align: right;
+	}
+
 	#nav-list a{
 		width: 40%;
 		margin: 0 auto;
 		text-align: center;
+		text-shadow: none;
 	}
 	#contact-content {
 		margin-bottom: 15px;
@@ -360,7 +365,7 @@ body {
 	#contact-img, #contact-content {
 		padding-bottom: 15px;
 	}
-	#nav-list a {
+	#nav-list li {
 		padding: 5px 0px;
 	}
 }
@@ -378,7 +383,7 @@ body {
 	#nav-list li {
 		padding: 5px;
 	}*/
-	#nav-list a {
+	#nav-list li {
 		padding: 5px 3px;
 	}
 }

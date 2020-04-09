@@ -172,6 +172,34 @@ body {
 }
 /*****end about page*****/
 
+/*****Publication page*****/
+#Publication-content, #Publication-link, #Publication-img {
+	float: right;
+}
+
+#Publication-content {
+	height: 650px;
+	overflow: auto;
+}
+
+#top-content-title {
+	margin-top: 0;
+}
+
+.year-link, .year-link:visited {
+	display: block;
+	text-align: center;
+	font-size: 1.3em;
+	text-decoration: none;
+}
+
+.year-link:hover, .year-link:active {
+	cursor: pointer;
+	text-decoration: none;
+	color: blue;
+}
+/*****end Publication page*****/
+
 /*****contact page*****/
 .text-bold {
 	font-weight: bold;

@@ -172,6 +172,40 @@ body {
 }
 /*****end about page*****/
 
+/*****People page*****/
+#people-options-row {
+	padding: 0 20px;
+}
+
+.people-options {
+	padding: 10px;
+	text-align: center;
+}
+
+.people-options>a {
+	display: block;
+	margin: 0 auto;
+	font-size: 1.2em;
+	font-weight: bold;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background-color: red; 
+	border-radius: 10px;
+}
+
+.people-options>a:hover {
+	box-shadow: 0 0 20px 10px black;
+}
+
+.people-options span {
+	color: black;
+	position: absolute;
+	right: 0;
+	top: 25px;
+}
+/*****end People page*****/
+
 /*****Publication page*****/
 #Publication-content, #Publication-link, #Publication-img {
 	float: right;
@@ -272,6 +306,12 @@ body {
 	#media-content {
 		height: unset;
 		overflow: visible;
+	}
+	.people-options>a.left-option {
+		float: right;
+	}
+	.people-options>a.right-option {
+		float: left;
 	}
 }
 /*****end extra small devices only*****/

@@ -247,6 +247,11 @@ body {
 	#contact-content {
 		margin-bottom: 15px;
 	}
+
+	#Publication-content {
+		height: unset;
+		overflow: visible;
+	}
 }
 /*****end extra small devices only*****/
 

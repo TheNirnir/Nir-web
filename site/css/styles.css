@@ -45,14 +45,13 @@ body {
 
 #OptionsUl {
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
 
-#nav-list {
+#OptionsUl>#nav-list {
 	clear: left;
 	text-align: center;
-	margin: 10px auto 10px;
+	margin: 10px auto;
 	/*margin: auto;*/
 	/*display: inline-block;
 	position: relative;*/
@@ -65,6 +64,14 @@ body {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);*/
+}
+
+#nav-list li {
+	padding: 5px;
+}
+
+#nav-list>li>a {
+	padding: 5px;
 }
 
 #nav-list a{
@@ -96,7 +103,7 @@ body {
 
 #nav-list a span {
 	font-size: 1em;
-	margin-right: 5px;
+	/*margin-right: 5px;*/
 }
 /*****end header*****/
 
@@ -185,7 +192,6 @@ body {
 	.PurpleBack {
 		background-color: #6600ff;
 		border-radius: 15px;
-		padding: 10px; 
 	}
 }
 /*****end all devices except extra small*****/
@@ -221,9 +227,9 @@ body {
 	#nav-list {
 		font-size: 11px;
 	}
-	#nav-list a {
-		padding: 1px 10px 1px 10px;
-	}
+	/*.navbar-nav>li>a {
+		padding: 1px 10px;
+	}*?
 	#contact-img, #contact-content {
 		padding-bottom: 15px;
 }
@@ -234,9 +240,16 @@ body {
 	#nav-list {
 		font-size: 14px;
 	}
-	#nav-list a {
-		padding: 1.5px 15px 1.5px 15px;
+
+	/*#nav-list>li>a {
+	padding: 1.5px 10px;
+}
+	.navbar-nav>li>a {
+		padding: 1.5px 10px 1.5px 10px;
 	}
+	#nav-list li {
+		padding: 5px;
+	}*?
 }
 /*****end medium devices only*****/
 
@@ -245,9 +258,12 @@ body {
 	#nav-list {
 		font-size: 17px;
 	}
-	#nav-list a {
-		padding: 2px 18px 2px 18px;
+	/*#nav-list li {
+		padding: 5px;
 	}
+	.navbar-nav>li>a {
+		padding: 2px 18px 2px 18px;
+	}*/
 }
 /*****end large devices only*****/
 

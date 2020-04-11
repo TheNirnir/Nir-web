@@ -7,4 +7,7 @@ function sayHello () {
 	// document.getElementById("content").innerHTML = message; =
 	document.querySelector("#content").innerHTML = message;
 	//doesn't work - document.querySelectorAll("div").innerHTML = message;
+	if (name === "Gael Monfils") {
+		document.querySelector("#title").textContent = "Gael Monfils is the best player in the world!";
+	}
 }

@@ -1,1 +1,6 @@
-Nir Ben-Ari
+{
+	"firstName": "Nir",
+	"lastName": "Ben-Ari",
+	"likesChineseFood": false,
+	"numberOfDisplays": 2
+}

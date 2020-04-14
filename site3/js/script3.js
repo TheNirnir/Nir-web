@@ -250,3 +250,8 @@
 // (function (name) {
 // 	console.log("Hello " + name);
 // })("Nir");
+
+// // converts from json string to object
+// var obj = JSON.parse(jsonString);
+// // converts from object to json string
+// var str = JSON.stringify(obj)

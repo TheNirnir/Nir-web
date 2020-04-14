@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded",
 							message += " displays for coding.";
 
 						document.querySelector("#content")
-							.innerHTML = "<h2>" + message + "</h2>";
+							.innerHTML = "<h2>" + "hello" + "</h2>";
 					}); 
 			});
 

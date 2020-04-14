@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded",
 			.addEventListener("click", function () {
 			// Call server to get the name
 			$ajaxUtils
-				.sendGetRequest("/data/name.txt",
+				.sendGetRequest("data/name.txt",
 					function (res) {
 						var message =
 							res.firstName + " " + res.lastName

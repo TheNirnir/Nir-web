@@ -160,11 +160,13 @@ body {
 /*****about page*****/
 #about-img {
 	margin-bottom: 20px;
+	float: right;
 }
 
-#about-p {
+#about-content {
 	font-size: 1.3em;
 	font-weight: 400;
+	float: right;
 }
 /*****end about page*****/
 
@@ -267,12 +269,22 @@ body {
 #media-content {
 	height: 250px;
 	overflow: auto;
+	float: right;
 }
 
-.media-link {
+#media-img {
+	float: right;
+}
+
+.media-link, .media-link:visited, .media-link:hover, .media-link:active {
 	color: black;
 	font-weight: bold;
 	font-size: 1.5em;
+}
+
+.media-link:hover, .media-link:active {
+	cursor: pointer;
+	text-decoration-line: none;
 }
 /*****end Media page*****/
 

@@ -28,9 +28,7 @@ $(function () { // same as document.addEventListener("DOMContentLoaded"...)
 // 		html += "<img src='images/ajax-loader.gif'></div>";
 // 		insertHtml (selector, html);
 // 	};
-// 	// var AboutLoad = function () {
-// 	// 	html = aboutHtml;
-// 	// };
+
 // 	// on page load - before images or css
 // 	document.addEventListener("DOMContentLoaded", function (event) {
 // 		// on first load, show home view
@@ -44,3 +42,10 @@ $(function () { // same as document.addEventListener("DOMContentLoaded"...)
 // global.$ot = ot;
 
 // })(window);
+
+// 	function aboutLoad (event) {
+// 		$ajaxUtils.sendGetRequest("snippets/about-snippet.html", function (responseText) {
+// 			document.querySelector("#main-content").innerHTML = responseText;
+// 		},
+// 		false);
+// 	}

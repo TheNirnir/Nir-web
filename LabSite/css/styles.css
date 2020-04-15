@@ -1,5 +1,6 @@
 body {
 	background-color: #38e0f2;
+	font-family: 'Comic Neue', cursive;
 }
 
 /*****header*****/
@@ -105,6 +106,7 @@ body {
 	text-align: center;
 	font-weight: 300;
 	margin: 0px auto 15px;
+	font-family: 'Lato', sans-serif;
 }
 /*****end main-contnent title*****/
 
@@ -130,7 +132,6 @@ body {
 	border-radius: 15px;
 	color: white;
 	padding: 3px 15px;
-	font-family: 'Comic Neue', cursive;
 }
 
 .prom-text h3 {
@@ -162,7 +163,8 @@ body {
 }
 
 #about-p {
-
+	font-size: 1.3em;
+	font-weight: 400;
 }
 /*****end about page*****/
 
@@ -278,6 +280,10 @@ body {
 .text-bold {
 	font-weight: bold;
 }
+
+#contact-content div {
+	margin-bottom: 3px;
+}
 /*****end contact page*****/
 
 /*****footer*****/
@@ -370,6 +376,12 @@ body {
 	#nav-list li {
 		padding: 5px 0px;
 	}
+	.prom-text {
+		height: 400px;
+	}
+	#news-prom {
+		height: unset;
+	}
 }
 /*****end small devices only*****/
 
@@ -388,6 +400,9 @@ body {
 	#nav-list li {
 		padding: 5px 3px;
 	}
+	.prom-container {
+		font-size: 0.85em;
+	}
 }
 /*****end medium devices only*****/
 
@@ -395,6 +410,9 @@ body {
 @media (min-width: 1200px) {
 	#nav-list {
 		font-size: 17px;
+	}
+	.prom-container {
+		font-size: 1.1em;
 	}
 	/*#nav-list li {
 		padding: 5px;

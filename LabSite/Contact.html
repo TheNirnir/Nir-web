@@ -7,10 +7,6 @@
 	<title>Nir-web</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/ajax-utils2.js"></script>
-	<script src="js/script.js"></script>
 </head>
 <body>
 	<header>
@@ -37,7 +33,7 @@
 	      				<li>
 	      					<a href="index.html"><!--<span class="glyphicon glyphicon-home"></span><br class="hidden-xs">-->Home</a>
 	      				</li>
-	      				<li id="page-on">
+	      				<li>
 	      					<a href="MomWebAbout.html"><!--<span class="glyphicon glyphicon-pencil"></span><br class="hidden-xs">-->About</a>
 	      				</li>
 	      				<li>
@@ -58,7 +54,7 @@
 	      				<li>
 	      					<a href="MomWebGallery.html"><!--<span class="glyphicon glyphicon-picture"></span><br class="hidden-xs">-->Gallery</a>
 	      				</li>
-	      				<li>
+	      				<li id="page-on">
 	      					<a href="MomWebContact.html"><!--<span class="glyphicon glyphicon-share"></span><br class="hidden-xs">-->Contact</a>
 	      				</li>
 	      			</ul>
@@ -68,11 +64,26 @@
 	</nav>
 	</header>
 	<div id="main-content" class="container">
-		<h2 class="text-center">About</h2>
+		<h2 class="text-center">Contact</h2>
 		<hr class="main-hr">
 		<div class="row">
-			<img id="about-img" class="col-sm-5" src="LupaPageTest.png" width="100%" alt="Picture">
-			<div id="about-p" class="col-sm-7"><p>Gaël Sébastien Monfils (French pronunciation: ​[ɡaɛl mɔ̃fis];[3] born 1 September 1986) is a French professional tennis player. He reached a career-high ATP world No. 6 singles ranking on 7 November 2016. His career highlights include reaching two Grand Slam singles semifinals at theGaël Sébastien Monfils (French pronunciation: ​[ɡaɛl mɔ̃fis];[3] born 1 September 1986) is a French professional tennis player. He reached a career-high ATP world No. 6 singles ranking on 7 November 2016. His career highlights include reaching two Grand Slam singles semifinals at the</p></div>
+				<img  id="contact-img" src="LupaPageTest.png" class="col-md-4 col-sm-6 hidden-xs" width="100%" alt="Picture">
+			<div id="contact-content" class="col-md-4 col-sm-6">
+				<div class="text-bold">Positive Family and Developmental Psychology Lab
+				Prof. Orit Taubman – Ben-Ari, Lab Director</div>
+				<div>The Louis and Gabi Weisfeld School of Social Work</div>
+				<div>Bar-Ilan University</div>
+				<div>52900 Ramat Gan</div>
+				<div>Israel</div>
+				<div>Email: taubman@biu.ac.il</div>
+			</div>
+			<div class="col-md-4">
+				<a href="https://goo.gl/maps/kDwCkdhhZjLtBejj8" target="_blank">
+					<div id="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.001843447399!2d34.84089891435915!3d32.069198881191475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4a6bba43574b%3A0xbdefd650a8c208c4!2sBar-Ilan%20University!5e0!3m2!1sen!2sil!4v1586420632562!5m2!1sen!2sil" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+				</a>
+			</div>
 		</div>
 	</div><!--end main-content-->
 
@@ -82,6 +93,8 @@
 	</div>	
 	</footer>
 
-
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

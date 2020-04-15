@@ -7,36 +7,3 @@ $(function () { // same as document.addEventListener("DOMContentLoaded"...)
 		}
 	});
 });
-
-(function (global) {
-
-	var ot = {};
-
-	var homeHtml = "snippets/home-snippet.html";
-
-	// convinience function for inserting innerHtml fot 'select'
-	var insertHtml = function (selector, html) {
-		var targetElem = document.querySelector(selector);
-		targetElem.innerHtml = html;
-	};
-
-	// showing loading icon inside element identified by 'selector'
-	var showLoading = function (selector) {
-		var html = "<div class='text-center'>";
-		html += "<img src='images/ajax-loader.gif'></div>";
-		insertHtml (selector, html);
-	};
-
-	// on page load - before images or css
-	document.addEventListener("DOMContentLoaded", function (event) {
-		// on first load, show home view
-		showLoading("#main-content");
-		$ajaxUtils.sendGetRequest(homeHtml, function (responseText) {
-			document.querySelector("#main-content").innerHTML = responseText;
-		},
-		false);
-	});
-
-global.$ot = ot;
-
-})(window);

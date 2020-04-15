@@ -7,10 +7,6 @@
 	<title>Nir-web</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/ajax-utils2.js"></script>
-	<script src="js/script.js"></script>
 </head>
 <body>
 	<header>
@@ -37,10 +33,10 @@
 	      				<li>
 	      					<a href="index.html"><!--<span class="glyphicon glyphicon-home"></span><br class="hidden-xs">-->Home</a>
 	      				</li>
-	      				<li id="page-on">
+	      				<li>
 	      					<a href="MomWebAbout.html"><!--<span class="glyphicon glyphicon-pencil"></span><br class="hidden-xs">-->About</a>
 	      				</li>
-	      				<li>
+	      				<li id="page-on">
 	      					<a href="MomWebPeople.html"><!--<span class="glyphicon glyphicon-user"></span><br class="hidden-xs">-->People</a>
 	      				</li>
 	      				<li>
@@ -68,11 +64,13 @@
 	</nav>
 	</header>
 	<div id="main-content" class="container">
-		<h2 class="text-center">About</h2>
+		<h2 class="text-center">People</h2>
 		<hr class="main-hr">
-		<div class="row">
-			<img id="about-img" class="col-sm-5" src="LupaPageTest.png" width="100%" alt="Picture">
-			<div id="about-p" class="col-sm-7"><p>Gaël Sébastien Monfils (French pronunciation: ​[ɡaɛl mɔ̃fis];[3] born 1 September 1986) is a French professional tennis player. He reached a career-high ATP world No. 6 singles ranking on 7 November 2016. His career highlights include reaching two Grand Slam singles semifinals at theGaël Sébastien Monfils (French pronunciation: ​[ɡaɛl mɔ̃fis];[3] born 1 September 1986) is a French professional tennis player. He reached a career-high ATP world No. 6 singles ranking on 7 November 2016. His career highlights include reaching two Grand Slam singles semifinals at the</p></div>
+		<div id="options-row" class="row">
+			<div class="options col-sm-3 col-xs-6"><a href="#" id="Current-Lab-Members" class="left-option"><span>Current Lab Members</span></a></div>
+			<div class="options col-sm-3 col-xs-6"><a href="#" id="Former-Lab-Members" class="right-option"><span>Former Lab Members</span></a></div>
+			<div class="options col-sm-3 col-xs-6"><a href="#" id="Former-PhD-Students" class="left-option"><span>Former PhD Students</span></a></div>
+			<div class="options col-sm-3 col-xs-6"><a href="#" id="Former-M.A-Students" class="right-option"><span>Former M.A Students</span></a></div>
 		</div>
 	</div><!--end main-content-->
 
@@ -82,6 +80,8 @@
 	</div>	
 	</footer>
 
-
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

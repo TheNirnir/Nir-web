@@ -155,6 +155,17 @@ body {
 	cursor: pointer;
 	color: #aaa;
 }
+
+#research-prom a, #research-prom a:visited {
+	color: #000;
+	text-decoration-line: none;
+}
+
+#research-prom a:hover, #research-prom a:active {
+	text-decoration-line: none;
+	color: #aaa;
+	cursor: pointer;
+}
 /*****end home page*****/
 
 /*****about page*****/
@@ -424,9 +435,6 @@ body {
 @media (min-width: 1200px) {
 	#nav-list {
 		font-size: 17px;
-	}
-	.prom-container {
-		font-size: 1.1em;
 	}
 	/*#nav-list li {
 		padding: 5px;

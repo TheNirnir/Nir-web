@@ -54,6 +54,8 @@ body {
 	clear: left;
 	text-align: center;
 	margin: 10px auto;
+	height: 40px;
+	overflow: visible;
 	/*margin: auto;*/
 	/*display: inline-block;
 	position: relative;*/
@@ -87,7 +89,18 @@ body {
 	border-radius: 15px;
 	color: #444444;
 	text-shadow: 2px 1px 3px #FFFFFF;
+	cursor: pointer;
 }
+
+
+
+		/* Style the collapsible content. Note: hidden by default */
+		.content-a {
+		  padding: 0 18px;
+		  display: none;
+		  overflow: hidden;
+		  background-color: #f1f1f1;
+		}
 
 #page-on a{
 	background-image: linear-gradient(#ebebeb, #a1a1a1);
@@ -339,6 +352,7 @@ body {
 @media (max-width: 767px) {
 	#nav-list {
 		font-size: 14px;
+		height: unset;
 	}
 
 	#big-title {

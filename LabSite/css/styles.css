@@ -403,6 +403,9 @@ body {
 		text-align: center;
 		text-shadow: none;
 	}
+	#nav-list #people-bar ul li {
+		width: 65%;
+	}
 	#contact-content {
 		margin-bottom: 15px;
 	}

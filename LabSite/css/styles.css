@@ -101,7 +101,7 @@ body {
 	height: 0;
 }
 
-#research-bar:hover ul {
+#research-bar:hover ul, #research-bar:active ul {
 	height: unset;
 }
 

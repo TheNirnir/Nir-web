@@ -103,7 +103,6 @@ body {
 
 #nav-list ul li {
 	margin: 3px auto;
-	text-align: left;
 }
 
 #nav-list ul li a {
@@ -353,6 +352,9 @@ body {
 		/*background-color: #6600ff;*/
 		background-image: linear-gradient(#663FA9, #2626A8);
 		border-radius: 15px;
+	}
+	#nav-list ul li {
+		text-align: left;
 	}
 	#other-news-title {
 		font-weight: bold;

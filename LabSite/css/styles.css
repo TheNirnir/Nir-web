@@ -397,7 +397,7 @@ body {
 		text-align: right;
 	}
 
-	#nav-list a{
+	#nav-list a, #nav-list #people-bar ul li{
 		width: 40%;
 		margin: 0 auto;
 		text-align: center;

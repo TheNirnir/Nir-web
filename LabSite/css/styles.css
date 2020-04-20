@@ -256,6 +256,10 @@ body {
 	overflow: auto;
 }
 
+#Publication-content p {
+	margin-bottom: 15px;
+}
+
 h3 {
 	font-weight: bold;
 }
@@ -279,7 +283,7 @@ h3 {
 	box-shadow: 0;
 }
 
-.year-link:hover {
+.year-link:hover, .year-link:active {
 	cursor: pointer;
 	text-decoration: none;
 	background-color: #88e0ff;

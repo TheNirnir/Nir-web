@@ -4,12 +4,17 @@
 	<meta charest="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-wudth, initial-scale=1">
-	<title>Research page 2</title>
+	<title>Nir-web</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Comic+Neue|Gotu|Nunito&display=swap" rel="stylesheet">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/ajax-utils2.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
-<header>
+	<header>
 	<nav class="navbar navbar-default">
 		<div class="container">
 			<div id="header-container" class="navbar-header">
@@ -32,12 +37,18 @@
       				<li id="page-on">
       					<a href="index.html">Home</a>
       				</li>
-      				<li>
+      				<li id="about-bar">
       					<!-- <a id="about-button" href="#" onclick="aboutLoad()">About</a> -->
-      					<a href="About.html">About</a>
+      					<a href="#">About</a>
       				</li>
-      				<li>
-      					<a href="People.html">People</a>
+      				<li id="people-bar">
+      					<a class="collapsible-a">People</a>
+						<ul class="PurpleBack">
+						  <li><a href="ResearchPage1.html">Current Lab Members</a></li>
+						  <li><a href="ResearchPage2.html">Former Lab Members</a></li>
+						  <li><a href="ResearchPage3.html">Former PhD Students</a></li>
+						  <li><a href="ResearchPage4.html">Former M.A Students</a></li>
+						</ul>
       				</li>
       				<li>
       					<a href="Publication.html">Publication</a>

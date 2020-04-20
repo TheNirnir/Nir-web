@@ -7,6 +7,11 @@
 	<title>Nir-web</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Comic+Neue|Gotu|Nunito&display=swap" rel="stylesheet">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/ajax-utils2.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<header>
@@ -14,11 +19,11 @@
 		<div class="container">
 			<div id="header-container" class="navbar-header">
 				<div id="header-row" class="row">
-					<a id="logo-link" href="index.html" class="col-sm-2 col-xs-4 col-xxs-4"><img class="Logo" src="LupaPageTest.png" width="90%" alt="Picture"></a>
+					<a id="logo-link" href="index.html" class="col-sm-2 col-xs-4 col-xxs-4"><img class="Logo" src="images/wordcloud.png" width="90%" alt="Picture"></a>
 					<h1 id="big-title" class="col-sm-10 col-xs-6 col-xxs-6">Positive Family and Developmental Psychology Lab
-					Headed by Prof.&nbsp;Orit&nbsp;Taubman&nbsp;–&nbsp;Ben-Ari</h1>
+					Headed&nbsp;by Prof.&nbsp;Orit Taubman&nbsp;–&nbsp;Ben&nbsp;-&nbsp;Ari</h1>
 				<div class="col-xs-2 col-xxs-2">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+					<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
 		       		<span class="sr-only">Toggle navigation</span>
 		        	<span class="icon-bar"></span>
 		        	<span class="icon-bar"></span>
@@ -28,37 +33,58 @@
 		      </div>
       		</div>
       		<div id="collapsable-nav" class="collapse navbar-collapse">
-      			<div id="OptionsUl" class="row">
-	      			<ul id="nav-list" class="nav navbar-nav PurpleBack"> <!--add "navbar-right" -->
-	      				<li>
-	      					<a href="index.html"><!--<span class="glyphicon glyphicon-home"></span><br class="hidden-xs">-->Home</a>
-	      				</li>
-	      				<li>
-	      					<a href="MomWebAbout.html"><!--<span class="glyphicon glyphicon-pencil"></span><br class="hidden-xs">-->About</a>
-	      				</li>
-	      				<li>
-	      					<a href="MomWebPeople.html"><!--<span class="glyphicon glyphicon-user"></span><br class="hidden-xs">-->People</a>
-	      				</li>
-	      				<li id="page-on">
-	      					<a href="MomWebPublication.html"><!--<span class="glyphicon glyphicon-th-list"></span><br class="hidden-xs">-->Publication</a>
-	      				</li>
-	      				<li>
-	      					<a href="MomWebResearch.html"><!--<span class="glyphicon glyphicon-file"></span><br class="hidden-xs">-->Research</a>
-	      				</li>
-	      				<li>
-	      					<a href="MomWebNews.html"><!--<span class="glyphicon glyphicon-check"></span><br class="hidden-xs">-->News</a>
-	      				</li>
-	      				<li>
-	      					<a href="MomWebMedia.html"><!--<span class="glyphicon glyphicon-headphones"></span><br class="hidden-xs">-->Media</a>
-	      				</li>
-	      				<li>
-	      					<a href="MomWebGallery.html"><!--<span class="glyphicon glyphicon-picture"></span><br class="hidden-xs">-->Gallery</a>
-	      				</li>
-	      				<li>
-	      					<a href="MomWebContact.html"><!--<span class="glyphicon glyphicon-share"></span><br class="hidden-xs">-->Contact</a>
-	      				</li>
-	      			</ul>
-      			</div>
+      			<ul id="nav-list" class="nav navbar-nav PurpleBack">
+      				<li id="page-on">
+      					<a href="index.html">Home</a>
+      				</li>
+      				<li id="about-bar">
+      					<!-- <a id="about-button" href="#" onclick="aboutLoad()">About</a> -->
+      					<a href="#">About</a>
+      				</li>
+      				<li id="people-bar">
+      					<a class="collapsible-a">People</a>
+						<ul class="PurpleBack">
+						  <li><a href="ResearchPage1.html">Current Lab Members</a></li>
+						  <li><a href="ResearchPage2.html">Former Lab Members</a></li>
+						  <li><a href="ResearchPage3.html">Former PhD Students</a></li>
+						  <li><a href="ResearchPage4.html">Former M.A Students</a></li>
+						</ul>
+      				</li>
+      				<li>
+      					<a href="Publication.html">Publication</a>
+      				</li>
+      				<li id="research-bar">
+      					<!-- <a id="research" href="Research.html">Research</a> -->
+      					<a class="collapsible-a">Research</a>
+						<ul class="PurpleBack">
+						  <li><a href="ResearchPage1.html">Transition to Parenthood and Grandparenthood</a></li>
+						  <li><a href="ResearchPage2.html">Mothers of Singletons and Twins (MOST)</a></li>
+						  <li><a href="ResearchPage3.html">Positive Outlook on Women Entering Reproductive treatments (POWER)</a></li>
+						  <li><a href="ResearchPage4.html">Driving Styles (MDSI) in the General Population</a></li>
+						  <li><a href="ResearchPage5.html">Risky Driving among Young Drivers</a></li>
+						  <li><a href="ResearchPage6.html">Driving in the Ultra-Orthodox Population in Israel</a></li>
+						  <li><a href="ResearchPage7.html">Terror Management Theory (TMT) in Everyday Life</a></li>
+						</ul>
+      					<!-- <ul>
+      						<li><a href="#"></a>something</li>
+      						<li><a href="#"></a>something</li>
+      						<li><a href="#"></a>something</li>
+      						<li><a href="#"></a>something</li>
+      					</ul> -->
+      				</li>
+      				<li>
+      					<a href="News.html">News</a>
+      				</li>
+      				<li>
+      					<a href="Media.html">Media</a>
+      				</li>
+      				<li>
+      					<a href="Gallery.html">Gallery</a>
+      				</li>
+      				<li>
+      					<a href="Contact.html">Contact</a>
+      				</li>
+      			</ul>
       		</div>
 		</div>
 	</nav>
@@ -104,19 +130,40 @@
 			<div id="Publication-content" class="col-md-7 col-sm-9 col-xs-12">
 				<section id="in-press">
 					<h3 id="top-content-title">in press</h3>
-					<p>words</p>
+					<p>Castro, C., Padilla, J., Doncel, P., & Taubman – Ben-Ari, O. (in press). Adaptation of the Multidimensional Driving Styles Inventory (MDSI) for Spanish drivers: Convergent and predictive validity evidence for detecting safe and unsafe driving styles. Accident Analysis and Prevention.<br>
+					Noy, A., Taubman – Ben-Ari, O., Morag, I., & Kuint, J. (in press). Childbirth circumstances, intergenerational relations, and mothers’ perception of marital quality over the course of two years following labor. Health Care for Women International.<br>
+					Skvirsky, V., Taubman – Ben-Ari, O., Hollins-Martin, C.J., & Martin, C.R. (in press). Validation of the Hebrew Birth Satisfaction Scale-Revised (BSS-R) and its Relationship to Perceived Traumatic Labour. Journal of Reproductive and Infant Psychology.<br>
+					Skvirsky, V., Taubman – Ben-Ari, O., Ben Shlomo, S., Azuri, J., & Horowitz, E. (in press). Contributors to women’s perceived stress at the start of fertility treatment. The Journal of Psychology: Interdisciplinary and Applied.</p>
 				</section>
 				<section id="2020">
 					<h3>2020</h3>
-					<p>words</p>
+					<p>will be uplload soon</p>
 				</section>
 				<section id="2019">
 					<h3>2019</h3>
-					<p>words</p>
+					<p>Taubman – Ben-Ari, O. (Ed.) (2019). Pathways and barriers to parenthood – Existential concerns regarding fertility, pregnancy, and early parenthood. Cham, Switzerland: Springer.<br>
+					Skvirsky, V., & Taubman – Ben-Ari, O. (2019). In pursuit of parenthood: The highs and lows of fertility treatment. In O. Taubman – Ben-Ari (Ed.), Pathways and barriers to the transition to parenthood – Existential concerns regarding fertility, pregnancy, and early parenthood. Cham, Switzerland: Springer.<br>
+					Taubman – Ben-Ari, O. (2019). Blossoming and growing in the transition to parenthood. In O. Taubman – Ben-Ari (Ed.), Pathways and barriers to the transition to parenthood – Existential concerns regarding fertility, pregnancy, and early parenthood. Cham, Switzerland: Springer.<br>
+					Taubman – Ben-Ari, O., Skvirsky, V., Straus, T., & Morag, I. (2019). Pre-term delivery, optimism and initial personal growth as predictors of mothers’ long-term personal growth. Journal of Reproductive and Infant Psychology, 37(3), 277-289.<br>
+					Ben Shlomo, S., Taubman – Ben-Ari, O., Skvirsky, V., Azuri, J., Weissman, A., & Horowitz, E. (2019). Subjective well-being of women at the beginning of fertility treatment: The role of medical variables, attachment orientation and supportive relationship with the mother. Journal of Reproductive and Infant Psychology, 37(4), 358-369.<br>
+					Navon, M., & Taubman – Ben-Ari, O. (2019). Driven by emotions: The association between emotion regulations, forgiveness and driving styles. Transportation Research Part F: Traffic Psychology and Behaviour, 65, 1-9.<br>
+					Porat-Zyman, G., Taubman – Ben-Ari, O., Kuint, J., & Morag, I. (2019). Personal growth four years after premature childbirth: The role of change in maternal mental health. Journal of Happiness Studies, 20(6), 1739-1750.<br>
+					Taubman – Ben-Ari, O., & Skvirsky, V. (2019). The Terror Management underpinnings of risky behavior. In Routladge, C. & Vess, M. (Eds.), Handbook of Terror Management Theory. San Diego: Elsevier.</p>
 				</section>
 				<section id="2018">
 					<h3>2018</h3>
-					<p>words</p>
+					<p>Taubman – Ben-Ari, O. (2018). What potential role do siblings play in young drivers’ driving styles? Transportation Research Part F: Traffic Psychology and Behaviour,58, 19-24.<br>
+					Guggenheim, N., & Taubman – Ben-Ari, O. (2018). Safe Driving Climate among Friends (SDCaF): A new scale. Accident Analysis and Prevention, 110, 78-85.<br>
+					Taubman – Ben-Ari, O., Ben Shlomo, S., & Findler, L. (2018). The transition to grandparenthood: A chance to promote well-being and personal growth in later life. In M. Demir & N. Sumer (Eds.), Close relationships and happiness across cultures. Dordrecht: Springer.<br>
+					Rozen, G., Taubman – Ben-Ari, O., Straus, T., & Morag, I. (2018). Personal growth of mothers of preterms – Objective severity of the event, subjective stress, personal resources, and maternal emotional support. Journal of Happiness Studies, 19(7), 2167-2186.<br>
+					Taubman – Ben-Ari, O., Skvirsky, V., Greenbury, T.J., & Prato, C. (2018). Explaining risks behind the wheel – Comparing Israeli and Queensland young drivers. Transportation Research Part F: Traffic Psychology and Behaviour, 58, 184-192.<br>
+					Taubman – Ben-Ari, O., Skvirsky, V., Bar Shua, E., & Horowitz, E. (2018). Personal growth of new fathers following assisted reproductive technology or spontaneous pregnancy. Parenting: Science and Practice, 18(3), 190-199.<br>
+					Skvirsky, V., Taubman – Ben-Ari, O., Ben Shlomo, S., Azuri, J., & Horowitz, E. (2018). Are mothers a source of support for women entering fertility treatment?. Health Care for Women International, 39(7), 719-733.<br>
+					Ithaki, H., Weiss-Dagan, S., & Taubman – Ben-Ari, O. (2018). Internal and community resources’ contribution to level of posttraumatic symptoms – The case of Israeli backpackers after the Nepal 2015 earthquake. Psychological Trauma: Theory, Research, Practice and Policy, 10(2), 239-245.<br>
+					Ben Shlomo, S. (2018). Psychoanalytic work with children. In R. Alfandary. Psychodynamic approach to social work. (Hebrew).<br>
+					Weiss-Dagan, S., Ithaki, H., & Taubman – Ben-Ari, O. (2018). Backpackers in the Nepal 2015 earthquake: The contribution of personal and social resources to mental health. Journal of Community Psychology, 46(6), 689-700.<br>
+					Porat-Zyman, G., Taubman – Ben-Ari, O., Morag, I., & Kuint, J. (2018). Contribution of psycho-social factors to mental health over the course of four years following childbirth in mothers of full-term and pre-term singletons and twins. Women and Health, 58, 72-91.
+					</p>
 				</section>
 				<section id="2017">
 					<h3>2017</h3>
@@ -203,7 +250,7 @@
 					<p>words</p>
 				</section>
 			</div>
-			<img id="Publication-img" src="LupaPageTest.png" class="col-md-3 hidden-sm hidden-xs" width="100%" alt="Picture">
+			<img id="Publication-img" src="images/publication-img.jpg" class="col-md-3 hidden-sm hidden-xs" width="100%" alt="Picture">
 		</div>
 	</div><!--end main-content-->
 

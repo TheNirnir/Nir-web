@@ -14,7 +14,7 @@
 // 	var ot = {};
 
 // 	var homeHtml = "snippets/home-snippet.html";
-// 	var aboutHtml = "snippets/about-snippet.html";
+// 	// var aboutHtml = "snippets/about-snippet.html";
 
 // 	var html = homeHtml;
 // 	// convinience function for inserting innerHtml fot 'select'
@@ -39,6 +39,9 @@
 // 		},
 // 		false);
 // 	});
+// 	// document.querySelector("#about-bar").addEventListener("click", function (event) {
+// 	// 	document.querySelector("#main-content").innerHtml = "<h2>about</h2>"
+// 	// });
 
 // global.$ot = ot;
 

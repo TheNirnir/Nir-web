@@ -268,7 +268,7 @@ h3 {
 	padding: 2px 5px;
 }
 
-.year-link, .year-link:visited {
+.year-link, .year-link:visited, .year-link:active {
 	display: block;
 	text-align: center;
 	font-size: 1.3em;
@@ -279,7 +279,7 @@ h3 {
 	box-shadow: 0;
 }
 
-.year-link:hover, .year-link:active {
+.year-link:hover {
 	cursor: pointer;
 	text-decoration: none;
 	background-color: #88e0ff;

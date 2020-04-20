@@ -252,7 +252,7 @@ body {
 }
 
 #Publication-content {
-	height: 650px;
+	height: 730px;
 	overflow: auto;
 }
 
@@ -264,17 +264,27 @@ h3 {
 	margin-top: 0;
 }
 
+.year-link-container {
+	padding: 2px 5px;
+}
+
 .year-link, .year-link:visited {
 	display: block;
 	text-align: center;
 	font-size: 1.3em;
 	text-decoration: none;
+	background-color: #88e0ff;
+	border-radius: 15px;
+	color: #0000b3;
 }
 
 .year-link:hover, .year-link:active {
 	cursor: pointer;
 	text-decoration: none;
-	color: blue;
+	background-color: #88e0ff;
+	border-radius: 15px;
+	color: #0000b3;
+	box-shadow: 0 0 20px 4px #fff;
 }
 /*****end Publication page*****/
 
@@ -492,6 +502,22 @@ h3 {
 	}
 	.people-options>a.right-option {
 		float: left;
+	}
+	#top-content-title {
+		margin-top: 10px;
+	}
+	.year-link-container {
+		padding: 2px 5px;
+	}
+	.year-link {
+		background-color: #88e0ff;
+		border-radius: 15px;
+	}
+	.year-link:hover, .year-link:active {
+		background-color: #88e0ff;
+		border-radius: 15px;
+		color: #0000b3;
+		box-shadow: 0 0 20px 4px #fff;
 	}
 	#other-news-title {
 		font-size: 1.6em;

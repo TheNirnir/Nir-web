@@ -661,9 +661,14 @@ h3 {
 	}
 	.col-xxs-6 {
  		width: 50%;
-	}
-	#big-title {
-		font-size: 1.2em/*3.5vw*/;
 	}	
 }
 /*****end super extra small devices only*****/
+
+/****super super extra small devices only****/
+@media (max-width: 536px) {
+	#big-title {
+		font-size: 1.2em/*3.5vw*/;
+	}
+}
+/****end super super extra small devices only****/

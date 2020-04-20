@@ -124,6 +124,12 @@ body {
 	text-shadow: 2px 1px 3px #FFFFFF;
 }
 
+button#navbarToggle {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
 	border: 1px solid #38e0f2;
 }
@@ -645,7 +651,7 @@ h3 {
 /*****end extra large devices only*****/
 
 /****super extra small****/
-@media (max-width: 560px) {
+/*@media (max-width: 560px) {
 	.col-xxs-2, .col-xxs-4, .col-xxs-7 {
 		position: relative;
 		min-height: 1px;
@@ -663,11 +669,11 @@ h3 {
 	.col-xxs-6 {
  		width: 50%;
 	}	
-}
+}*/
 /*****end super extra small devices only*****/
 
 /****super super extra small devices only****/
-@media (max-width: 536px) {
+@media (max-width: 485px) {
 	#big-title {
 		font-size: 1.2em/*3.5vw*/;
 	}

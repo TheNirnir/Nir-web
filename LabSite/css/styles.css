@@ -139,6 +139,7 @@ button#navbarToggle {
 .main-hr {
 	width: 80%;
 	margin: 0 auto 15px;
+	height: 1px;
 }
 /*****end main-contnent title*****/
 
@@ -356,11 +357,13 @@ h3 {
 	color: black;
 	font-weight: bold;
 	font-size: 1.5em;
+	text-decoration-line: none;
 }
 
 .media-link:hover, .media-link:active {
 	cursor: pointer;
 	text-decoration-line: none;
+	color: #808080;
 }
 /*****end Media page*****/
 

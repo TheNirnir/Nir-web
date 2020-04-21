@@ -256,6 +256,10 @@ button#navbarToggle {
 	float: right;
 }
 
+#Publication-link {
+	margin: 0;
+}
+
 #Publication-content {
 	height: 730px;
 	overflow: auto;

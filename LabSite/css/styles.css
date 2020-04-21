@@ -109,7 +109,7 @@ body {
 	text-decoration-line: none;
 }
 
-.page-on a{
+a#page-on{
 	background-image: linear-gradient(#ebebeb, #a1a1a1);
 	border-radius: 15px;
 	color: #444444;
@@ -444,6 +444,10 @@ h3 {
 	background-color: white;
 	border: none;
 }
+
+#copyright-symbol {
+	font-size: 1.5em;
+}
 /*****end footer*****/
 
 /***************media queries***************/
@@ -676,10 +680,16 @@ h3 {
 }*/
 /*****end super extra small devices only*****/
 
-/****super super extra small devices only****/
+/****specific max size of devices only****/
 @media (max-width: 445px) {
 	#big-title {
 		font-size: 1em;
 	}
 }
-/****end super super extra small devices only****/
+
+@media (max-width: 399px) {
+	.panel-footer {
+		font-size: 0.8em;
+	}
+}
+/****end specific max size of devices only****/

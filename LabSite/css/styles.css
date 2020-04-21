@@ -491,7 +491,7 @@ h3 {
 		text-align: right;
 	}
 
-	#nav-list a, #nav-list #people-bar ul li{
+	#nav-list a, #nav-list #people-bar ul li, #nav-list #research-bar ul li {
 		width: 40%;
 		margin: 0 auto;
 		text-align: center;

@@ -19,14 +19,6 @@ body {
 	font-family: 'Nunito', sans-serif;
 }
 
-#main-title {
-	margin-bottom: 15px;
-}
-
-.main-hr {
-	width: 80%;
-}
-
 .Logo {
 	margin: 10px 0;
 	width: 12.337vw;/* 135.125px;*/
@@ -117,7 +109,7 @@ body {
 	text-decoration-line: none;
 }
 
-#page-on a{
+.page-on a{
 	background-image: linear-gradient(#ebebeb, #a1a1a1);
 	border-radius: 15px;
 	color: #444444;
@@ -139,9 +131,14 @@ button#navbarToggle {
 #main-title {
 	text-align: center;
 	font-weight: 300;
-	margin: 0px auto 15px;
+	margin: 0px auto 5px;
 	/*font-family: 'Lato', sans-serif;*/
 	font-family: 'Gotu', sans-serif;
+}
+
+.main-hr {
+	width: 80%;
+	margin: 0 auto 15px;
 }
 /*****end main-contnent title*****/
 
@@ -311,9 +308,9 @@ h3 {
 	float: right;
 }
 
-.research-content div {
+.research-content p {
 	margin-bottom: 8px;
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 /*****end Research pages*****/
 
@@ -341,6 +338,10 @@ h3 {
 	overflow: auto;
 	float: right;
 	margin-bottom: 15px; 
+}
+
+#media-content hr {
+	margin-top: 15px;
 }
 
 #media-img {
@@ -673,9 +674,9 @@ h3 {
 /*****end super extra small devices only*****/
 
 /****super super extra small devices only****/
-@media (max-width: 485px) {
+@media (max-width: 445px) {
 	#big-title {
-		font-size: 1.2em/*3.5vw*/;
+		font-size: 1em;
 	}
 }
 /****end super super extra small devices only****/

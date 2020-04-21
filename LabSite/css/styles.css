@@ -500,6 +500,9 @@ h3 {
 	#nav-list #people-bar ul li {
 		width: 65%;
 	}
+	#nav-list #research-bar ul li {
+		width: 90%;
+	}
 	#contact-content {
 		margin-bottom: 15px;
 	}

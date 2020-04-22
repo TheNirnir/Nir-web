@@ -368,10 +368,10 @@ h3 {
 /*****end Media page*****/
 
 /*****Gallery page*****/
-#gallery-container {
+#galerry-container {
 /*	border: 2px solid #000;*/
 	margin: 0 auto;
-	width: 528px;
+	width: 533.333px;
 	height: 400px;
 	position: relative;
 /*	background-color: white;*/
@@ -419,7 +419,7 @@ h3 {
 	left: 10%;
 }
 
-.gallery-picture {
+#img-container img {
 	height: 100%;
 }
 

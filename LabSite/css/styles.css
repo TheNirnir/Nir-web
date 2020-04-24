@@ -353,7 +353,7 @@ h3 {
 	float: right;
 }
 
-.media-link, .media-link:visited, .media-link:hover, .media-link:active {
+.media-link:link , .media-link:visited, .media-link:hover, .media-link:active {
 	color: black;
 	font-weight: bold;
 	font-size: 1.5em;
@@ -381,6 +381,20 @@ h3 {
 #img-container {
 	width: 100%;
 	height: 100%;
+	border: 2px solid black;
+}
+
+#gallery-play {
+	font-size: 6em;
+	position: absolute;
+	top: 41%;
+	right: 41%;
+	color: transparent;
+}
+
+#gallery-play:hover {
+	color: #000;
+	opacity: .5;
 }
 
 .arrow {
@@ -423,7 +437,7 @@ h3 {
 	height: 100%;
 }
 
-#gallery-after-picture {
+/*#gallery-after-picture {
 	width: 0;
 }
 
@@ -433,7 +447,7 @@ h3 {
 
 #img-container:hover #gallery-after-picture {
 	width: auto;
-}
+}*/
 /*****end Gallery page*****/
 
 /*****contact page*****/
@@ -466,8 +480,12 @@ h3 {
 		background-image: linear-gradient(#663FA9, #2626A8);
 		border-radius: 15px;
 	}
+	#nav-list li {
+		height: 30px;
+	}	
 	#nav-list ul li {
 		text-align: left;
+		height: unset;
 	}
 	/*#nav-list #research-bar ul li a:hover {
 		border-radius: 0;
@@ -565,9 +583,6 @@ h3 {
 	#big-title {
 		font-size: 2em/*3.5vw*/;
 	}
-	/*.navbar-nav>li>a {
-		padding: 1px 10px;
-	}*/
 	#contact-img, #contact-content {
 		padding-bottom: 15px;
 	}

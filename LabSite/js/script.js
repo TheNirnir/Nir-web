@@ -7,14 +7,16 @@
 // 		}
 // 	});
 // });
-var i=1;
-for (i<=2; i++;) {
+// document.addEventListener("DOMContentLoaded", function (event) {
+// 	var i=1;
+// for (i<=2; i++;) {
 	// document.querySelector("#foward-arrow").addEventListener("click", function () {
-		function nextPicture() {
- 		document.querySelector("#img-container").innerHTML = '<img src="images/gallery/gallery' + 'i' + '.jpg" alt="Picture" heghit=100%>';
- 		}		
+		// function nextPicture() {
+ 		document.querySelector("#img-container").innerHTML = '<img src="images/gallery/gallery' + '1' + '.jpg" alt="Picture" heghit=100%>';
+ 		// }		
 	// });
-}
+// }
+// });
 // (function (global) {
 
 // 	var ot = {};

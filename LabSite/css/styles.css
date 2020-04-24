@@ -9,7 +9,7 @@ body {
 	width: 100%;
 }
 
-#big-title {
+h1 {
 	margin-top: 15px;
 	padding: 0 30px 0 0;
 	text-align: center;
@@ -508,7 +508,7 @@ h3 {
 		height: unset;
 	}
 
-	#big-title {
+	h1 {
 		font-size: 1.5em/*3.5vw*/;
 	}
 
@@ -581,7 +581,7 @@ h3 {
 	#nav-list {
 		font-size: 11px;
 	}
-	#big-title {
+	h1 {
 		font-size: 2em/*3.5vw*/;
 	}
 	#contact-img, #contact-content {
@@ -616,7 +616,7 @@ h3 {
 	#nav-list {
 		font-size: 14px;
 	}
-	#big-title {
+	h1 {
 		font-size: 2.5em/*3.5vw*/;
 	}
 	#research-bar {
@@ -705,7 +705,7 @@ h3 {
 
 /****specific max size of devices only****/
 @media (max-width: 445px) {
-	#big-title {
+	h1 {
 		font-size: 1em;
 	}
 }

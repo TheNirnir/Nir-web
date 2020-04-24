@@ -138,7 +138,7 @@ button#navbarToggle {
 
 .main-hr {
 	width: 80%;
-	margin: 0 auto 15px;
+	margin: 15px auto;
 	height: 1px;
 }
 /*****end main-contnent title*****/
@@ -329,7 +329,7 @@ h3 {
 }
 
 .research-content p {
-	margin-bottom: 8px;
+	margin-bottom: 15px;
 	font-size: 1.2em;
 }
 /*****end Research pages*****/
@@ -468,6 +468,10 @@ h3 {
 /*****contact page*****/
 .text-bold {
 	font-weight: bold;
+}
+
+#contact-content {
+	font-size: 1.3em;
 }
 
 #contact-content div {

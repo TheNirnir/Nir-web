@@ -350,6 +350,10 @@ h3 {
 #news-content p {
 	font-size: 1.5em;
 }
+
+#other-news-content p {
+	color: #60ffff;
+}
 /*****end News page*****/
 
 /*****Media page*****/

@@ -253,26 +253,26 @@ button#navbarToggle {
 /*****end People and Research options page*****/
 
 /*****People page*****/
-#people-container {
+.people-container {
 	text-align: center;
 	margin-bottom: 20px;
 }
 
-#people-container img {
+.people-container img {
 	width: 100%;
 	margin-bottom: 5px;
 }
 
-#people-container span {
+.people-container span {
 	font-size: 1.2em;
 	font-weight: bold;
 }
 
-#people-container:hover img {
+.people-container:hover img {
 	box-shadow: 0 0 30px 10px #fff;
 }
 
-#people-container:hover span {
+.people-container:hover span {
 	font-size: 1.5em;
 }
 /**********Former PhD and Former M.A Students pages**********/

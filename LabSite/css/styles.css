@@ -275,6 +275,24 @@ button#navbarToggle {
 #people-container:hover span {
 	font-size: 1.5em;
 }
+/**********Former PhD Students page**********/
+#former-phd-list {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#former-phd-list li {
+	margin-bottom: 15px;
+}
+
+#former-phd-list li span {
+	font-weight: normal;
+	font-size: 0.9em;
+}
+/**********end Former PhD Students page**********/
+/**********Former M.A Students page**********/
+
+/**********end Former M.A Students page**********/
 /*****end People page*****/
 
 /*****Publication page*****/

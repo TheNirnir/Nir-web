@@ -7,6 +7,10 @@
 // 		}
 // 	});
 // });
+
+function hello () {
+	console.log("hello");
+}
 // document.addEventListener("DOMContentLoaded", function (event) {
 // 	var i=1;
 // for (i<=2; i++;) {

@@ -255,10 +255,12 @@ button#navbarToggle {
 /*****People page*****/
 #people-container {
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 #people-container img {
 	width: 100%;
+	margin-bottom: 5px;
 }
 
 #people-container span {

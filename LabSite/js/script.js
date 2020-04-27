@@ -10,7 +10,8 @@
 
 function hello () {
 	console.log("hello");
-	document.querySelector("#main-content").innerHTML = "hello";
+	// document.querySelector("#main-content").innerHTML = "hello";
+	window.location.href = "../OritT.html"
 }
 // document.addEventListener("DOMContentLoaded", function (event) {
 // 	var i=1;

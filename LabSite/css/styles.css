@@ -276,16 +276,16 @@ button#navbarToggle {
 	font-size: 1.5em;
 }
 /**********Former PhD Students page**********/
-#former-phd-list {
+#former-students-list {
 	font-size: 1.5em;
 	font-weight: bold;
 }
 
-#former-phd-list li {
+#former-students-list li {
 	margin-bottom: 15px;
 }
 
-#former-phd-list li span {
+#former-students-list li span {
 	font-weight: normal;
 	font-size: 0.9em;
 }

@@ -8,10 +8,10 @@
 // 	});
 // });
 
-function hello () {
+function memberPagePointing (memberName) {
 	console.log("hello");
 	// document.querySelector("#main-content").innerHTML = "hello";
-	window.location.href = "OritT.html"
+	window.location.href = memberName + ".html"
 }
 // document.addEventListener("DOMContentLoaded", function (event) {
 // 	var i=1;

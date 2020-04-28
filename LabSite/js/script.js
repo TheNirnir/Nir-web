@@ -9,7 +9,6 @@
 // });
 
 function memberPagePointing (memberName) {
-	console.log("hello");
 	// document.querySelector("#main-content").innerHTML = "hello";
 	$ajaxUtils.sendGetRequest("snippets/" + memberName + "-snippet.html", function (responseText) {
 			document.querySelector("#main-content").innerHTML = responseText;
@@ -20,11 +19,11 @@ function memberPagePointing (memberName) {
 // document.addEventListener("DOMContentLoaded", function (event) {
 // 	var i=1;
 // for (i<=2; i++;) {
-	// document.querySelector("#foward-arrow").addEventListener("click", function () {
-		// function nextPicture() {
- 		// document.querySelector("#img-container").innerHTML = '<img src="images/gallery/gallery' + '1' + '.jpg" alt="Picture" heghit=100%>';
- 		// }		
-	// });
+// 	// document.querySelector("#foward-arrow").addEventListener("click", function () {
+// 		// function nextPicture() {
+//  		document.querySelector("#img-container").innerHTML = '<img src="images/gallery/gallery' + '1' + '.jpg" alt="Picture" heghit=100%>';
+//  		// }		
+// // 	});
 // }
 // });
 

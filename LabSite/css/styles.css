@@ -614,6 +614,9 @@ h3 {
 	#nav-list #research-bar ul li {
 		width: 90%;
 	}
+	#member-img-container, #member-content {
+		float: none;
+	}
 	#contact-content {
 		margin-bottom: 15px;
 	}

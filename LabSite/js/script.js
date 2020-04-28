@@ -11,7 +11,11 @@
 function memberPagePointing (memberName) {
 	console.log("hello");
 	// document.querySelector("#main-content").innerHTML = "hello";
-	window.location.href = memberName + ".html"
+	$ajaxUtils.sendGetRequest("snippets/" + memberName + "-snippet.html", function (responseText) {
+			document.querySelector("#main-content").innerHTML = responseText;
+		},
+		false);
+	// window.location.href = memberName + ".html";
 }
 // document.addEventListener("DOMContentLoaded", function (event) {
 // 	var i=1;

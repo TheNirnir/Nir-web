@@ -270,10 +270,12 @@ button#navbarToggle {
 
 .people-container:hover img {
 	box-shadow: 0 0 30px 10px #fff;
+	cursor: pointer;
 }
 
 .people-container:hover span {
 	font-size: 1.5em;
+	cursor: pointer;
 }
 /**********Former PhD and Former M.A Students pages**********/
 #former-students-list {

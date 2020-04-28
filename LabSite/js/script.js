@@ -16,14 +16,69 @@ function memberPagePointing (memberName) {
 		false);
 	// window.location.href = memberName + ".html";
 }
+document.addEventListener("DOMContentLoaded", function (event) {
+
+	document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture1.jpg" alt="Picture" heghit=100%>';
+	$ajaxUtils.sendGetRequest("../data/pictures-titles/picture1-title.txt", function (responseText) {
+			document.querySelector("#picture-title").innerHTML = responseText;
+		},
+		false);
+	// console.log(document.getElementById("gallery-container").width);
+	// var galleryHeight = document.getElementById("gallery-container").width;
+	// document.getElementById("gallery-container").heghit = "100px";
+
+});
+
+var i = 1;
+
+function nextPicture () {
+	if (i == 7) {
+		i = 0;
+	}
+	i++;
+	document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
+	$ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
+			document.querySelector("#picture-title").innerHTML = responseText;
+		},
+		false);
+	// $ajaxUtils
+	// 			.sendGetRequest("data/pictures-title.txt",
+	// 				function (res) {
+	// 					// var message =
+	// 					// 	res.firstName + " " + res.lastName
+	// 					// 	if (res.likesChineseFood) {
+	// 					// 		message += " likes Chinese food";
+	// 					// 	}
+	// 					// 	else {
+	// 					// 		message += " doesn't likes likes Chinese food";
+	// 					// 	}
+	// 					// 	message += " and uses ";
+	// 					// 	message +=res.numberOfDisplays;
+	// 					// 	message += " displays for coding.";
+
+	// 					var pictureTitle = res.picture + "1";
+
+	// 					document.querySelector("#picture-title")
+	// 						.innerHTML = pictureTitle;
+	// 				}); 
+}
+
+function prevPicture () {
+	if (i == 1) {
+		i = 8;
+	}
+	i=i-1;
+	document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
+}
+
 // document.addEventListener("DOMContentLoaded", function (event) {
 // 	var i=1;
 // for (i<=2; i++;) {
-// 	// document.querySelector("#foward-arrow").addEventListener("click", function () {
-// 		// function nextPicture() {
-//  		document.querySelector("#img-container").innerHTML = '<img src="images/gallery/gallery' + '1' + '.jpg" alt="Picture" heghit=100%>';
-//  		// }		
-// // 	});
+// // 	// document.querySelector("#foward-arrow").addEventListener("click", function () {
+// // 		// function nextPicture() {
+//  		document.querySelector("#img-container").innerHTML = '<img src="images/gallery/gallery' + i + '.jpg" alt="Picture" heghit=100%>';
+// //  		// }		
+// // // 	});
 // }
 // });
 

@@ -1,0 +1,5 @@
+{
+	"picture1": "something",
+	"picture2": "something else",
+	"picture3": "something 3"
+}

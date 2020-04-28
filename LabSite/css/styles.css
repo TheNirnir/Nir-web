@@ -445,12 +445,13 @@ h3 {
 /*****end Media page*****/
 
 /*****Gallery page*****/
-#galerry-container {
-/*	border: 2px solid #000;*/
+#gallery-container {
+	/*border: 2px solid #000;*/
 	margin: 0 auto;
-	width: 533.333px;
+	width: fit-content;
 	height: 400px;
 	position: relative;
+	padding: 0;
 /*	background-color: white;*/
 	text-align: center;
 }
@@ -458,23 +459,24 @@ h3 {
 #img-container {
 	width: 100%;
 	height: 100%;
-	border: 2px solid black;
+	/*border: 2px solid black;*/
+	margin: 0 auto;
 }
 
-#gallery-play {
+/*#gallery-play2 {
 	font-size: 6em;
 	position: absolute;
-	top: 41%;
-	right: 41%;
+	top: 42%;
+	right: 42%;
 	color: transparent;
 }
 
-#gallery-play:hover {
+#gallery-play2:hover {
 	color: #000;
-	opacity: .5;
+	opacity: .6;
 }
 
-.arrow {
+.arrow2 {
 	position: absolute;
 	height: 100%;
 	width: 10%;
@@ -483,37 +485,82 @@ h3 {
 	color: black;
 }
 
-.arrow span {
+.arrow2 span {
 	position: absolute;
 	top: 43%;
 	font-size: 3em;
 }
 
-.arrow:hover {
+.arrow2:hover {
 	background-color: #d9d9d9;
 	opacity: .5;
 }
 
-#foward-arrow {
+#foward-arrow2 {
 	right: 0;
 }
 
-#foward-arrow span {
+#foward-arrow2 span {
 	right: 10%;
 }
 
-#backward-arrow {
+#backward-arrow2 {
 	left: 0;
 }
 
-#backward-arrow span {
+#backward-arrow2 span {
 	left: 10%;
-}
+}*/
 
 #img-container img {
 	height: 100%;
 }
 
+#gallery-options-container {
+	margin: 10px auto 0;
+	text-align: center;
+	font-size: 3em;
+	width: 533px;
+	color: #000;
+}
+
+.gallery-option ,.gallery-option:visited {
+	padding: 5px;
+	background-color: #88e0ff;
+	border-radius: 15px;
+	box-shadow: 0;
+	width: 20%;
+}
+
+.gallery-option span {
+	display: block;
+	margin: auto;
+}
+
+.gallery-option:hover, .gallery-option:active {
+	cursor: pointer;
+	box-shadow: 0 0 20px 4px #fff;
+}
+
+#backward-arrow {
+	float: left;
+}
+
+#foward-arrow {
+	float: right;
+}
+
+#gallery-play {
+	width: fit-content;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+#picture-title {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 1.3em;
+}
 /*#gallery-after-picture {
 	width: 0;
 }
@@ -787,6 +834,23 @@ h3 {
 	}
 }
 
+@media (max-width: 600px) {
+	#gallery-container {
+		height: 300px;
+	}
+	#gallery-options-container {
+		width: 400px;
+	}
+}
+
+@media (max-width: 450px) {
+	#gallery-container {
+		height: 200px;
+	}
+	#gallery-options-container {
+		width: 266px;
+	}
+}
 /*@media (max-width: 399px) {
 	.panel-footer {
 		font-size: 0.8em;

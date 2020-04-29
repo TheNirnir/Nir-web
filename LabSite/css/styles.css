@@ -664,10 +664,12 @@ h3 {
 	#member-img-container, #member-content {
 		float: none;
 	}
+	#gallery-options-container {
+		font-size: 2em;
+	}
 	#contact-content {
 		margin-bottom: 15px;
 	}
-
 	#Publication-content {
 		height: unset;
 		overflow: visible;

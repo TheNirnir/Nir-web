@@ -36,6 +36,10 @@ function pageTransformation (pageName) {
 			document.querySelector("#main-content").innerHTML = responseText;
 		},
 		false);
+	var screenWidth = window.innerWidth;
+		if (screenWidth<768) {
+			$("#collapsable-nav").collapse('hide');
+		}
 }
 
 var i = 1;

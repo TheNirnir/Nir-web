@@ -18,7 +18,7 @@
 // }
 document.addEventListener("DOMContentLoaded", function (event) {
 
-	pageTransformation('Home');
+	pageTransformation('home');
 
 	document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture1.jpg" alt="Picture" heghit=100%>';
 	$ajaxUtils.sendGetRequest("../data/pictures-titles/picture1-title.txt", function (responseText) {

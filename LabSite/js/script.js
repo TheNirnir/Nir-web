@@ -8,15 +8,17 @@
 // 	});
 // });
 
-function memberPagePointing (memberName) {
-	// document.querySelector("#main-content").innerHTML = "hello";
-	$ajaxUtils.sendGetRequest("snippets/" + memberName + "-snippet.html", function (responseText) {
-			document.querySelector("#main-content").innerHTML = responseText;
-		},
-		false);
-	// window.location.href = memberName + ".html";
-}
+// function memberPagePointing (memberName) {
+// 	// document.querySelector("#main-content").innerHTML = "hello";
+// 	$ajaxUtils.sendGetRequest("snippets/" + memberName + "-snippet.html", function (responseText) {
+// 			document.querySelector("#main-content").innerHTML = responseText;
+// 		},
+// 		false);
+// 	// window.location.href = memberName + ".html";
+// }
 document.addEventListener("DOMContentLoaded", function (event) {
+
+	pageTransformation('Home');
 
 	document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture1.jpg" alt="Picture" heghit=100%>';
 	$ajaxUtils.sendGetRequest("../data/pictures-titles/picture1-title.txt", function (responseText) {
@@ -28,6 +30,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	// document.getElementById("gallery-container").heghit = "100px";
 
 });
+
+function pageTransformation (pageName) {
+	$ajaxUtils.sendGetRequest("snippets/" + pageName + "-snippet.html", function (responseText) {
+			document.querySelector("#main-content").innerHTML = responseText;
+		},
+		false);
+}
 
 var i = 1;
 
@@ -69,6 +78,10 @@ function prevPicture () {
 	}
 	i=i-1;
 	document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
+	$ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
+			document.querySelector("#picture-title").innerHTML = responseText;
+		},
+		false);
 }
 
 // document.addEventListener("DOMContentLoaded", function (event) {

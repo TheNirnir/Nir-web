@@ -40,6 +40,8 @@ function pageTransformation (pageName) {
 		if (screenWidth<768) {
 			$("#collapsable-nav").collapse('hide');
 		}
+	document.getElementById("page-on").id = "";
+	document.getElementsByClassName(pageName)[0].id = "page-on";
 }
 
 var i = 1;

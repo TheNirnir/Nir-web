@@ -530,6 +530,8 @@ h3 {
 	border-radius: 15px;
 	box-shadow: 0;
 	width: 20%;
+	/*display: inline;*/
+	margin: 0 auto;
 }
 
 .gallery-option span {
@@ -550,10 +552,22 @@ h3 {
 	float: right;
 }
 
-#gallery-play {
+#gallery-play-stop {
 	width: fit-content;
 	padding: 5px;
-	margin: 0 auto;
+	overflow: hidden;
+}
+
+#gallery-play-stop span {
+	overflow: hidden;
+}
+
+#gallery-play {
+	height: auto;
+}
+
+#gallery-stop {
+	height: 0;
 }
 
 #picture-title {

@@ -16,21 +16,24 @@
 // 		false);
 // 	// window.location.href = memberName + ".html";
 // }
+
 document.addEventListener("DOMContentLoaded", function (event) {
 
 	pageTransformation('home');
 
-	document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture1.jpg" alt="Picture" heghit=100%>';
-	$ajaxUtils.sendGetRequest("../data/pictures-titles/picture1-title.txt", function (responseText) {
-			document.querySelector("#picture-title").innerHTML = responseText;
-		},
-		false);
+	// document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
+	// $ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
+	// 		document.querySelector("#picture-title").innerHTML = responseText;
+	// 	},
+	// 	false);
+	// document.getElementById("picture-number").innerHTML = i;
 	// console.log(document.getElementById("gallery-container").width);
 	// var galleryHeight = document.getElementById("gallery-container").width;
 	// document.getElementById("gallery-container").heghit = "100px";
 
 });
 
+var i = 1;
 function pageTransformation (pageName) {
 	$ajaxUtils.sendGetRequest("snippets/" + pageName + "-snippet.html", function (responseText) {
 			document.querySelector("#main-content").innerHTML = responseText;
@@ -42,12 +45,12 @@ function pageTransformation (pageName) {
 		}
 	document.getElementById("page-on").id = "";
 	document.getElementsByClassName(pageName)[0].id = "page-on";
+
+	if (pageName == "Gallery") {}
 }
 
-var i = 1;
-
 function nextPicture () {
-	if (i == 21) {
+	if (i == 25) {
 		i = 0;
 	}
 	i++;
@@ -81,9 +84,9 @@ function nextPicture () {
 
 function prevPicture () {
 	if (i == 1) {
-		i = 22;
+		i = 26;
 	}
-	i=i-1;
+	i--;
 	document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
 	$ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
 			document.querySelector("#picture-title").innerHTML = responseText;
@@ -92,6 +95,48 @@ function prevPicture () {
 	document.getElementById("picture-number").innerHTML = i;
 }
 
+var playPictureTime;
+// var galleryPlay = document.getElementById("gallery-play");
+
+function playPicture () {
+	document.getElementById("gallery-play").style.height = "0";
+	document.getElementById("gallery-stop").style.height = "auto";
+	// console.log(galleryPlay.offsetWidth);
+	playPictureTime = setInterval(function () {
+		if (i == 25) {
+		i = 0;
+		}
+		// setTimeout(function () {}, 4000);
+		i++;
+		document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
+		$ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
+				document.querySelector("#picture-title").innerHTML = responseText;
+			},
+			false);
+		document.getElementById("picture-number").innerHTML = i;
+		if (i == 25) {
+			clearInterval(playPictureTime);
+			i = 1;
+			setTimeout(function () {
+				document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
+				$ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
+				document.querySelector("#picture-title").innerHTML = responseText;
+					},
+					false);
+				document.getElementById("picture-number").innerHTML = i;
+				document.getElementById("gallery-stop").style.height = "0";
+				document.getElementById("gallery-play").style.height = "auto";
+			}, 2500);
+		}
+	}, 2500);
+
+}
+
+function stopPlayPicture () {
+	clearInterval(playPictureTime);
+	document.getElementById("gallery-stop").style.height = "0";
+	document.getElementById("gallery-play").style.height = "auto";
+}
 // document.addEventListener("DOMContentLoaded", function (event) {
 // 	var i=1;
 // for (i<=2; i++;) {

@@ -15,5 +15,9 @@
 <div id="gallery-options-container">
 	<div id="backward-arrow" class="gallery-option" onclick="prevPicture()"><span class="glyphicon glyphicon-arrow-left"></span></div>
 	<div id="foward-arrow" class="gallery-option" onclick="nextPicture()"><span class="glyphicon glyphicon-arrow-right"></span></div>
-	<div id="gallery-play"class="gallery-option" onclick="playPicture()"><span class="glyphicon glyphicon-play-circle"></span></div>
+	<div id="gallery-play-stop"class="gallery-option">
+		<span id="gallery-play" onclick="playPicture()" class="glyphicon glyphicon-play-circle"></span>
+		<span id="gallery-stop" onclick="stopPlayPicture()" class="glyphicon glyphicon-pause"></span>
+	</div>
+	<!-- <div id="gallery-stop"class="gallery-option" onclick="stopPlayPicture()"><span class="glyphicon glyphicon-pause"></span></div> -->
 </div>

@@ -47,7 +47,7 @@ function pageTransformation (pageName) {
 var i = 1;
 
 function nextPicture () {
-	if (i == 7) {
+	if (i == 21) {
 		i = 0;
 	}
 	i++;
@@ -56,6 +56,7 @@ function nextPicture () {
 			document.querySelector("#picture-title").innerHTML = responseText;
 		},
 		false);
+	document.getElementById("picture-number").innerHTML = i;
 	// $ajaxUtils
 	// 			.sendGetRequest("data/pictures-title.txt",
 	// 				function (res) {
@@ -80,7 +81,7 @@ function nextPicture () {
 
 function prevPicture () {
 	if (i == 1) {
-		i = 8;
+		i = 22;
 	}
 	i=i-1;
 	document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
@@ -88,6 +89,7 @@ function prevPicture () {
 			document.querySelector("#picture-title").innerHTML = responseText;
 		},
 		false);
+	document.getElementById("picture-number").innerHTML = i;
 }
 
 // document.addEventListener("DOMContentLoaded", function (event) {

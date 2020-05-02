@@ -17,11 +17,221 @@
 // 	// window.location.href = memberName + ".html";
 // }
 
-var galleryAray;
-$ajaxUtils.sendGetRequest("../data/pictures-titles.js", function (responseText) {
-			galleryAray = responseText;
-		},
-		false);
+var galleryAray = [
+	{
+	"title" : "Vera Skvirsky & Adi Noy (Lab meeting, September 2016)"
+	},
+	{
+	"title" : "Avinoam Solomon & Gal Rozen (Lab meeting, September 2016)"
+	},
+	{
+	"title" : "Meital, Efrat, Miriam, & Ariel (Lab meeting, September 2016)"
+	},
+	{
+	"title" : "Ariel & Avinoam (Lab meeting, September 2016)"
+	},
+	{
+	"title" : "Lab meeting, September 2016"
+	},
+	{
+	"title" : "From left to right: Vered, Noga, Adi, Ginna, & Gal (Lab meeting, September 2016)"
+	},
+	{
+	"title" : "From left to right: Shirley Ben Shlomo, Orit Taubman ג€“ Ben-Ari & Liora Findler (STAR conference, Tel Aviv, June 2015)"
+	},
+	{
+	"title" : "From left to right: Gal, Gabi, Adi, Orit, Ginna, Vera & Adi (STAR conference, Tel Aviv, June 2015)"
+	},
+	{
+	"title" : "From left to right: Noga, Vered, Vera, Orit, Adi, & Ginna (May 2016)"
+	},
+	{
+	"title" : "Orit Taubman - Ben-Ari & Vered Mey-Zahav Oren (May 2016)"
+	},
+	{
+	"title" : "Orit Taubman - Ben-Ari & Noga Guggenheim (May 2016)"
+	},
+	{
+	"title" : "Orit Taubman - Ben-Ari & Vera Skvirsky (May 2016)"
+	},
+	{
+	"title" : "Gal Rozen & Vera Skvirsky (Lab meeting, May 2016)"
+	},
+	{
+	"title" : "Miriam Chasson, Ginna Porat-Zyman, Adi Noy, & Noga Guggenheim (Lab meeting, May 2016)"
+	},
+	{
+	"title" : "Shirley Ben Shlomo & Orit Taubman - Ben-Ari (May 2016)"
+	},
+	{
+	"title" : "Shirley Ben Shlomo & Ofir Ben-Yaakov (May 2016)"       
+	},
+	{
+	"title" : "From left to right: Adi Noy, Noga Guggenheim, & Limor Magen (July 2016)"      
+	},
+	{
+	"title" : "Ariel presenting at the Social Work doctoral students conference (February 2017)"
+	},
+	{
+	"title" : "Vera presenting at the Social Work doctoral students conference (February 2017)"
+	},
+	{
+	"title" : "From left to right: Ofir, Keren, Vera, & Ariel at the Social Work doctoral students conference (February 2017)"
+	},
+	{              
+	"title" : "From left to right: Vera, Keren,& Ofir at the Social Work doctoral students conference (February 2017)"
+	},
+	{
+	"title" : "Miriam presenting at the ESPANET conference (Bar Ilan University, February 2017)"
+	},
+	{              
+	"title" : "Shirely and Vera at the WCWMH conference, Dublin (March 2017)"
+	},
+	{              
+	"title" : "Vera at the WCWMH conference, Dublin (March 2017)"
+	},
+	{              
+	"title" : "Orit presenting at the WCWMH conference, Dublin (March 2017)"
+	},
+    {              
+    "title" : "Our lab is hosting two interns (June-July 2017)"
+    },
+    {              
+    "title" : "With Prof. Henny Bos from Amsterdam University (January 2018)"
+    },
+    {              
+    "title" : "Noga presenting at the Qualitative Research Conference (Ben Gurion University, February 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },     
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {             
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "Prof. Shulamit Michaeli, VP for Research, at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "Prof. Michael Steger at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },     
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "Prof. Brennan Peterson at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "Dr. Eran Horowitz at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "Dr. Avi Tsafrir at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "Prof. Dov Feldberg at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "Prof. Liat Lerner-Geva at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },              
+    {              
+    "title" : "Vera Skvirsky at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "Dr. Floor van Rooij at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "Prof. Orit Taubman ג€“ Ben-Ari at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "Prof. Susan Ayers at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "Prof. Sheldon Solomon at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "Prof. Mario Mikulincer at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "Evening tour in Old Jaffa during the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "Evening tour in Old Jaffa during the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "Evening tour in Old Jaffa during the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
+    },
+    {              
+    "title" : "Prof. Joseph Deutsch, Dean, Faculty of Social Sciences,  at the conference: There is nothing impossible to him who will try (March 15, 2018)"
+    },              
+    {              
+    "title" : "Prof. Michael Ungar from Dalhousie University (Canada) presenting at the conference: There is nothing impossible to him who will try (March 15, 2018)"
+    },
+    {              
+    "title" : "Prof. Martin Hagger from Curtin University (Australia) presenting at the conference: There is nothing impossible to him who will try (March 15, 2018)"
+    }
+];
 
 document.addEventListener("DOMContentLoaded", function (event) {
 
@@ -55,18 +265,29 @@ function pageTransformation (pageName) {
 	if (pageName == "Gallery") {}
 }
 
+function memberPageTransformation (memberName) {
+$ajaxUtils.sendGetRequest("snippets/" + memberName + "-snippet.html", function (responseText) {
+			document.querySelector("#main-content").innerHTML = responseText;
+		},
+		false);
+}
+
+function replacePicture () {
+	document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
+	document.querySelector("#picture-title").innerHTML = galleryAray[i-1].title;
+	document.getElementById("picture-number").innerHTML = i;
+	// $ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
+	// 		document.querySelector("#picture-title").innerHTML = responseText;
+	// 	},
+	// 	false);
+}
+
 function nextPicture () {
 	if (i == 25) {
 		i = 0;
 	}
 	i++;
-	document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
-	// $ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
-	// 		document.querySelector("#picture-title").innerHTML = responseText;
-	// 	},
-	// 	false);
-	document.querySelector("#picture-title").innerHTML = galleryAray[i-1].title;
-	document.getElementById("picture-number").innerHTML = i;
+	replacePicture();
 }
 
 function prevPicture () {
@@ -74,12 +295,7 @@ function prevPicture () {
 		i = 26;
 	}
 	i--;
-	document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
-	// $ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
-	// 		document.querySelector("#picture-title").innerHTML = responseText;
-	// 	},
-	// 	false);
-	document.getElementById("picture-number").innerHTML = i;
+	replacePicture();
 }
 
 var playPictureTime;
@@ -95,22 +311,12 @@ function playPicture () {
 		}
 		// setTimeout(function () {}, 4000);
 		i++;
-		document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
-		$ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
-				document.querySelector("#picture-title").innerHTML = responseText;
-			},
-			false);
-		document.getElementById("picture-number").innerHTML = i;
+		replacePicture();
 		if (i == 25) {
 			clearInterval(playPictureTime);
 			i = 1;
 			setTimeout(function () {
-				document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
-				$ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
-				document.querySelector("#picture-title").innerHTML = responseText;
-					},
-					false);
-				document.getElementById("picture-number").innerHTML = i;
+				replacePicture();
 				document.getElementById("gallery-stop").style.height = "0";
 				document.getElementById("gallery-play").style.height = "auto";
 			}, 2500);

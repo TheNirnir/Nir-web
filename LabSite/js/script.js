@@ -17,6 +17,12 @@
 // 	// window.location.href = memberName + ".html";
 // }
 
+var galleryAray;
+$ajaxUtils.sendGetRequest("../data/pictures-titles.js", function (responseText) {
+			galleryAray = responseText;
+		},
+		false);
+
 document.addEventListener("DOMContentLoaded", function (event) {
 
 	pageTransformation('home');
@@ -55,31 +61,12 @@ function nextPicture () {
 	}
 	i++;
 	document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
-	$ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
-			document.querySelector("#picture-title").innerHTML = responseText;
-		},
-		false);
+	// $ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
+	// 		document.querySelector("#picture-title").innerHTML = responseText;
+	// 	},
+	// 	false);
+	document.querySelector("#picture-title").innerHTML = galleryAray[i-1].title;
 	document.getElementById("picture-number").innerHTML = i;
-	// $ajaxUtils
-	// 			.sendGetRequest("data/pictures-title.txt",
-	// 				function (res) {
-	// 					// var message =
-	// 					// 	res.firstName + " " + res.lastName
-	// 					// 	if (res.likesChineseFood) {
-	// 					// 		message += " likes Chinese food";
-	// 					// 	}
-	// 					// 	else {
-	// 					// 		message += " doesn't likes likes Chinese food";
-	// 					// 	}
-	// 					// 	message += " and uses ";
-	// 					// 	message +=res.numberOfDisplays;
-	// 					// 	message += " displays for coding.";
-
-	// 					var pictureTitle = res.picture + "1";
-
-	// 					document.querySelector("#picture-title")
-	// 						.innerHTML = pictureTitle;
-	// 				}); 
 }
 
 function prevPicture () {
@@ -88,10 +75,10 @@ function prevPicture () {
 	}
 	i--;
 	document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
-	$ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
-			document.querySelector("#picture-title").innerHTML = responseText;
-		},
-		false);
+	// $ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
+	// 		document.querySelector("#picture-title").innerHTML = responseText;
+	// 	},
+	// 	false);
 	document.getElementById("picture-number").innerHTML = i;
 }
 

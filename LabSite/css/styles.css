@@ -443,14 +443,14 @@ h3 {
 	float: right;
 }
 
-.media-link:link , .media-link:visited, .media-link:hover, .media-link:active {
+#media-content a:link , #media-content a:visited, #media-content a:hover, #media-content a:active {
 	color: black;
 	font-weight: bold;
 	font-size: 1.5em;
 	text-decoration-line: none;
 }
 
-.media-link:hover, .media-link:active {
+#media-content a:hover, #media-content a:active {
 	cursor: pointer;
 	text-decoration-line: none;
 	color: #808080;
@@ -780,7 +780,7 @@ h3 {
 		width: 135px;
 	}
 	.prom-text {
-		height: 400px;
+		height: 430px;
 	}
 	#news-prom {
 		height: unset;

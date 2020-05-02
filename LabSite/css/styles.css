@@ -180,9 +180,16 @@ button#navbarToggle {
 	font-weight: 900;
 }
 
+#research-prom h3 span {
+	font-size: 0.5em;
+}
+
 #research-prom a, #research-prom a:visited {
 	color: #60ffff;
 	text-decoration-line: none;
+	display: block;
+	margin-bottom: 10px;
+	line-height: 1.2;
 }
 
 #research-prom a:hover, #research-prom a:active {
@@ -253,6 +260,12 @@ button#navbarToggle {
 /*****end People and Research options page*****/
 
 /*****People page*****/
+#explanation {
+	text-align: center;
+	font-size: 1.3em;
+	margin-bottom: 10px;
+}
+
 .people-container {
 	text-align: center;
 	margin-bottom: 20px;

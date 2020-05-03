@@ -836,7 +836,9 @@ function pageTransformation (pageName) {
 
 	if (pageName == "Gallery") {
 		i = 0;
-		touchswipeStart();
+		document.addEventListener("DOMContentLoaded", function (event) {
+			touchswipeStart();
+		});
 	}
 }
 

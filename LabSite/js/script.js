@@ -906,7 +906,7 @@ $(function() {
   $("#img-container").swipe( {
     //Generic swipe handler for all directions
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-      nextPicture(); 
+      $(this).text("You swiped " + direction );  
     }
   });
 });

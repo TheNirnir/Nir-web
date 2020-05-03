@@ -414,7 +414,7 @@ var galleryAray = [
 
     "title" : "Shirely and Vera at the WCWMH conference, Dublin (March 2017)",
 
-    "url" : "Dublin2017_06.jpg"
+    "url" : "Dublin2017_06.JPG"
 
     },
 
@@ -422,7 +422,7 @@ var galleryAray = [
 
     "title" : "Vera at the WCWMH conference, Dublin (March 2017)",
 
-    "url" : "Dublin2017_07.jpg"
+    "url" : "Dublin2017_07.JPG"
 
     },
 
@@ -901,6 +901,29 @@ function stopPlayPicture () {
 	document.getElementById("gallery-stop").style.height = "0";
 	document.getElementById("gallery-play").style.height = "auto";
 }
+
+// $(function() {
+//   $("#test").swipe( {
+//     //Generic swipe handler for all directions
+//     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+//       $(this).text("You swiped " + direction );  
+//     }
+//   });
+ 
+//   //Set some options later
+//   $("#test").swipe( {fingers:2} );
+// });
+
+// $("#img-container").touchwipe({
+//      wipeLeft: function() { alert("left"); },
+//      wipeRight: function() { alert("right"); },
+//      wipeUp: function() { alert("up"); },
+//      wipeDown: function() { alert("down"); },
+//      min_move_x: 20,
+//      min_move_y: 20,
+//      preventDefaultEvents: true
+// });
+
 // document.addEventListener("DOMContentLoaded", function (event) {
 // 	var i=1;
 // for (i<=2; i++;) {

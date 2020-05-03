@@ -3,6 +3,14 @@ body {
 	font-family: 'Comic Neue', cursive;
 }
 
+#test {
+	background-color: #000;
+	color: #fff;
+	font-size: 3em;
+	text-align: center;
+	height: 300px;
+}
+
 /*****header*****/
 #header-row {
 	background-color: white;

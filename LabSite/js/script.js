@@ -904,10 +904,10 @@ function stopPlayPicture () {
 
 $(function() {      
   //Enable swiping...
-  $("#gallery-container").swipe( {
+  $("#test").swipe( {
     //Generic swipe handler for all directions
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-      nextPicture();  
+      $(this).text("You swiped " + direction );  
     },
     //Default is 75px, set to 0 for demo so any distance triggers swipe
      threshold:0

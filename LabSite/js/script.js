@@ -807,7 +807,7 @@ var galleryAray = [
 
 document.addEventListener("DOMContentLoaded", function (event) {
 
-	// pageTransformation('home');
+	pageTransformation('home');
 
 	// document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
 	// $ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
@@ -836,6 +836,7 @@ function pageTransformation (pageName) {
 
 	if (pageName == "Gallery") {
 		i = 0;
+		touchswipeStart();
 	}
 }
 
@@ -902,14 +903,16 @@ function stopPlayPicture () {
 	document.getElementById("gallery-play").style.height = "auto";
 }
 
-$(function() {
-  $("#test").swipe( {
-    //Generic swipe handler for all directions
-    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-      $(this).text("You swiped " + direction );  
-    }
-  });
-});
+function touchswipeStart () {
+	$(function() {
+	  $("#test").swipe( {
+	    //Generic swipe handler for all directions
+	    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+	      $(this).text("You swiped " + direction );  
+	    }
+	  });
+	});
+}
 
 // $(function() {
 //   $("#test").swipe( {

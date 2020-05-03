@@ -902,6 +902,15 @@ function stopPlayPicture () {
 	document.getElementById("gallery-play").style.height = "auto";
 }
 
+$(function() {
+  $("#img-container").swipe( {
+    //Generic swipe handler for all directions
+    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+      nextPicture(); 
+    }
+  });
+});
+
 // $(function() {
 //   $("#test").swipe( {
 //     //Generic swipe handler for all directions

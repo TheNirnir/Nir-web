@@ -840,6 +840,7 @@ function pageTransformation (pageName) {
 			touchswipeStart();
 		});
 	}
+	return pageName;
 }
 
 function memberPageTransformation (memberName) {
@@ -913,6 +914,9 @@ function touchswipeStart () {
 	      $(this).text("You swiped " + direction );  
 	    }
 	  });
+	  if (pageName != "Gallery") {
+	  	return;
+	  }
 	});
 }
 

@@ -807,7 +807,7 @@ var galleryAray = [
 
 document.addEventListener("DOMContentLoaded", function (event) {
 
-	pageTransformation('home');
+	// pageTransformation('home');
 
 	// document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
 	// $ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {

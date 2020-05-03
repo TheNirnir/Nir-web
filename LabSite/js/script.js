@@ -902,12 +902,15 @@ function stopPlayPicture () {
 	document.getElementById("gallery-play").style.height = "auto";
 }
 
-$(function() {
-  $("#img-container").swipe( {
+$(function() {      
+  //Enable swiping...
+  $("#gallery-container").swipe( {
     //Generic swipe handler for all directions
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-      $(this).text("You swiped " + direction );  
-    }
+      nextPicture();  
+    },
+    //Default is 75px, set to 0 for demo so any distance triggers swipe
+     threshold:0
   });
 });
 

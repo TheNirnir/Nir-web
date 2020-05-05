@@ -835,10 +835,13 @@ function pageTransformation (pageName) {
 	document.getElementsByClassName(pageName)[0].id = "page-on";
 
 	if (pageName == "Gallery") {
-		i = 0;
-		document.addEventListener("DOMContentLoaded", function (event) {
+		i = 1;
+		// document.addEventListener("DOMContentLoaded", function (event) {
+			// touchswipeStart();
+		// });
+		setTimeout(function () {
 			touchswipeStart();
-		});
+		}, 5000);
 	}
 	return pageName;
 }
@@ -914,9 +917,9 @@ function touchswipeStart () {
 	      $(this).text("You swiped " + direction );  
 	    }
 	  });
-	  if (pageName != "Gallery") {
-	  	return;
-	  }
+	  // if (pageName != "Gallery") {
+	  // 	return;
+	  // }
 	});
 }
 

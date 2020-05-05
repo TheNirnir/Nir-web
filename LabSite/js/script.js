@@ -836,12 +836,12 @@ function pageTransformation (pageName) {
 
 	if (pageName == "Gallery") {
 		i = 1;
-		document.addEventListener("DOMContentLoaded", function (event) {
-			touchswipeStart();
-		});
-		// setTimeout(function () {
+		// document.addEventListener("DOMContentLoaded", function (event) {
 		// 	touchswipeStart();
-		// }, 5000);
+		// });
+		setTimeout(function () {
+			touchswipeStart();
+		}, 1000);
 	}
 	return pageName;
 }

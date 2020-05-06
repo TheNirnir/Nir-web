@@ -839,11 +839,10 @@ function pageTransformation (pageName) {
 		// document.addEventListener("DOMContentLoaded", function (event) {
 		// 	touchswipeStart();
 		// });
-		setTimeout(function () {
-			touchswipeStart();
-		}, 1000);
+		// setTimeout(function () {
+		// 	touchswipeStart();
+		// }, 1000);
 	}
-	return pageName;
 }
 
 function memberPageTransformation (memberName) {
@@ -909,20 +908,20 @@ function stopPlayPicture () {
 	document.getElementById("gallery-play").style.height = "auto";
 }
 
-function touchswipeStart () {
-	$(function() {
-	  $("#test").swipe( {
-	    //Generic swipe handler for all directions
-	    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-	      $(this).text("You swiped " + direction );
-	      nextPicture();
-	    }
-	  });
-	  // if (pageName != "Gallery") {
-	  // 	return;
-	  // }
-	});
-}
+// function touchswipeStart () {
+// 	$(function() {
+// 	  $("#test").swipe( {
+// 	    //Generic swipe handler for all directions
+// 	    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+// 	      $(this).text("You swiped " + direction );
+// 	      nextPicture();
+// 	    }
+// 	  });
+// 	  // if (pageName != "Gallery") {
+// 	  // 	return;
+// 	  // }
+// 	});
+// }
 
 // $(function() {
 //   $("#test").swipe( {

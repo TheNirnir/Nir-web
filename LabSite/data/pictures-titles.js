@@ -1,4 +1,4 @@
-{
+[{
 
 "title" : "Vera Skvirsky & Adi Noy (Lab meeting, September 2016)",
 
@@ -196,4 +196,4 @@
 
 "url" : "picture25.jpg"
 
-}
+}]

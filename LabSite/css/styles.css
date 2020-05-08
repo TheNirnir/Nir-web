@@ -81,6 +81,10 @@ h1 {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+#nav-list span {
+	padding-right: 10px;
+}
+
 #nav-list>li>a:hover, #nav-list ul li:hover {
 	background-image: linear-gradient(#ebebeb, #a1a1a1);
 	border-radius: 15px;
@@ -658,6 +662,14 @@ h3 {
 /***************media queries***************/
 /*****all devices except extra small*****/
 @media (min-width: 768px) {
+
+	#nav-list span {
+		width: 0;
+		height: 0;
+		padding: 0;
+		display: block;
+		opacity: 0;
+	}
 
 	.PurpleBack {
 		/*background-color: #6600ff;*/

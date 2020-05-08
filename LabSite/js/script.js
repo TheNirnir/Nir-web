@@ -1081,10 +1081,11 @@ function pageTransformation (pageName) {
 			document.querySelector("#main-content").innerHTML = responseText;
 		},
 		false);
-	var screenWidth = window.innerWidth;
-		if (screenWidth<768) {
-			$("#collapsable-nav").collapse('hide');
-		}
+	// var screenWidth = window.innerWidth;
+	// 	if (screenWidth<768) {
+	// 		$("#collapsable-nav").collapse('hide');
+	// 	}
+	HideButton();
 	pageOnChanging(pageName);
 
 	if (pageName == "Gallery") {
@@ -1100,16 +1101,19 @@ function pageTransformation (pageName) {
 
 function currentLabMembersPageTransformation (pageName) {
 	pageOnChanging(pageName);
+	HideButton();
 	buildAndShowCurrentLabMembersPage(currentMembersObj);
 }
 
 function formerLabMembersPageTransformation (pageName) {
 	pageOnChanging(pageName);
+	HideButton();
 	buildAndShowFormerLabMembersPage(formerMembersObj);
 }
 
 function newsPageTransformation (pageName) {
 	pageOnChanging(pageName);
+	HideButton();
 	buildAndShowNewsPage(newsObj, MainNewsNumber);
 }
 // // showing loading icon inside element identified by 'selector'
@@ -1122,6 +1126,13 @@ function newsPageTransformation (pageName) {
 function pageOnChanging (pageName) {
 	document.getElementById("page-on").id = "";
 	document.getElementsByClassName(pageName)[0].id = "page-on";
+}
+
+function HideButton () {
+	var screenWidth = window.innerWidth;
+		if (screenWidth<768) {
+			$("#collapsable-nav").collapse('hide');
+		}
 }
 
 function currentLabMemberPageTransformation (memberName) {

@@ -845,6 +845,13 @@ function pageTransformation (pageName) {
 	}
 }
 
+// // showing loading icon inside element identified by 'selector'
+// var showLoading = function (selector) {
+// 	var html = "<div class='text-center'>";
+// 	html += "<img src='images/ajax-loader.gif'></div>";
+// 	document.querySelector("#main-content").innerHTML = html;
+// };
+
 function memberPageTransformation (memberName) {
 $ajaxUtils.sendGetRequest("snippets/" + memberName + "-snippet.html", function (responseText) {
 			document.querySelector("#main-content").innerHTML = responseText;

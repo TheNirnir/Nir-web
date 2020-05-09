@@ -999,7 +999,7 @@ var newsObj = {
 		number: 8
 	},
 	{//4
-		content: "On 12-14 March, 2018, we hosted an international symposium, entitled: Barriers and pathways in the transition to parenthood. The symposium, funded by the Israeli Science Foundation (ISF), dealt with concerns and experiences of individuals in respect to fertility/infertility, pregnancy, birth, and early parenthood, with an emphasis on positive psychology aspects such as well-being, resilience, personal growth, and meaning in life. Several leading experts from Israel and abroad participated in this stimulating and inspiring event. All talks are available on: https://www.youtube.com/playlist?list=PLXF_IJaFk-9Ch99gKwXFd42LLeGmLkpcx",
+		content: "On 12-14 March, 2018, we hosted an international symposium, entitled: Barriers and pathways in the transition to parenthood. The symposium, funded by the Israeli Science Foundation (ISF), dealt with concerns and experiences of individuals in respect to fertility/infertility, pregnancy, birth, and early parenthood, with an emphasis on positive psychology aspects such as well-being, resilience, personal growth, and meaning in life. Several leading experts from Israel and abroad participated in this stimulating and inspiring event. All talks are available on youtube: <a href='https://www.youtube.com/playlist?list=PLXF_IJaFk-9Ch99gKwXFd42LLeGmLkpcx' target='_blank' id='conference-link'>Barriers and pathways in the transition to parenthood</a>",
 		shortContent: "On 12-14 March, 2018, we hosted an international symposium, entitled: Barriers and pathways in the transition to parenthood. The symposium was funded by the Israeli Science Foundation (ISF).",
 		image: "img_001_resize.JPG",
 		number: 7
@@ -1025,7 +1025,7 @@ var newsObj = {
 	{//8
 		content: "Noga Guggenheim came back from Kampala, Uganda, with some personal and professional impressions: In October 2016, I travelled to Uganda where my son and my daughter-in-law have been living and working in recent months. Uganda is an interesting country with wonderful nature experiences where I had the opportunity to witness many significant areas of interest, among them some professional ones. In this regard, for several years I have been involved in studying driving behavior and culture. Immediately after landing in Entebbe, the sights of transportation and driving habits during the ride from the airport to Kampala, put the visitor into a sudden shock. The eye finds it difficult and overwhelming to get used to the sight of the enormous crowding of cars and the fast-moving, overloaded motorcycles, huge masses of pedestrians crossing chaotically between vehicles, unmaintained roads, the conspicuous absence of sidewalks and countless vendors jumping on every car whenever it stops. In addition, although by law a driver's license is issued from the age of 18 - in practice it turns out that this is only a recommendation. Many drive without having a driving license. Traffic crashes are a great problem in the capital, and as a result, there are many casualties with loss of lives. Kampala itself has very limited public transportation, most trips are carried out in large taxis or using the Uber app. Another significant shuttle service are “Boda Boda”, motorcycles which are often extremely overloaded. It is common, for example, to see three or four people carrying baskets on a motorcycle. The sense of danger is lurking on the streets of Kampala in every turn, but it does not necessarily disturb the ones walking about the streets.",
 		shortContent: "Noga Guggenheim came back from Kampala, Uganda, with some personal and professional impressions",
-		image: "noga_uganda1.jpg",
+		image: "noga_uganda3.jpg",
 		number: 3
 	},
 	{//9
@@ -1090,9 +1090,10 @@ function pageTransformation (pageName) {
 
 	if (pageName == "Gallery") {
 		// i = 1;
-		// document.addEventListener("DOMContentLoaded", function (event) {
+		document.addEventListener("DOMContentLoaded", function (event) {
+			console.log("It's working")
 		// 	touchswipeStart();
-		// });
+		});
 		// setTimeout(function () {
 		// 	touchswipeStart();
 		// }, 1000);

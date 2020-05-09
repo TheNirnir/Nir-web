@@ -1105,7 +1105,7 @@ function pageTransformation (pageName) {
 		// 	j++;
 		// }
 
-		waitForElementToDisplay("#gallery-container", 100);
+		waitForElementToDisplay("#test", 100);
 
 		function waitForElementToDisplay(selector, time) {
 	        if(document.querySelector(selector)!=null) {
@@ -1452,20 +1452,20 @@ function changeNews (MainNewsNumber) {
 	buildAndShowNewsPage(newsObj, MainNewsNumber);
 }
 
-// function touchswipeStart () {
-// 	$(function() {
-// 	  $("#test").swipe( {
-// 	    //Generic swipe handler for all directions
-// 	    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-// 	      $(this).text("You swiped " + direction );
-// 	      nextPicture();
-// 	    }
-// 	  });
-// 	  // if (pageName != "Gallery") {
-// 	  // 	return;
-// 	  // }
-// 	});
-// }
+function touchswipeStart () {
+	$(function() {
+	  $("#test").swipe( {
+	    //Generic swipe handler for all directions
+	    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+	      $(this).text("You swiped " + direction );
+	      nextPicture();
+	    }
+	  });
+	  // if (pageName != "Gallery") {
+	  // 	return;
+	  // }
+	});
+}
 
 // $(function() {
 //   $("#test").swipe( {

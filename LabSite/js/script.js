@@ -284,7 +284,7 @@ var galleryArray = [
 
     {//7
 
-            "title" : "From left to right: Shirley Ben Shlomo, Orit Taubman ג€“ Ben-Ari & Liora Findler (STAR conference, Tel Aviv, June 2015)",
+            "title" : "From left to right: Shirley Ben Shlomo, Orit Taubman&nbsp;- Ben&#8209;Ari & Liora Findler (STAR conference, Tel Aviv, June 2015)",
 
             "url" : "from_word_doc_04.jpg"
 
@@ -308,7 +308,7 @@ var galleryArray = [
 
     {//10
 
-    "title" : "Orit Taubman ג€“ Ben-Ari & Vered Mey-Zahav Oren (May 2016)",
+    "title" : "Orit Taubman&nbsp;- Ben&#8209;Ari & Vered Mey-Zahav Oren (May 2016)",
 
     "url" : "A07A0107.jpg"
 
@@ -316,7 +316,7 @@ var galleryArray = [
 
     {//11
 
-    "title" : "Orit Taubman ג€“ Ben-Ari & Noga Guggenheim (May 2016)",
+    "title" : "Orit Taubman&nbsp;- Ben&#8209;Ari & Noga Guggenheim (May 2016)",
 
     "url" : "A07A0117.jpg"
 
@@ -324,7 +324,7 @@ var galleryArray = [
 
     {//12
 
-    "title" : "Orit Taubman ג€“ Ben-Ari & Vera Skvirsky (May 2016)",
+    "title" : "Orit Taubman&nbsp;- Ben&#8209;Ari & Vera Skvirsky (May 2016)",
 
     "url" : "A07A0102.jpg"
 
@@ -348,7 +348,7 @@ var galleryArray = [
 
     {//15
 
-            "title" : "Shirley Ben Shlomo & Orit Taubman ג€“ Ben-Ari (May 2016)",
+            "title" : "Shirley Ben Shlomo & Orit Taubman&nbsp;- Ben&#8209;Ari (May 2016)",
 
             "url" : "from_word_doc_01.jpg"
 
@@ -726,7 +726,7 @@ var galleryArray = [
 
     {//62              
 
-    "title" : "Prof. Orit Taubman ג€“ Ben-Ari at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "Prof. Orit Taubman&nbsp;- Ben&#8209;Ari at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
     "url" : "314.jpg"
 
@@ -808,19 +808,19 @@ var galleryArray = [
 var currentMembersObj = {
 	currentMembersArray: [
 	{//1
-		fullName: "Prof. Orit Taubman - Ben&nbsp;-&nbsp;Ari",
+		fullName: "Prof. Orit Taubman&nbsp;- Ben&#8209;Ari",
 		shortName: "OritT",
 		content: "is a psychologist and professor at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University in Israel. Her research focuses on two main interests. The first is intergenerational relationships and personal growth following life transitions, such as the transitions to parenthood and grandparenthood. In the wake of her ground-breaking research, her scholarly publications were among the first to introduce the construct of personal growth into the discourse of life transitions. Her studies examine both deleterious and positive or constructive predispositions and outcomes within families coping with various stress-related events, such as the birth of a pre-term infant, parenthood following fertility treatment, and parenting twins. The second focus of her research is the psychology of risk taking, especially reckless driving, with an emphasis on risk taking among adolescents and young adults. Over the years, she has studied youngsters during the stages of learning to drive and the early phases of driving, examining various issues, including the motivations for driving, gender differences, relevant personality traits, and the contribution of the family and peers. Within this framework, she has developed and confirmed the validity and reliability of instruments for assessing driving style (Multidimensional Driving Style Inventory; MDSI), as well as for assessing the attitudes of young drivers and their parents to the accompanied driving period (Attitudes Towards Accompanied Driving; ATAD). She has also developed a new theoretical concept, Family Climate for Road Safety, along with an instrument for its assessment (Family Climate for Road Safety Scale; FCRSS)."
 	},
 	{//2
 		fullName: "Dr. Shirley Ben Shlomo",
 		shortName: "ShirleyB",
-		content: "is a clinical social worker and psychotherapist specializing in parents, children, and youth. A lecturer and former head of the Bachelor's degree program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, she received her PhD at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman – Ben-Ari. Over the last decade, her research has focused on positive outcomes following life transitions, the representation of social work in the media, and developmental implications of intergenerational transmission of abuse and neglect. Her papers have been published in scientific journals and presented at international conferences."
+		content: "is a clinical social worker and psychotherapist specializing in parents, children, and youth. A lecturer and former head of the Bachelor's degree program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, she received her PhD at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari. Over the last decade, her research has focused on positive outcomes following life transitions, the representation of social work in the media, and developmental implications of intergenerational transmission of abuse and neglect. Her papers have been published in scientific journals and presented at international conferences."
 	},
 	{//3
 		fullName: "Dr. Noga Guggenheim",
 		shortName: "NogaG",
-		content: "is a clinical social worker and a relational psychotherapist. She received her MA in Special Education from the Hebrew University in Jerusalem and her MSW and PhD in Social Work from the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman – Ben-Ari. With over 30 years of experience in clinical work and as a clinical supervisor, she works with adults in her private practice in Tel Aviv, specializing in coping with various changes during the life cycle (including loss, bereavement, PTSD, disability, and rehabilitation). Her PhD dealt with the multidimensional assessment of friendship relations among young drivers and their contribution to road safety. Based mainly on the methodology of qualitative phenomenology, her research deals with questions of driving behavior and involves culture, gender, and special population groups. Her work has been published in scientific journals."
+		content: "is a clinical social worker and a relational psychotherapist. She received her MA in Special Education from the Hebrew University in Jerusalem and her MSW and PhD in Social Work from the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari. With over 30 years of experience in clinical work and as a clinical supervisor, she works with adults in her private practice in Tel Aviv, specializing in coping with various changes during the life cycle (including loss, bereavement, PTSD, disability, and rehabilitation). Her PhD dealt with the multidimensional assessment of friendship relations among young drivers and their contribution to road safety. Based mainly on the methodology of qualitative phenomenology, her research deals with questions of driving behavior and involves culture, gender, and special population groups. Her work has been published in scientific journals."
 	},
 	{//4
 		fullName: "Dr. Ariel Ezra",
@@ -830,87 +830,87 @@ var currentMembersObj = {
 	{//5
 		fullName: "Vera Skvirsky",
 		shortName: "VeraS",
-		content: "is a clinical social worker and a PhD student at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman – Ben-Ari. She has a BA in History and Sociology from Tel Aviv University and an MA from Bar-Ilan University. Her studies focus on the mental health of women with fertility problems, and she is the research manager for the longitudinal fertility study (POWER) being conducted by the lab."
+		content: "is a clinical social worker and a PhD student at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari. She has a BA in History and Sociology from Tel Aviv University and an MA from Bar-Ilan University. Her studies focus on the mental health of women with fertility problems, and she is the research manager for the longitudinal fertility study (POWER) being conducted by the lab."
 	},
 	{//6
 		fullName: "Salam Abu-Sharkia",
 		shortName: "SalamA",
-		content: "is a PhD student at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman – Ben-Ari. She has a BA in Social work and Criminology from Max Stern Academic College of Emek Yezreel, and a Master’s degree in Social Work from Bar-Ilan University. She is currently working as a social worker at Yoseftal hospital in Eilat. The series of studies she is conducting for her doctorate focuses on personal growth and cultural factors among Arab women in different stages of infertility treatment."
+		content: "is a PhD student at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari. She has a BA in Social work and Criminology from Max Stern Academic College of Emek Yezreel, and a Master’s degree in Social Work from Bar-Ilan University. She is currently working as a social worker at Yoseftal hospital in Eilat. The series of studies she is conducting for her doctorate focuses on personal growth and cultural factors among Arab women in different stages of infertility treatment."
 	},
 	{//7
 		fullName: "Ofir Ben Yaakov",
 		shortName: "OfirB",
-		content: "is an PhD student at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman – Ben-Ari. He has a BA in Social Work from Haifa University and an MA from the School of Social Work at Bar-Ilan University. A clinical social worker with extensive experience in the field of mental health, he currently works as a clinician in mental health clinics, specializing in individual and group work with children and adolescents with emotional and behavioral problems and adults with mental health disorders. His MA thesis, under the supervision of Dr. Shirley Ben Shlomo, dealt with the experience of parenthood of young children in light of personality characteristics of the parent and child and the parent’s couple relationship. His studies focus on the transition to parenthood, parenthood of young children, and the parent-child relationship."
+		content: "is an PhD student at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari. He has a BA in Social Work from Haifa University and an MA from the School of Social Work at Bar-Ilan University. A clinical social worker with extensive experience in the field of mental health, he currently works as a clinician in mental health clinics, specializing in individual and group work with children and adolescents with emotional and behavioral problems and adults with mental health disorders. His MA thesis, under the supervision of Dr. Shirley Ben Shlomo, dealt with the experience of parenthood of young children in light of personality characteristics of the parent and child and the parent’s couple relationship. His studies focus on the transition to parenthood, parenthood of young children, and the parent-child relationship."
 	},
 	{//8
 		fullName: "Keren Yuzuk",
 		shortName: "KerenY",
-		content: "is a doctoral student and a clinical social worker with a BA and MA in Social Work from the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. Her MA thesis, under the supervision of Dr. Shirley Ben Shlomo, investigated life satisfaction and meaning in life during the transition of both men and women to parenthood. The series of studies she is conducting for her doctorate, under the supervision of Prof. Orit Taubman – Ben-Ari, focuses on TMT and infertility issues."
+		content: "is a doctoral student and a clinical social worker with a BA and MA in Social Work from the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. Her MA thesis, under the supervision of Dr. Shirley Ben Shlomo, investigated life satisfaction and meaning in life during the transition of both men and women to parenthood. The series of studies she is conducting for her doctorate, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, focuses on TMT and infertility issues."
 	},
 	{//9
 		fullName: "Miriam Chasson",
 		shortName: "MiriamC",
-		content: "is a social worker and and a PhD student at the Louis and Gabi Weisfeld School of Social work at Bar-Ilan University. She has a BA and an MA from the School of Social work at Bar-Ilan University. Her MA thesis, under the supervision of Prof. Orit Taubman – Ben-Ari, investigated the transition to motherhood of single mothers by choice, focusing on the contribution of the mother's personal resources to her mental health and personal growth."
+		content: "is a social worker and and a PhD student at the Louis and Gabi Weisfeld School of Social work at Bar-Ilan University. She has a BA and an MA from the School of Social work at Bar-Ilan University. Her MA thesis, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, investigated the transition to motherhood of single mothers by choice, focusing on the contribution of the mother's personal resources to her mental health and personal growth."
 	},
 	{//10
 		fullName: "Gal Rozen",
 		shortName: "GalR",
-		content: "is a clinical social worker and a PhD candidate under the supervision of Prof. Orit Taubman – Ben-Ari. He has a BA in Philosophy and a BA and Master’s degree in Social Work from Bar-Ilan university, and he specializes in working with children and their parents and team training. He currently serves as the coordinator of clinical work at the Neve Hanna Children’s Home for youngsters from troubled families in Kiryat Gat. His Master’s thesis, under the supervision of Prof. Orit Taubman – Ben-Ari, dealt with personal growth among mothers of pre-term babies, examining the contribution of the health risk to the infants, the perceived stress of the mothers, and the emotional support of the grandmother."
+		content: "is a clinical social worker and a PhD candidate under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari. He has a BA in Philosophy and a BA and Master’s degree in Social Work from Bar-Ilan university, and he specializes in working with children and their parents and team training. He currently serves as the coordinator of clinical work at the Neve Hanna Children’s Home for youngsters from troubled families in Kiryat Gat. His Master’s thesis, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, dealt with personal growth among mothers of pre-term babies, examining the contribution of the health risk to the infants, the perceived stress of the mothers, and the emotional support of the grandmother."
 	},
 	{//11
 		fullName: "Anna Zelkin",
 		shortName: "AnnaZ",
-		content: "is a PhD candidate at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman – Ben-Ari. Anna is a social worker and psychotherapist specializing in adults with physical disease. She is currently working as a social worker at Kaplan hospital in Rehovot. She has a BA from the School of Social Work at Tel-Aviv University and an MA from the School of Social Work at Bar-Ilan University. Her MA thesis, under the supervision of Prof. Varda Soskolni, investigated the association of illness perception, personal control and social support with psychological distress in GI cancer patients."
+		content: "is a PhD candidate at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari. Anna is a social worker and psychotherapist specializing in adults with physical disease. She is currently working as a social worker at Kaplan hospital in Rehovot. She has a BA from the School of Social Work at Tel-Aviv University and an MA from the School of Social Work at Bar-Ilan University. Her MA thesis, under the supervision of Prof. Varda Soskolni, investigated the association of illness perception, personal control and social support with psychological distress in GI cancer patients."
 	},
 	{//12
 		fullName: "Meital Navon",
 		shortName: "MeitalN",
-		content: "is a PhD candidate at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman – Ben-Ari. Meital is a clinical social worker and graduated her MA at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in Social Work from the Hebrew University in Jerusalem, and has studied animal-assisted therapy. She currently works with adolescents and youth at risk in Jerusalem. Her MA thesis, under the supervision of Prof. Orit Taubman – Ben-Ari, focused on affect regulation processes and their association with risky driving."
+		content: "is a PhD candidate at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari. Meital is a clinical social worker and graduated her MA at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in Social Work from the Hebrew University in Jerusalem, and has studied animal-assisted therapy. She currently works with adolescents and youth at risk in Jerusalem. Her MA thesis, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, focused on affect regulation processes and their association with risky driving."
 	},
 	{//13
 		fullName: "Maram Yassin",
 		shortName: "MaramY",
-		content: "is a PhD candidate at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman – Ben-Ari. Maram is a community social worker, within the Community Security Program sponsored by the Ministry of Public Security, in the city of Tamra. As part of her work, she leads projects and initiates processes aimed at developing mechanisms that promote dialogue and cooperation within society and the community. For the past two years she has also served as an instructor at Sakhnin Academic College. Maram received an MA with Honors, after completing the Research Track with a specialization in Organization and Management, as well as a Certificate in Group Facilitation, from the University of Haifa. In addition, she has an instructor’s certificate in the field of education at Gordon Academic College. Maram’s current area of research, under the supervision of Prof. Orit Taubman – Ben-Ari, is parental involvement and its impact on teenage driving in the Arab society."
+		content: "is a PhD candidate at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari. Maram is a community social worker, within the Community Security Program sponsored by the Ministry of Public Security, in the city of Tamra. As part of her work, she leads projects and initiates processes aimed at developing mechanisms that promote dialogue and cooperation within society and the community. For the past two years she has also served as an instructor at Sakhnin Academic College. Maram received an MA with Honors, after completing the Research Track with a specialization in Organization and Management, as well as a Certificate in Group Facilitation, from the University of Haifa. In addition, she has an instructor’s certificate in the field of education at Gordon Academic College. Maram’s current area of research, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, is parental involvement and its impact on teenage driving in the Arab society."
 	},
 	{//14
 		fullName: "Sigalit Offer",
 		shortName: "SigalitO",
-		content: "is a clinical social worker and a PhD candidate. She is a lecturer at the Louis and Gabi Weisfeld School of Social Work of Bar-Ilan University. She is also a certified couple and family therapist. For more than 23 years, she worked at Schneider Children’s Medical Center of Israel in the Department of Premature and Newborns and at the Psychiatric Department of Eating Disorders. Today she works at the unit for Child Development. Her research, under the supervision of Prof. Orit Taubman – Ben-Ari, focuses on the meaning of giving birth to a premature baby on the motherhood experience in retrospect."
+		content: "is a clinical social worker and a PhD candidate. She is a lecturer at the Louis and Gabi Weisfeld School of Social Work of Bar-Ilan University. She is also a certified couple and family therapist. For more than 23 years, she worked at Schneider Children’s Medical Center of Israel in the Department of Premature and Newborns and at the Psychiatric Department of Eating Disorders. Today she works at the unit for Child Development. Her research, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, focuses on the meaning of giving birth to a premature baby on the motherhood experience in retrospect."
 	},
 	{//15
 		fullName: "Shachar Taichner Katz",
 		shortName: "ShacharT",
-		content: "is a first-year MA student in the Clinical Social Work program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in Behavioral Sciences from the Netanya Academic College. Her MA thesis, under the supervision of Prof. Orit Taubman – Ben-Ari, examines the connection between internal and external resources and personal growth among first-time parents."
+		content: "is a first-year MA student in the Clinical Social Work program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in Behavioral Sciences from the Netanya Academic College. Her MA thesis, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, examines the connection between internal and external resources and personal growth among first-time parents."
 	},
 	{//16
 		fullName: "Efrat Amitay",
 		shortName: "EfratA",
-		content: "is an MA student in the Clinical Social Work program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in Social Work from the Academic College of Judea and Samaria in Ariel, and is currently working as a juvenile probation officer in Jerusalem, working with youngsters who have committed criminal offenses. Her MA thesis, under the supervision of Prof. Orit Taubman – Ben-Ari, deals with the contribution of personal, social, and family characteristics on youngsters’ driving before they actually receive their license."
+		content: "is an MA student in the Clinical Social Work program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in Social Work from the Academic College of Judea and Samaria in Ariel, and is currently working as a juvenile probation officer in Jerusalem, working with youngsters who have committed criminal offenses. Her MA thesis, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, deals with the contribution of personal, social, and family characteristics on youngsters’ driving before they actually receive their license."
 	},
 	{//17
 		fullName: "Efrat Weiss",
 		shortName: "EfratW",
-		content: "is a clinical social worker, who graduated her MA at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in social work from Bar Ilan University, and is currently working at a boarding school for religious girls. Her MA thesis, under the supervision of Prof. Orit Taubman – Ben-Ari, dealt with the transition to parenthood of new fathers to twins or a single baby."
+		content: "is a clinical social worker, who graduated her MA at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in social work from Bar Ilan University, and is currently working at a boarding school for religious girls. Her MA thesis, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, dealt with the transition to parenthood of new fathers to twins or a single baby."
 	},
 	{//18
 		fullName: "Meital Mialy",
 		shortName: "MeitalM",
-		content: "is an MA student in the Rehabilitation and Health Social Work program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in social work from the Hebrew University in Jerusalem, and is working for more than a decade in the Israeli health system. Her MA thesis, under the supervision of Prof. Orit Taubman – Ben-Ari, deals with fertility physicians’ coping with their role and the associations between cognitive aspects and personal growth among them."
+		content: "is an MA student in the Rehabilitation and Health Social Work program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in social work from the Hebrew University in Jerusalem, and is working for more than a decade in the Israeli health system. Her MA thesis, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, deals with fertility physicians’ coping with their role and the associations between cognitive aspects and personal growth among them."
 	},
 	{//19
 		fullName: "Reut Ben-Kimhy",
 		shortName: "ReutB",
-		content: "is an MA student in the Gender studies program at the School of Interdisciplinary studies at Bar-Ilan University. Reut is a medical psychologist specializing in women reproduction. She is currently working as a psychologist at the obstetrics and gynecology department at Meir Medical Center in Kfar saba. She has a BA and an MA from the academic college of Tel Aviv-Yaffo. Her current MA thesis, under the supervision of Prof. Orit Taubman – Ben-Ari, deals with motherhood identity as perceived by both women using egg donation and fertility physicians."
+		content: "is an MA student in the Gender studies program at the School of Interdisciplinary studies at Bar-Ilan University. Reut is a medical psychologist specializing in women reproduction. She is currently working as a psychologist at the obstetrics and gynecology department at Meir Medical Center in Kfar saba. She has a BA and an MA from the academic college of Tel Aviv-Yaffo. Her current MA thesis, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, deals with motherhood identity as perceived by both women using egg donation and fertility physicians."
 	},
 	{//20
 		fullName: "Shir-ly Moryosef",
 		shortName: "Shir-lyM",
-		content: "Shir-ly Moryosef is an  MA student in the Clinical Social Work program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in Social Work from Bar-Ilan University. Her MA thesis, under the supervision of Prof. Orit Taubman – Ben-Ari, examines the relationship between secondary traumatization and personal growth among mental health officers who treat patients with non-suicidal self-injury and suicidal actions."
+		content: "Shir-ly Moryosef is an  MA student in the Clinical Social Work program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in Social Work from Bar-Ilan University. Her MA thesis, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, examines the relationship between secondary traumatization and personal growth among mental health officers who treat patients with non-suicidal self-injury and suicidal actions."
 	},
 	{//21
 		fullName: "Avia Schreier",
 		shortName: "AviaS",
-		content: "is an MA student in the Clinical Social Work program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in Education from Tel-Hai College. Her MA thesis, under the supervision of Prof. Orit Taubman – Ben-Ari, examines motherhood perception among mothers of two-year-old twins, and the contribution of internal and external resources to their personal growth."
+		content: "is an MA student in the Clinical Social Work program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in Education from Tel-Hai College. Her MA thesis, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, examines motherhood perception among mothers of two-year-old twins, and the contribution of internal and external resources to their personal growth."
 	},
 	{//22
 		fullName: "Esther Joffe",
@@ -929,32 +929,32 @@ var formerMembersObj = {
 	{//1
 		fullName: "Dr. Adi Noy",
 		shortName: "AdiN",
-		content: "is a clinical social worker and lecturer at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University specializing in children and adolescents with psychological and behavioral difficulties, and is currently working at the child and youth clinic in Shalvata Psychiatric Hospital. Her PhD, under the supervision of Prof. Orit Taubman – Ben-Ari, focused on the transition to motherhood, taking into account intergenerational relationships with grandparents. Her research has been published in scientific journals and presented at international conferences."
+		content: "is a clinical social worker and lecturer at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University specializing in children and adolescents with psychological and behavioral difficulties, and is currently working at the child and youth clinic in Shalvata Psychiatric Hospital. Her PhD, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, focused on the transition to motherhood, taking into account intergenerational relationships with grandparents. Her research has been published in scientific journals and presented at international conferences."
 	},
 	{//2
 		fullName: "Dr. Vered Mei-Zahav - Oren",
 		shortName: "VeredM",
-		content: "is a clinical social worker and lecturer at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. Specializing in health care social work, crisis intervention, psycho-oncology, and palliative care, she is currently working at Maccabi Health Care Services. Her PhD, under the supervision of Prof. Orit Taubman – Ben-Ari, dealt with death anxiety during the transition to parenthood."
+		content: "is a clinical social worker and lecturer at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. Specializing in health care social work, crisis intervention, psycho-oncology, and palliative care, she is currently working at Maccabi Health Care Services. Her PhD, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, dealt with death anxiety during the transition to parenthood."
 	},
 	{//3
 		fullName: "Dr. Ahinoam Eherenfreund-Hager",
 		shortName: "AhinoamE",
-		content: "is a clinical social worker and lecturer at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University and the Haredi campus in Jerusalem. The series of studies she conducted for her PhD, under the supervision of Prof. Orit Taubman – Ben-Ari, focused on the effect of positive and negative affect on young drivers’ risky driving."
+		content: "is a clinical social worker and lecturer at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University and the Haredi campus in Jerusalem. The series of studies she conducted for her PhD, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, focused on the effect of positive and negative affect on young drivers’ risky driving."
 	},
 	{//4
 		fullName: "Dr. Limor Magen",
 		shortName: "LimorM",
-		content: "is a clinical social worker specializing in loss, trauma, and crisis situations. She received her PhD in Social Work at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University , under the supervision of Prof. Orit Taubman – Ben-Ari. Her dissertation investigated the consequences of the loss of a sibling during military service on brothers and sisters who are now soldiers themselves, and included a quantitative study accompanied by in-depth interviews with the siblings. She is currently working in the Gynecology and Obstetrics Department of Meir hospital in Kfar Saba and teaches courses on loss and trauma."
+		content: "is a clinical social worker specializing in loss, trauma, and crisis situations. She received her PhD in Social Work at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University , under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari. Her dissertation investigated the consequences of the loss of a sibling during military service on brothers and sisters who are now soldiers themselves, and included a quantitative study accompanied by in-depth interviews with the siblings. She is currently working in the Gynecology and Obstetrics Department of Meir hospital in Kfar Saba and teaches courses on loss and trauma."
 	},
 	{//5
 		fullName: "Dr. Ginna Porat-Zyman",
 		shortName: "GinnaP",
-		content: "is a clinical social worker and lecturer at the Louis Gabi Weisfeld School of Social Work at Bar-Ilan University. She specializes in high-risk children and adolescents with psychological and behavioral difficulties. She is currently working at Gesher Crisis Intervention Center for Children and Adolescents affiliated to Shalvata Mental Health Center. Her doctoral dissertation, under the supervision of Prof. Orit Taubman – Ben-Ari, investigated mental health and personal growth among parents of pre- and full-term babies. Her research has been published in scientific journals and presented at international conferences."
+		content: "is a clinical social worker and lecturer at the Louis Gabi Weisfeld School of Social Work at Bar-Ilan University. She specializes in high-risk children and adolescents with psychological and behavioral difficulties. She is currently working at Gesher Crisis Intervention Center for Children and Adolescents affiliated to Shalvata Mental Health Center. Her doctoral dissertation, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, investigated mental health and personal growth among parents of pre- and full-term babies. Her research has been published in scientific journals and presented at international conferences."
 	},
 	{//6
 		fullName: "Avinoam Solomon",
 		shortName: "AvinoamS",
-		content: "is a clinical social worker at the Social Services, working with youth at risk. His Master’s thesis under the supervision of Prof. Orit Taubman – Ben-Ari, examined adolescents’ separation thoughts from their parents and their association to risk-taking behavior."
+		content: "is a clinical social worker at the Social Services, working with youth at risk. His Master’s thesis under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, examined adolescents’ separation thoughts from their parents and their association to risk-taking behavior."
 	},
 	{//7
 		fullName: "Dr. Shira Sobol Goldberg",
@@ -981,20 +981,20 @@ var formerMembersObj = {
 var newsObj = {
 	newsArray: [
 	{//1
-		content: "We are very excited to announce that a new book: Pathways and barriers to parenthood – Existential concerns regarding fertility, pregnancy, and early parenthood, edited by Prof. Orit Taubman – Ben-Ari, has recently been published by Springer. The book explores the transition to parenthood from a holistic developmental approach, relating to barriers such as fertility problems and traumatic childbirth, as well as pathways such as positive experiences of pregnancy and childbirth. It presents an extended process, beginning with infertility issues, continuing with subjects pertaining to decisions regarding parenthood, pregnancy and birth, and ending with the early stages of parenthood from a positive psychology perspective. The volume draws on theories of resilience, meaning, terror management, and attachment, and considers psychological, sociological, legal, policy, medical, and therapy issues. It relates to the developmental needs of individuals and couples, as well as to the role played by family, society, and the media, offering a comprehensive in-depth evaluation of the latest topics.",
-		shortContent: "We are very excited to announce that a new book: Pathways and barriers to parenthood – Existential concerns regarding fertility, pregnancy, and early parenthood, edited by Prof. Orit Taubman – Ben-Ari, has recently been published by Springer.",
+		content: "We are very excited to announce that a new book: Pathways and barriers to parenthood – Existential concerns regarding fertility, pregnancy, and early parenthood, edited by Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, has recently been published by Springer. The book explores the transition to parenthood from a holistic developmental approach, relating to barriers such as fertility problems and traumatic childbirth, as well as pathways such as positive experiences of pregnancy and childbirth. It presents an extended process, beginning with infertility issues, continuing with subjects pertaining to decisions regarding parenthood, pregnancy and birth, and ending with the early stages of parenthood from a positive psychology perspective. The volume draws on theories of resilience, meaning, terror management, and attachment, and considers psychological, sociological, legal, policy, medical, and therapy issues. It relates to the developmental needs of individuals and couples, as well as to the role played by family, society, and the media, offering a comprehensive in-depth evaluation of the latest topics.",
+		shortContent: "We are very excited to announce that a new book: Pathways and barriers to parenthood – Existential concerns regarding fertility, pregnancy, and early parenthood, edited by Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, has recently been published by Springer.",
 		image: "Pathways_book cover.jpg",
 		number: 10
 	},
 	{//2
-		content: "A new paper entitled Driven by Emotions: The Association between Emotion Regulation, Forgiveness and Driving Styles by Meital Navon and Orit Taubman – Ben-Ari, has recently been published in Transportation Research Part F: Traffic Psychology and Behaviour. The paper shows that drivers adopting the three maladaptive driving styles (reckless and careless, angry and hostile, anxious) were characterized by a higher level of general difficulties in emotion regulation and by low trait forgivingness. In contrast, drivers adopting the patient and careful driving style had fewer difficulties in all aspects of emotion regulation, as well as higher trait forgivingness. The theoretical contribution of the study lays in showing that difficulties in emotion regulation and forgivingness are closely associated with maladaptive driving styles- an issue crucial for promoting the substantial efforts being invested in the attempts to reduce road crashes.",
-		shortContent: "A new paper entitled Driven by Emotions: The Association between Emotion Regulation, Forgiveness and Driving Styles by Meital Navon and Orit Taubman – Ben-Ari, has recently been published in Transportation Research Part F: Traffic Psychology and Behaviour.",
+		content: "A new paper entitled Driven by Emotions: The Association between Emotion Regulation, Forgiveness and Driving Styles by Meital Navon and Orit Taubman&nbsp;- Ben&#8209;Ari, has recently been published in Transportation Research Part F: Traffic Psychology and Behaviour. The paper shows that drivers adopting the three maladaptive driving styles (reckless and careless, angry and hostile, anxious) were characterized by a higher level of general difficulties in emotion regulation and by low trait forgivingness. In contrast, drivers adopting the patient and careful driving style had fewer difficulties in all aspects of emotion regulation, as well as higher trait forgivingness. The theoretical contribution of the study lays in showing that difficulties in emotion regulation and forgivingness are closely associated with maladaptive driving styles- an issue crucial for promoting the substantial efforts being invested in the attempts to reduce road crashes.",
+		shortContent: "A new paper entitled Driven by Emotions: The Association between Emotion Regulation, Forgiveness and Driving Styles by Meital Navon and Orit Taubman&nbsp;- Ben&#8209;Ari, has recently been published in Transportation Research Part F: Traffic Psychology and Behaviour.",
 		image: "IMG_0048.jpg",
 		number: 9
 	},
 	{//3
-		content: "A new paper entitled What Potential Role Do Siblings Play in Young Drivers ’ Driving Styles? by Orit Taubman – Ben-Ari, has recently been published in Transportation Research Part F: Traffic Psychology and Behaviour. The paper claims that siblings ’ contribution to young drivers ’ driving styles has received little attention. The study described in the paper examined the unique and combined contributions of sibling relations and perceived sibling ’s driving style to the self-reported driving styles of young drivers. The findings revealed significant associations between the driving style of the young driver and their sibling, and significant contributions of both sibling relations and perceived sibling driving style to the self-reported driving style of the young driver. The results indicate the potentially overlooked importance of siblings in determining how young drivers choose to drive, strengthening previous evidence regarding the strong influence of the family ’s global climate on the dynamics surrounding youngsters ’ driving.",
-		shortContent: "A new paper entitled What Potential Role Do Siblings Play in Young Drivers ’ Driving Styles? by Orit Taubman – Ben-Ari, has recently been published in Transportation Research Part F: Traffic Psychology and Behaviour.",
+		content: "A new paper entitled What Potential Role Do Siblings Play in Young Drivers ’ Driving Styles? by Orit Taubman&nbsp;- Ben&#8209;Ari, has recently been published in Transportation Research Part F: Traffic Psychology and Behaviour. The paper claims that siblings ’ contribution to young drivers ’ driving styles has received little attention. The study described in the paper examined the unique and combined contributions of sibling relations and perceived sibling ’s driving style to the self-reported driving styles of young drivers. The findings revealed significant associations between the driving style of the young driver and their sibling, and significant contributions of both sibling relations and perceived sibling driving style to the self-reported driving style of the young driver. The results indicate the potentially overlooked importance of siblings in determining how young drivers choose to drive, strengthening previous evidence regarding the strong influence of the family ’s global climate on the dynamics surrounding youngsters ’ driving.",
+		shortContent: "A new paper entitled What Potential Role Do Siblings Play in Young Drivers ’ Driving Styles? by Orit Taubman&nbsp;- Ben&#8209;Ari, has recently been published in Transportation Research Part F: Traffic Psychology and Behaviour.",
 		image: "IMG_0048.jpg",
 		number: 8
 	},
@@ -1005,14 +1005,14 @@ var newsObj = {
 		number: 7
 	},
 	{//5
-		content: "A new paper entitled “Maternal mental health over four years following childbirth: The contribution of birth circumstances and psycho-social factors, by Ginna Porat-Zyman, Orit Taubman – Ben-Ari, Iris Morag and Jacob Kuint has recently been published in Women and Health. The paper describes a study which aimed to identify mothers at risk for poorer maternal mental health (MMH) one month post-partum and to determine changes in MMH over four years, in relation to birth circumstances (singleton/twins, full-term/pre-term infant/s, first/ non-first child), internal resources (adult attachment styles), and external resources (marital quality and support from the maternal grandmother) at one month post-partum. Shortly after birth, mothers at risk for poorer MMH were those who gave birth prematurely or were characterized by insecure attachment styles, lower marital quality, younger age, or a higher level of education. The mothers with a good prognosis for improvement in MMH were those who had given birth prematurely or were younger, more highly educated, or multiparous. Women with insecure attachment or lower marital quality reported lower MMH one month after delivery that did not improve over time, and the MMH of older or less educated mothers deteriorated over time. Marital quality mitigated or exacerbated the effects of birth circumstances and insecure attachment style on MMH shortly after giving birth.",
-		shortContent: "A new paper entitled “Maternal mental health over four years following childbirth: The contribution of birth circumstances and psycho-social factors, by Ginna Porat-Zyman, Orit Taubman – Ben-Ari, Iris Morag and Jacob Kuint has recently been published in Women and Health.",
+		content: "A new paper entitled “Maternal mental health over four years following childbirth: The contribution of birth circumstances and psycho-social factors, by Ginna Porat-Zyman, Orit Taubman&nbsp;- Ben&#8209;Ari, Iris Morag and Jacob Kuint has recently been published in Women and Health. The paper describes a study which aimed to identify mothers at risk for poorer maternal mental health (MMH) one month post-partum and to determine changes in MMH over four years, in relation to birth circumstances (singleton/twins, full-term/pre-term infant/s, first/ non-first child), internal resources (adult attachment styles), and external resources (marital quality and support from the maternal grandmother) at one month post-partum. Shortly after birth, mothers at risk for poorer MMH were those who gave birth prematurely or were characterized by insecure attachment styles, lower marital quality, younger age, or a higher level of education. The mothers with a good prognosis for improvement in MMH were those who had given birth prematurely or were younger, more highly educated, or multiparous. Women with insecure attachment or lower marital quality reported lower MMH one month after delivery that did not improve over time, and the MMH of older or less educated mothers deteriorated over time. Marital quality mitigated or exacerbated the effects of birth circumstances and insecure attachment style on MMH shortly after giving birth.",
+		shortContent: "A new paper entitled “Maternal mental health over four years following childbirth: The contribution of birth circumstances and psycho-social factors, by Ginna Porat-Zyman, Orit Taubman&nbsp;- Ben&#8209;Ari, Iris Morag and Jacob Kuint has recently been published in Women and Health.",
 		image: "IMG_0048.jpg",
 		number: 6
 	},
 	{//6
-		content: "A new paper entitled “Mental Health of Women Entering Fertility Treatment: What Role do Age and Internal Resources Play?“ by Shirley Ben Shlomo, Vera Skvirsky, Orit Taubman – Ben-Ari, Yoseph Azuri, and Eran Horowitz has recently been published in Stress and Health. The paper describes a study which aimed at examining the associations between the mental health of women entering fertility treatment and their internal resources, and indicating whether mental health is associated with age (above or below 35). The sample consisted of 137 women (76 aged 20-34, 61 aged 35-44) at the start of fertility treatment. Results indicated that younger women reported higher distress and rumination than older women. Higher hope was associated with greater well-being, while higher rumination was associated with greater distress. Furthermore, hope and rumination were found to mediate the association between age and mental health. These findings highlight the importance of developing age-based interventions for women entering fertility treatment, aimed at strengthening their resilience to effectively cope with the demanding process ahead.",
-		shortContent: "A new paper entitled “Mental Health of Women Entering Fertility Treatment: What Role do Age and Internal Resources Play?“ by Shirley Ben Shlomo, Vera Skvirsky, Orit Taubman – Ben-Ari, Yoseph Azuri, and Eran Horowitz has recently been published in Stress and Health.",
+		content: "A new paper entitled “Mental Health of Women Entering Fertility Treatment: What Role do Age and Internal Resources Play?“ by Shirley Ben Shlomo, Vera Skvirsky, Orit Taubman&nbsp;- Ben&#8209;Ari, Yoseph Azuri, and Eran Horowitz has recently been published in Stress and Health. The paper describes a study which aimed at examining the associations between the mental health of women entering fertility treatment and their internal resources, and indicating whether mental health is associated with age (above or below 35). The sample consisted of 137 women (76 aged 20-34, 61 aged 35-44) at the start of fertility treatment. Results indicated that younger women reported higher distress and rumination than older women. Higher hope was associated with greater well-being, while higher rumination was associated with greater distress. Furthermore, hope and rumination were found to mediate the association between age and mental health. These findings highlight the importance of developing age-based interventions for women entering fertility treatment, aimed at strengthening their resilience to effectively cope with the demanding process ahead.",
+		shortContent: "A new paper entitled “Mental Health of Women Entering Fertility Treatment: What Role do Age and Internal Resources Play?“ by Shirley Ben Shlomo, Vera Skvirsky, Orit Taubman&nbsp;- Ben&#8209;Ari, Yoseph Azuri, and Eran Horowitz has recently been published in Stress and Health.",
 		image: "IMG_0048.jpg",
 		number: 5
 	},
@@ -1029,13 +1029,13 @@ var newsObj = {
 		number: 3
 	},
 	{//9
-		content: "A new book on grandparents of children with disabilities, by Prof. Liora Findler and Prof. Orit Taubman – Ben-Ari, has recently been published by Springer. The book sheds light on the complex issues with which the extended family of a child with special needs must contend, relating in particular to the positive aspects of personal growth and development.",
-		shortContent: "A new book on grandparents of children with disabilities, by Prof. Liora Findler and Prof. Orit Taubman – Ben-Ari, has recently been published by Springer",
+		content: "A new book on grandparents of children with disabilities, by Prof. Liora Findler and Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, has recently been published by Springer. The book sheds light on the complex issues with which the extended family of a child with special needs must contend, relating in particular to the positive aspects of personal growth and development.",
+		shortContent: "A new book on grandparents of children with disabilities, by Prof. Liora Findler and Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, has recently been published by Springer",
 		image: "grandparents_book_cover.png",
 		number: 2
 	},
 	{//10
-		content: "A new paper entitled “The Multidimensional Driving Style Inventory a Decade Later: Review of the Literature and Re-evaluation of the Scale” by Orit Taubman – Ben-Ari and Vera Skvirsky, has recently been published in Accident Analysis and Prevention. The paper employs two large data sets to summarize the accumulated knowledge, examining MDSI factors in samples of young drivers aged 17-21 (Study 1, n=1436) and older drivers aged 22-84 (Study 2, n=3409). Findings indicate that driving-related indicators are coherently and systematically related to the four driving styles in the expected directions, revalidating the structure of the MDSI. The results also help clarify the relationships between the driving styles and variables such as gender, ethnicity, car ownership, age, and experience, and suggest that driving styles are largely unaffected by sociodemographic characteristics, except for gender and ethnicity, and appear to represent a relatively stable and universal trait. The two studies highlight the validity and reliability of the MDSI, attesting to its practical value as a tool for purposes of research, evaluation, and intervention.",
+		content: "A new paper entitled “The Multidimensional Driving Style Inventory a Decade Later: Review of the Literature and Re-evaluation of the Scale” by Orit Taubman&nbsp;- Ben&#8209;Ari and Vera Skvirsky, has recently been published in Accident Analysis and Prevention. The paper employs two large data sets to summarize the accumulated knowledge, examining MDSI factors in samples of young drivers aged 17-21 (Study 1, n=1436) and older drivers aged 22-84 (Study 2, n=3409). Findings indicate that driving-related indicators are coherently and systematically related to the four driving styles in the expected directions, revalidating the structure of the MDSI. The results also help clarify the relationships between the driving styles and variables such as gender, ethnicity, car ownership, age, and experience, and suggest that driving styles are largely unaffected by sociodemographic characteristics, except for gender and ethnicity, and appear to represent a relatively stable and universal trait. The two studies highlight the validity and reliability of the MDSI, attesting to its practical value as a tool for purposes of research, evaluation, and intervention.",
 		shortContent: "A new paper entitled “The Multidimensional Driving Style Inventory a Decade Later: Review of the Literature and Re-evaluation of the Scale” by Orit Taubman – Ben-Ari and Vera Skvirsky, has recently been published in Accident Analysis and Prevention.",
 		image: "IMG_0048.jpg",
 		number: 1
@@ -1088,6 +1088,24 @@ function pageTransformation (pageName) {
 	HideButton();
 	pageOnChanging(pageName);
 
+	if (pageName == "home") {
+
+		waitForHomeElementToDisplay("#home-news", 100, newsObj)
+
+		function waitForHomeElementToDisplay(selector, time, obj) {
+	        if(document.querySelector(selector)!=null) {
+	            document.querySelector(selector).innerHTML = obj.newsArray[0].shortContent; 
+	            return;
+	        }
+	        else {
+	            setTimeout(function() {
+	            	// console.log("Still dosen't exist")
+	                waitForHomeElementToDisplay(selector, time, obj);
+	            }, time);
+	        }
+	    }
+	}
+
 	if (pageName == "Gallery") {
 		// i = 1;
 		// document.addEventListener("DOMContentLoaded", function (event) {
@@ -1107,7 +1125,7 @@ function pageTransformation (pageName) {
 
 		waitForElementToDisplay("#gallery-container", 100);
 
-		function waitForElementToDisplay(selector, time) {
+		function waitForGalleryElementToDisplay(selector, time) {
 	        if(document.querySelector(selector)!=null) {
 	            touchswipeStart();
 	            return;
@@ -1115,7 +1133,7 @@ function pageTransformation (pageName) {
 	        else {
 	            setTimeout(function() {
 	            	// console.log("Still dosen't exist")
-	                waitForElementToDisplay(selector, time);
+	                waitForGalleryElementToDisplay(selector, time);
 	            }, time);
 	        }
 	    }

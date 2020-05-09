@@ -833,7 +833,7 @@ h3 {
 		font-size: 0.8em;
 	}
 	.prom-text {
-		height: 430px;
+		height: 470px;
 	}
 	#news-prom {
 		height: unset;
@@ -879,6 +879,9 @@ h3 {
 	.prom-container {
 		font-size: 0.85em;
 	}
+	#news-prom {
+		height: 250px;
+	}
 }
 /*****end medium devices only*****/
 
@@ -905,6 +908,9 @@ h3 {
 	.navbar-nav a {
 		padding: 2px 18px 2px 18px;
 	}*/
+	#news-prom {
+		height: 193px;
+	}
 }
 /*****end large devices only*****/
 

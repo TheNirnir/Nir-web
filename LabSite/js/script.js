@@ -1123,7 +1123,7 @@ function pageTransformation (pageName) {
 		// 	j++;
 		// }
 
-		waitForElementToDisplay("#gallery-container", 100);
+		waitForGalleryElementToDisplay("#gallery-container", 100);
 
 		function waitForGalleryElementToDisplay(selector, time) {
 	        if(document.querySelector(selector)!=null) {

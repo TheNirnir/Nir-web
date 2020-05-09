@@ -1105,7 +1105,7 @@ function pageTransformation (pageName) {
 		// 	j++;
 		// }
 
-		waitForElementToDisplay("#test", 100);
+		waitForElementToDisplay("#gallery-container", 100);
 
 		function waitForElementToDisplay(selector, time) {
 	        if(document.querySelector(selector)!=null) {
@@ -1454,10 +1454,10 @@ function changeNews (MainNewsNumber) {
 
 function touchswipeStart () {
 	$(function() {
-	  $("#test").swipe( {
+	  $("#gallery-container").swipe( {
 	    //Generic swipe handler for all directions
 	    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-	      $(this).text("You swiped " + direction );
+	      // $(this).text("You swiped " + direction );
 	      if (direction == "left") {
 	      	nextPicture();
 	      }

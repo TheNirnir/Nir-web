@@ -1107,6 +1107,7 @@ function pageTransformation (pageName) {
 	}
 
 	if (pageName == "Gallery") {
+	 	touchswipeStart();
 		// i = 1;
 		// document.addEventListener("DOMContentLoaded", function (event) {
 			// console.log("It's working")
@@ -1123,20 +1124,20 @@ function pageTransformation (pageName) {
 		// 	j++;
 		// }
 
-		waitForGalleryElementToDisplay("#gallery-container", 100);
+		// waitForGalleryElementToDisplay("#gallery-container", 100);
 
-		function waitForGalleryElementToDisplay(selector, time) {
-	        if(document.querySelector(selector)!=null) {
-	            touchswipeStart();
-	            return;
-	        }
-	        else {
-	            setTimeout(function() {
-	            	// console.log("Still dosen't exist")
-	                waitForGalleryElementToDisplay(selector, time);
-	            }, time);
-	        }
-	    }
+		// function waitForGalleryElementToDisplay(selector, time) {
+	 //        if(document.querySelector(selector)!=null) {
+	 //            touchswipeStart();
+	 //            return;
+	 //        }
+	 //        else {
+	 //            setTimeout(function() {
+	 //            	// console.log("Still dosen't exist")
+	 //                waitForGalleryElementToDisplay(selector, time);
+	 //            }, time);
+	 //        }
+	 //    }
 
 		// console.log("It's working")
 
@@ -1472,7 +1473,7 @@ function changeNews (MainNewsNumber) {
 
 function touchswipeStart () {
 	$(function() {
-	  $("#gallery-container").swipe( {
+	  $("#main-content").swipe( {
 	    //Generic swipe handler for all directions
 	    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
 	      // $(this).text("You swiped " + direction );

@@ -1461,6 +1461,9 @@ function touchswipeStart () {
 	      if (direction == "left") {
 	      	nextPicture();
 	      }
+	      if (direction == "right") {
+	      	prevPicture();
+	      }
 	    }
 	  });
 	  // if (pageName != "Gallery") {

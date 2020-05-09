@@ -1090,12 +1090,41 @@ function pageTransformation (pageName) {
 
 	if (pageName == "Gallery") {
 		// i = 1;
-		document.addEventListener("DOMContentLoaded", function (event) {
-			console.log("It's working")
+		// document.addEventListener("DOMContentLoaded", function (event) {
+			// console.log("It's working")
 		// 	touchswipeStart();
-		});
+		// });
+		// console.log(document.getElementById("#test"));
+		// for (var j = 0; j < 10;) {
+		// 	setTimeout(function () {
+		// 		console.log("It's null");
+		// 		if (document.getElementById("#test") !== null) {
+		// 			break;
+		// 		}
+		// 	}, 100);
+		// 	j++;
+		// }
+
+		waitForElementToDisplay("#gallery-container", 100);
+
+		function waitForElementToDisplay(selector, time) {
+	        if(document.querySelector(selector)!=null) {
+	            touchswipeStart();
+	            return;
+	        }
+	        else {
+	            setTimeout(function() {
+	            	// console.log("Still dosen't exist")
+	                waitForElementToDisplay(selector, time);
+	            }, time);
+	        }
+	    }
+
+		// console.log("It's working")
+
 		// setTimeout(function () {
-		// 	touchswipeStart();
+		// 	console.log("It's working")
+		// // 	touchswipeStart();
 		// }, 1000);
 	}
 }

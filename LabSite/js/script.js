@@ -913,11 +913,16 @@ var currentMembersObj = {
 		content: "is an MA student in the Clinical Social Work program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in Education from Tel-Hai College. Her MA thesis, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, examines motherhood perception among mothers of two-year-old twins, and the contribution of internal and external resources to their personal growth."
 	},
 	{//22
+		fullName: "Roni Meir",
+		shortName: "RoniM",
+		content: "is an MA student in the Clinical Social Work program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in psychology from Bar-Ilan University. Her MA thesis, under the supervision of Prof. Orit Taubman – Ben-Ari, examines the contribution of personality and cognitive variables to marital satisfaction, personal growth and well-being of women undergoing fertility treatments."
+	},
+	{//23
 		fullName: "Esther Joffe",
 		shortName: "EstherJ",
 		content: "is a social worker. She has a BA in Social Work from the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She is currently working as a social worker for teenage girls in the Ethiopian community in Bet Shemesh. She is the research manager for the longitudinal mothers' of twins and single babies study (MOST) being conducted by the lab."
 	},
-	{//23
+	{//24
 		fullName: "Michal Wolman",
 		shortName: "MichalW",
 		content: "is a 3rd year BA student at the Louis and Gabi Weisfeld School of Social work at Bar-Ilan University. She is a research assistant for the longitudinal fertility study (POWER), being conducted by the lab."
@@ -1230,6 +1235,7 @@ function playPicture () {
 	document.getElementById("gallery-play").style.height = "0";
 	document.getElementById("gallery-stop").style.height = "auto";
 	// console.log(galleryPlay.offsetWidth);
+
 	playPictureTime = setInterval(function () {
 		i++;
 		replacePicture();
@@ -1243,6 +1249,22 @@ function playPicture () {
 			}, 2500);
 		}
 	}, 2500);
+
+	// for (var i = 0; i <= galleryArray.length;) {
+	
+	// 	i++;
+	// 	replacePicture();
+	// 	var img = new Image();
+	// 	img.onload = function () {};
+	// 	setTimeout(function () {
+	// 	}, 2500);
+	// }
+	// i = 1;
+	// setTimeout(function () {
+	// 	replacePicture();
+	// 	document.getElementById("gallery-stop").style.height = "0";
+	// 	document.getElementById("gallery-play").style.height = "auto";
+	// }, 2500);
 
 }
 

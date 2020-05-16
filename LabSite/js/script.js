@@ -1224,9 +1224,25 @@ function formerLabMemberPageTransformation (memberName) {
 
 function replacePicture () {
 	// document.querySelector("#img-container").innerHTML = '<img src="images/gallery1/picture' + i + '.jpg" alt="Picture">';
-	document.querySelector("#img-container").innerHTML = '<img src="images/gallery/' + galleryArray[i-1].url + '">';
+	document.querySelector("#img-container").innerHTML = '<img id="currentImg" src="images/gallery/' + galleryArray[i-1].url + '">';
 	document.querySelector("#picture-title").innerHTML = galleryArray[i-1].title;
 	document.getElementById("picture-number").innerHTML = i;
+
+	waitForPictureToLoad("#currentImg", 100)
+
+	function waitForPictureToLoad(selector, time) {
+        if(document.querySelector(selector)) {
+        	alert("The image is loaded!");
+            return;
+        }
+        else {
+            setTimeout(function() {
+            	// console.log("Still dosen't exist")
+                waitForHomeElementToDisplay(selector, time);
+            }, time);
+        }
+	}
+
 	// $ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
 	// 		document.querySelector("#picture-title").innerHTML = responseText;
 	// 	},
@@ -1286,6 +1302,27 @@ function playPicture () {
 	// 	document.getElementById("gallery-stop").style.height = "0";
 	// 	document.getElementById("gallery-play").style.height = "auto";
 	// }, 2500);
+
+	// for (var i = 0; i <= galleryArray.length;) {
+	
+	// 	i++;
+	// 	replacePicture();
+	// 	setTimeout(function () {
+	// 		console.log("I'm waiting...");
+	// 	}, 2500);
+	// }
+	// function waitForHomeElementToDisplay(selector, time, obj) {
+ //        if(document.querySelector(selector)!=null) {
+ //            document.querySelector(selector).innerHTML = obj.newsArray[0].shortContent; 
+ //            return;
+ //        }
+ //        else {
+ //            setTimeout(function() {
+ //            	// console.log("Still dosen't exist")
+ //                waitForHomeElementToDisplay(selector, time, obj);
+ //            }, time);
+ //        }
+	// }
 
 }
 

@@ -332,33 +332,33 @@ var galleryArray = [
 
     {//13
 
+    "title" : "Shirley Ben Shlomo & Orit Taubman&nbsp;- Ben&#8209;Ari (May 2016)",
+
+    "url" : "from_word_doc_01.jpg"
+
+    },
+
+    {//14
+
+    "title" : "Shirley Ben Shlomo & Ofir Ben-Yaakov (May 2016)",
+
+    "url" : "from_word_doc_02.jpg"
+
+    },
+
+    {//15
+
     "title" : "Gal Rozen & Vera Skvirsky (Lab meeting, May 2016)",
 
     "url" : "June 16, 2016 061.jpg"
 
     },
 
-    {//14
+    {//16
 
     "title" : "Miriam Chasson, Ginna Porat-Zyman, Adi Noy, & Noga Guggenheim (Lab meeting, May 2016)",
 
     "url" : "June 16, 2016 060.jpg"
-
-    },
-
-    {//15
-
-            "title" : "Shirley Ben Shlomo & Orit Taubman&nbsp;- Ben&#8209;Ari (May 2016)",
-
-            "url" : "from_word_doc_01.jpg"
-
-    },
-
-    {//16
-
-            "title" : "Shirley Ben Shlomo & Ofir Ben-Yaakov (May 2016)",
-
-            "url" : "from_word_doc_02.jpg"
 
     },
 

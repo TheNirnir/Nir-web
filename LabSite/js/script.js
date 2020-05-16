@@ -1114,7 +1114,7 @@ function pageTransformation (pageName) {
 	HideButton();
 	pageOnChanging(pageName);
 
-	if (pageName == "home") {
+	if (pageName == "Home") {
 
 		waitForHomeElementToDisplay("#home-news", 100, newsObj)
 

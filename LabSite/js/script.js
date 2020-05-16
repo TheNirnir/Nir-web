@@ -586,7 +586,14 @@ var galleryArray = [
 
     },
 
-    {//45             
+    {//45
+
+    	"title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+
+    	"url" : "img_197_resize.JPG"
+    },
+
+    {//46             
 
     "title" : "Prof. Shulamit Michaeli, VP for Research, at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -594,7 +601,7 @@ var galleryArray = [
 
     },
 
-    {//46             
+    {//47             
 
     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -602,7 +609,7 @@ var galleryArray = [
 
     },
 
-    {//47             
+    {//48             
 
     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -610,7 +617,7 @@ var galleryArray = [
 
     },
 
-    {//48             
+    {//49             
 
     "title" : "Prof. Michael Steger at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -618,7 +625,7 @@ var galleryArray = [
 
     },     
 
-    {//49              
+    {//50              
 
     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -626,7 +633,7 @@ var galleryArray = [
 
     },
 
-    {//50              
+    {//51              
 
     "title" : "Prof. Brennan Peterson at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -634,7 +641,7 @@ var galleryArray = [
 
     },
 
-    {//51             
+    {//52             
 
     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -642,7 +649,7 @@ var galleryArray = [
 
     },
 
-    {//52             
+    {//53             
 
     "title" : "Dr. Eran Horowitz at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -650,9 +657,7 @@ var galleryArray = [
 
     },
 
-
-
-    {//53             
+    {//54             
 
     "title" : "Dr. Avi Tsafrir at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -660,7 +665,7 @@ var galleryArray = [
 
     },
 
-    {//54              
+    {//55              
 
     "title" : "Prof. Dov Feldberg at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -668,7 +673,7 @@ var galleryArray = [
 
     },
 
-    {//55             
+    {//56             
 
     "title" : "Prof. Liat Lerner-Geva at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -676,7 +681,7 @@ var galleryArray = [
 
     },
 
-    {//56             
+    {//57             
 
     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -684,7 +689,7 @@ var galleryArray = [
 
     },
 
-    {//57              
+    {//58              
 
     "title" : "Vera Skvirsky at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -692,7 +697,7 @@ var galleryArray = [
 
     },
 
-    {//58             
+    {//59             
 
     "title" : "Dr. Floor van Rooij at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -700,7 +705,7 @@ var galleryArray = [
 
     },
 
-    {//59             
+    {//60             
 
     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -708,7 +713,7 @@ var galleryArray = [
 
     },
 
-    {//60              
+    {//61              
 
     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -716,7 +721,7 @@ var galleryArray = [
 
     },
 
-    {//61              
+    {//62              
 
     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -724,7 +729,7 @@ var galleryArray = [
 
     },
 
-    {//62              
+    {//63              
 
     "title" : "Prof. Orit Taubman&nbsp;- Ben&#8209;Ari at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -732,7 +737,7 @@ var galleryArray = [
 
     },
 
-    {//63             
+    {//64             
 
     "title" : "Prof. Susan Ayers at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -740,7 +745,7 @@ var galleryArray = [
 
     },
 
-    {//64             
+    {//65             
 
     "title" : "Prof. Sheldon Solomon at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -748,7 +753,14 @@ var galleryArray = [
 
     },
 
-    {//65             
+    {//66
+
+    	"title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+
+    	"url" : "f6534912.jpg"
+    },
+
+    {//67             
 
     "title" : "Prof. Mario Mikulincer at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -756,7 +768,7 @@ var galleryArray = [
 
     },
 
-    {//66             
+    {//68             
 
     "title" : "Evening tour in Old Jaffa during the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -764,7 +776,7 @@ var galleryArray = [
 
     },
 
-    {//67             
+    {//69             
 
     "title" : "Evening tour in Old Jaffa during the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -772,7 +784,7 @@ var galleryArray = [
 
     },
 
-    {//68             
+    {//70             
 
     "title" : "Evening tour in Old Jaffa during the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
@@ -780,14 +792,15 @@ var galleryArray = [
 
     },
 
-    {//69             
+    {//71             
 
     "title" : "Prof. Joseph Deutsch, Dean, Faculty of Social Sciences,  at the conference: There is nothing impossible to him who will try (March 15, 2018)",
 
     "url" : "8914_resize.jpg"
 
     },
-    {//70              
+
+    {//72              
 
     "title" : "Prof. Michael Ungar from Dalhousie University (Canada) presenting at the conference: There is nothing impossible to him who will try (March 15, 2018)",
 
@@ -795,12 +808,20 @@ var galleryArray = [
 
     },
 
-    {//71              
+    {//73              
 
     "title" : "Prof. Martin Hagger from Curtin University (Australia) presenting at the conference: There is nothing impossible to him who will try (March 15, 2018)",
 
     "url" : "9400_resize.jpg"
 
+    },
+
+    {//74
+
+   	"title" : "Zoom Lab meeting, May 2020",
+
+    "url" : "Capture5.PNG"
+    
     }
 
 ];

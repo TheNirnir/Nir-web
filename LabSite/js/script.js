@@ -757,7 +757,7 @@ var galleryArray = [
 
     	"title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
 
-    	"url" : "f6534912.jpg"
+    	"url" : "f6527296.jpg"
     },
 
     {//67             

@@ -821,7 +821,7 @@ var galleryArray = [
    	"title" : "Zoom Lab meeting, May 2020",
 
     "url" : "Capture5.PNG"
-    
+
     }
 
 ];
@@ -1074,7 +1074,7 @@ var newsObj = {
 
 document.addEventListener("DOMContentLoaded", function (event) {
 
-	pageTransformation('home');
+	pageTransformation('Home');
 
 	// document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
 	// $ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {

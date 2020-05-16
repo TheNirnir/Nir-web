@@ -1232,7 +1232,7 @@ function replacePicture () {
 
 	function waitForPictureToLoad(selector, time) {
         if(document.querySelector(selector)) {
-        	alert("The image is loaded!");
+        	// alert("The image is loaded!");
             return;
         }
         else {

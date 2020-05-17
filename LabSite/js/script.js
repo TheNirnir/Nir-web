@@ -1222,26 +1222,32 @@ function formerLabMemberPageTransformation (memberName) {
 	buildAndShowFormerMemberPage(formerMembersObj, memberName);
 }
 
-function replacePicture () {
+function replacePicture (i) {
 	// document.querySelector("#img-container").innerHTML = '<img src="images/gallery1/picture' + i + '.jpg" alt="Picture">';
 	document.querySelector("#img-container").innerHTML = '<img id="currentImg" src="images/gallery/' + galleryArray[i-1].url + '">';
 	document.querySelector("#picture-title").innerHTML = galleryArray[i-1].title;
 	document.getElementById("picture-number").innerHTML = i;
 
-	waitForPictureToLoad("#currentImg", 100)
+	// waitForPictureToLoad("#currentImg", 100, 0)
 
-	function waitForPictureToLoad(selector, time) {
-        if(document.querySelector(selector)) {
-        	// alert("The image is loaded!");
-            return;
-        }
-        else {
-            setTimeout(function() {
-            	// console.log("Still dosen't exist")
-                waitForHomeElementToDisplay(selector, time);
-            }, time);
-        }
-	}
+	// function waitForPictureToLoad(selector, time, k) {
+ //        if(document.querySelector(selector).complete) {
+ //        	// alert("The image is loaded!");
+ //        	setTimeout(function () {
+ //        		k=1;
+ //        	}, 2500);
+ //        	if (k == 1) {
+ //        		return
+ //        	}
+ //            // return;
+ //        }
+ //        else {
+ //            setTimeout(function() {
+ //            	// console.log("Still dosen't exist")
+ //                waitForPictureToLoad(selector, time, k);
+ //            }, time);
+ //        }
+	// }
 
 	// $ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
 	// 		document.querySelector("#picture-title").innerHTML = responseText;
@@ -1254,7 +1260,7 @@ function nextPicture () {
 		i = 0;
 	}
 	i++;
-	replacePicture();
+	replacePicture(i);
 }
 
 function prevPicture () {
@@ -1262,7 +1268,7 @@ function prevPicture () {
 		i = galleryArray.length+1;
 	}
 	i--;
-	replacePicture();
+	replacePicture(i);
 }
 
 var playPictureTime;
@@ -1273,19 +1279,19 @@ function playPicture () {
 	document.getElementById("gallery-stop").style.height = "auto";
 	// console.log(galleryPlay.offsetWidth);
 
-	playPictureTime = setInterval(function () {
-		i++;
-		replacePicture();
-		if (i == galleryArray.length) {
-			clearInterval(playPictureTime);
-			i = 1;
-			setTimeout(function () {
-				replacePicture();
-				document.getElementById("gallery-stop").style.height = "0";
-				document.getElementById("gallery-play").style.height = "auto";
-			}, 2500);
-		}
-	}, 2500);
+	// playPictureTime = setInterval(function () {
+	// 	i++;
+	// 	replacePicture();
+	// 	if (i == galleryArray.length) {
+	// 		clearInterval(playPictureTime);
+	// 		i = 1;
+	// 		setTimeout(function () {
+	// 			replacePicture();
+	// 			document.getElementById("gallery-stop").style.height = "0";
+	// 			document.getElementById("gallery-play").style.height = "auto";
+	// 		}, 2500);
+	// 	}
+	// }, 2500);
 
 	// for (var i = 0; i <= galleryArray.length;) {
 	
@@ -1303,14 +1309,40 @@ function playPicture () {
 	// 	document.getElementById("gallery-play").style.height = "auto";
 	// }, 2500);
 
-	// for (var i = 0; i <= galleryArray.length;) {
+	// for (var i = 1; i <= galleryArray.length;) {
 	
+	// 	replacePicture(i);
+	// 	// wait(2500);
+	// 	// console.log("I'm waiting...");
 	// 	i++;
-	// 	replacePicture();
-	// 	setTimeout(function () {
-	// 		console.log("I'm waiting...");
-	// 	}, 2500);
 	// }
+
+	waitForPictureToLoad("#currentImg", 100, i)
+
+	function waitForPictureToLoad(selector, time, i) {
+		console.log("We enterd the function");
+        if(document.querySelector(selector).complete) {
+        	// alert("The image is loaded!");
+        	if (i == galleryArray.length) {
+        		stopPlayPicture();
+        		return;
+        	}
+        	setTimeout(function () {
+        		i++;
+        		replacePicture(i);
+        		waitForPictureToLoad(selector, time, i);
+        	}, 2500);
+            // return;
+        }
+        else {
+            setTimeout(function() {
+            	// console.log("Still dosen't exist")
+                waitForPictureToLoad(selector, time, i);
+            }, time);
+        }
+	}
+
+
 	// function waitForHomeElementToDisplay(selector, time, obj) {
  //        if(document.querySelector(selector)!=null) {
  //            document.querySelector(selector).innerHTML = obj.newsArray[0].shortContent; 

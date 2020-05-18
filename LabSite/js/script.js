@@ -1,238 +1,3 @@
-// $(function () { // same as document.addEventListener("DOMContentLoaded"...)
-// 	// same as document.qeurySelector("#navbarToggle").addEventListener("blur",...
-// 	$("#navbarToggle").blur(function (event) {
-// 		var screenWidth = window.innerWidth;
-// 		if (screenWidth<768) {
-// 			$("#collapsable-nav").collapse('hide');
-// 		}
-// 	});
-// });
-
-// function memberPagePointing (memberName) {
-// 	// document.querySelector("#main-content").innerHTML = "hello";
-// 	$ajaxUtils.sendGetRequest("snippets/" + memberName + "-snippet.html", function (responseText) {
-// 			document.querySelector("#main-content").innerHTML = responseText;
-// 		},
-// 		false);
-// 	// window.location.href = memberName + ".html";
-// }
-
-// var galleryArray = [
-// 	{
-// 	"title" : "Vera Skvirsky & Adi Noy (Lab meeting, September 2016)"
-// 	},
-// 	{
-// 	"title" : "Avinoam Solomon & Gal Rozen (Lab meeting, September 2016)"
-// 	},
-// 	{
-// 	"title" : "Meital, Efrat, Miriam, & Ariel (Lab meeting, September 2016)"
-// 	},
-// 	{
-// 	"title" : "Ariel & Avinoam (Lab meeting, September 2016)"
-// 	},
-// 	{
-// 	"title" : "Lab meeting, September 2016"
-// 	},
-// 	{
-// 	"title" : "From left to right: Vered, Noga, Adi, Ginna, & Gal (Lab meeting, September 2016)"
-// 	},
-// 	{
-// 	"title" : "From left to right: Shirley Ben Shlomo, Orit Taubman ג€“ Ben-Ari & Liora Findler (STAR conference, Tel Aviv, June 2015)"
-// 	},
-// 	{
-// 	"title" : "From left to right: Gal, Gabi, Adi, Orit, Ginna, Vera & Adi (STAR conference, Tel Aviv, June 2015)"
-// 	},
-// 	{
-// 	"title" : "From left to right: Noga, Vered, Vera, Orit, Adi, & Ginna (May 2016)"
-// 	},
-// 	{
-// 	"title" : "Orit Taubman - Ben-Ari & Vered Mey-Zahav Oren (May 2016)"
-// 	},
-// 	{
-// 	"title" : "Orit Taubman - Ben-Ari & Noga Guggenheim (May 2016)"
-// 	},
-// 	{
-// 	"title" : "Orit Taubman - Ben-Ari & Vera Skvirsky (May 2016)"
-// 	},
-// 	{
-// 	"title" : "Gal Rozen & Vera Skvirsky (Lab meeting, May 2016)"
-// 	},
-// 	{
-// 	"title" : "Miriam Chasson, Ginna Porat-Zyman, Adi Noy, & Noga Guggenheim (Lab meeting, May 2016)"
-// 	},
-// 	{
-// 	"title" : "Shirley Ben Shlomo & Orit Taubman - Ben-Ari (May 2016)"
-// 	},
-// 	{
-// 	"title" : "Shirley Ben Shlomo & Ofir Ben-Yaakov (May 2016)"       
-// 	},
-// 	{
-// 	"title" : "From left to right: Adi Noy, Noga Guggenheim, & Limor Magen (July 2016)"      
-// 	},
-// 	{
-// 	"title" : "Ariel presenting at the Social Work doctoral students conference (February 2017)"
-// 	},
-// 	{
-// 	"title" : "Vera presenting at the Social Work doctoral students conference (February 2017)"
-// 	},
-// 	{
-// 	"title" : "From left to right: Ofir, Keren, Vera, & Ariel at the Social Work doctoral students conference (February 2017)"
-// 	},
-// 	{              
-// 	"title" : "From left to right: Vera, Keren,& Ofir at the Social Work doctoral students conference (February 2017)"
-// 	},
-// 	{
-// 	"title" : "Miriam presenting at the ESPANET conference (Bar Ilan University, February 2017)"
-// 	},
-// 	{              
-// 	"title" : "Shirely and Vera at the WCWMH conference, Dublin (March 2017)"
-// 	},
-// 	{              
-// 	"title" : "Vera at the WCWMH conference, Dublin (March 2017)"
-// 	},
-// 	{              
-// 	"title" : "Orit presenting at the WCWMH conference, Dublin (March 2017)"
-// 	},
-//     {              
-//     "title" : "Our lab is hosting two interns (June-July 2017)"
-//     },
-//     {              
-//     "title" : "With Prof. Henny Bos from Amsterdam University (January 2018)"
-//     },
-//     {              
-//     "title" : "Noga presenting at the Qualitative Research Conference (Ben Gurion University, February 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },     
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {             
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "Prof. Shulamit Michaeli, VP for Research, at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "Prof. Michael Steger at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },     
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "Prof. Brennan Peterson at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "Dr. Eran Horowitz at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "Dr. Avi Tsafrir at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "Prof. Dov Feldberg at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "Prof. Liat Lerner-Geva at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },              
-//     {              
-//     "title" : "Vera Skvirsky at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "Dr. Floor van Rooij at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "Prof. Orit Taubman ג€“ Ben-Ari at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "Prof. Susan Ayers at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "Prof. Sheldon Solomon at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "Prof. Mario Mikulincer at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "Evening tour in Old Jaffa during the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "Evening tour in Old Jaffa during the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "Evening tour in Old Jaffa during the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)"
-//     },
-//     {              
-//     "title" : "Prof. Joseph Deutsch, Dean, Faculty of Social Sciences,  at the conference: There is nothing impossible to him who will try (March 15, 2018)"
-//     },              
-//     {              
-//     "title" : "Prof. Michael Ungar from Dalhousie University (Canada) presenting at the conference: There is nothing impossible to him who will try (March 15, 2018)"
-//     },
-//     {              
-//     "title" : "Prof. Martin Hagger from Curtin University (Australia) presenting at the conference: There is nothing impossible to him who will try (March 15, 2018)"
-//     }
-// ];
-
 var galleryArray = [
     {//1
 
@@ -1067,25 +832,9 @@ var newsObj = {
 		number: 1
 	}
 ]};
-// $ajaxUtils.sendGetRequest("../data/currentLabMembersData.json", function (responseText) {
-// 			currentMembersObj.currentMembersArray = responseText;
-// 		});
-// currentMembersObj.currentMembersArray = JSON.parse(currentMembersObj.currentMembersArray);
 
 document.addEventListener("DOMContentLoaded", function (event) {
-
 	pageTransformation('Home');
-
-	// document.querySelector("#img-container").innerHTML = '<img src="images/gallery/picture' + i + '.jpg" alt="Picture" heghit=100%>';
-	// $ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
-	// 		document.querySelector("#picture-title").innerHTML = responseText;
-	// 	},
-	// 	false);
-	// document.getElementById("picture-number").innerHTML = i;
-	// console.log(document.getElementById("gallery-container").width);
-	// var galleryHeight = document.getElementById("gallery-container").width;
-	// document.getElementById("gallery-container").heghit = "100px";
-
 });
 
 var i = 1;
@@ -1107,10 +856,6 @@ function pageTransformation (pageName) {
 			document.querySelector("#main-content").innerHTML = responseText;
 		},
 		false);
-	// var screenWidth = window.innerWidth;
-	// 	if (screenWidth<768) {
-	// 		$("#collapsable-nav").collapse('hide');
-	// 	}
 	HideButton();
 	pageOnChanging(pageName);
 
@@ -1134,21 +879,6 @@ function pageTransformation (pageName) {
 
 	if (pageName == "Gallery") {
 	 	touchswipeStart();
-		// i = 1;
-		// document.addEventListener("DOMContentLoaded", function (event) {
-			// console.log("It's working")
-		// 	touchswipeStart();
-		// });
-		// console.log(document.getElementById("#test"));
-		// for (var j = 0; j < 10;) {
-		// 	setTimeout(function () {
-		// 		console.log("It's null");
-		// 		if (document.getElementById("#test") !== null) {
-		// 			break;
-		// 		}
-		// 	}, 100);
-		// 	j++;
-		// }
 
 		waitForGalleryElementToDisplay("#gallery-container", 100);
 
@@ -1164,13 +894,6 @@ function pageTransformation (pageName) {
 	            }, time);
 	        }
 	    }
-
-		// console.log("It's working")
-
-		// setTimeout(function () {
-		// 	console.log("It's working")
-		// // 	touchswipeStart();
-		// }, 1000);
 	}
 }
 
@@ -1191,12 +914,6 @@ function newsPageTransformation (pageName) {
 	HideButton();
 	buildAndShowNewsPage(newsObj, MainNewsNumber);
 }
-// // showing loading icon inside element identified by 'selector'
-// var showLoading = function (selector) {
-// 	var html = "<div class='text-center'>";
-// 	html += "<img src='images/ajax-loader.gif'></div>";
-// 	document.querySelector("#main-content").innerHTML = html;
-// };
 
 function pageOnChanging (pageName) {
 	document.getElementById("page-on").id = "";
@@ -1211,10 +928,6 @@ function HideButton () {
 }
 
 function currentLabMemberPageTransformation (memberName) {
-// $ajaxUtils.sendGetRequest("snippets/" + memberName + "-snippet.html", function (responseText) {
-// 			document.querySelector("#main-content").innerHTML = responseText;
-// 		},
-// 		false);
 	buildAndShowCurrentMemberPage(currentMembersObj, memberName);
 }
 
@@ -1223,36 +936,9 @@ function formerLabMemberPageTransformation (memberName) {
 }
 
 function replacePicture (i) {
-	// document.querySelector("#img-container").innerHTML = '<img src="images/gallery1/picture' + i + '.jpg" alt="Picture">';
 	document.querySelector("#img-container").innerHTML = '<img id="currentImg" src="images/gallery/' + galleryArray[i-1].url + '">';
 	document.querySelector("#picture-title").innerHTML = galleryArray[i-1].title;
 	document.getElementById("picture-number").innerHTML = i;
-
-	// waitForPictureToLoad("#currentImg", 100, 0)
-
-	// function waitForPictureToLoad(selector, time, k) {
- //        if(document.querySelector(selector).complete) {
- //        	// alert("The image is loaded!");
- //        	setTimeout(function () {
- //        		k=1;
- //        	}, 2500);
- //        	if (k == 1) {
- //        		return
- //        	}
- //            // return;
- //        }
- //        else {
- //            setTimeout(function() {
- //            	// console.log("Still dosen't exist")
- //                waitForPictureToLoad(selector, time, k);
- //            }, time);
- //        }
-	// }
-
-	// $ajaxUtils.sendGetRequest("../data/pictures-titles/picture" + i + "-title.txt", function (responseText) {
-	// 		document.querySelector("#picture-title").innerHTML = responseText;
-	// 	},
-	// 	false);
 }
 
 function nextPicture () {
@@ -1271,106 +957,23 @@ function prevPicture () {
 	replacePicture(i);
 }
 
-// var playPictureTime;
-// var galleryPlay = document.getElementById("gallery-play");
-
 function playPicture () {
 	document.getElementById("gallery-play").style.height = "0";
 	document.getElementById("gallery-stop").style.height = "auto";
 
 	waitForPictureToLoad("#currentImg", 100);
-
-	// console.log(galleryPlay.offsetWidth);
-
-	// playPictureTime = setInterval(function () {
-	// 	i++;
-	// 	replacePicture();
-	// 	if (i == galleryArray.length) {
-	// 		clearInterval(playPictureTime);
-	// 		i = 1;
-	// 		setTimeout(function () {
-	// 			replacePicture();
-	// 			document.getElementById("gallery-stop").style.height = "0";
-	// 			document.getElementById("gallery-play").style.height = "auto";
-	// 		}, 2500);
-	// 	}
-	// }, 2500);
-
-	// for (var i = 0; i <= galleryArray.length;) {
-	
-	// 	i++;
-	// 	replacePicture();
-	// 	var img = new Image();
-	// 	img.onload = function () {};
-	// 	setTimeout(function () {
-	// 	}, 2500);
-	// }
-	// i = 1;
-	// setTimeout(function () {
-	// 	replacePicture();
-	// 	document.getElementById("gallery-stop").style.height = "0";
-	// 	document.getElementById("gallery-play").style.height = "auto";
-	// }, 2500);
-
-	// for (var i = 1; i <= galleryArray.length;) {
-	
-	// 	replacePicture(i);
-	// 	// wait(2500);
-	// 	// console.log("I'm waiting...");
-	// 	i++;
-	// }
-
-	// global.$waitForPictureToLoad = waitForPictureToLoad;
-	// function waitForHomeElementToDisplay(selector, time, obj) {
- //        if(document.querySelector(selector)!=null) {
- //            document.querySelector(selector).innerHTML = obj.newsArray[0].shortContent; 
- //            return;
- //        }
- //        else {
- //            setTimeout(function() {
- //            	// console.log("Still dosen't exist")
- //                waitForHomeElementToDisplay(selector, time, obj);
- //            }, time);
- //        }
-	// }
-
 }
 
 var wantToStop = "No";
 
 function wantToStopFunction () {
 	wantToStop = "Yes";
-	// console.log("I'm trying to stop...");
 	stopPlayPicture();
 }
 
 function waitForPictureToLoad(selector, time) {
-	// console.log("We enterd the function");
-	// var PtoL = {};
-	// PtoL.stopPlayPicture = function () {
-	// 	return;
-	// };
-
-	// global.$PtoL = PtoL;
 
     if(document.querySelector(selector).complete) {
-    	// alert("The image is loaded!");
-  //   	if (a == 1) {
-		// 	console.log("I'm stopping the function");
-		// 	return;
-		// }
-		// var stopPlayPictureInside = function () {
-		// 	return;
-		// };
-		// function stopPlayPicture () {
-		// 	return;
-		// };
-		// if (wantToStop == "Yes") {
-		// 	console.log("I'm stopping1");
-		// 	stopPlayPicture();
-		// 	wantToStop = "No";
-  //   		return;
-		// }
     	if (i == galleryArray.length) {
     		stopPlayPicture();
     		return;
@@ -1385,31 +988,17 @@ function waitForPictureToLoad(selector, time) {
     		replacePicture(i);
     		waitForPictureToLoad(selector, time);
     	}, 2500);
-        // return;
     }
     else {
-  //   	if (wantToStop == "Yes") {
-		// 	console.log("I'm stopping");
-		// 	stopPlayPicture();
-		// 	wantToStop = "No";
-  //   		return;
-		// }
         setTimeout(function() {
-        	// console.log("Still dosen't exist")
             waitForPictureToLoad(selector, time);
         }, time);
     }
 }
 
 function stopPlayPicture () {
-	// clearInterval(playPictureTime);
 	document.getElementById("gallery-stop").style.height = "0";
 	document.getElementById("gallery-play").style.height = "auto";
-	// console.log(wantToStop);
-	// wantToStopFunction();
-	// console.log(wantToStop);
-	// waitForPictureToLoad("img", 100, i, 1);
-	// waitForPictureToLoad("img", 100, galleryArray.length)
 }
 
 function insertProperty (string, propName, propValue) {
@@ -1440,8 +1029,11 @@ function buildCurrentLabMembersViewHTML(members, CurrentLabMembersTitleHTML, Cur
 		finalHtml += html;
 
 		if (j !== 0 && (j+1) % 2 == 0) {
-			finalHtml += "<div class='clearfix visible-xs-block'></div>";
+			finalHtml += "<div class='clearfix visible-pxs-block'></div>";
 		}
+        if (j !== 0 && (j+1) % 3 == 0) {
+            finalHtml += "<div class='clearfix visible-psm-block'></div>";
+        }
 		if (j !== 0 && (j+1) % 4 == 0) {
 			finalHtml += "<div class='clearfix visible-sm-block'></div>";
 		}
@@ -1560,22 +1152,13 @@ function buildAndShowNewsPage (news, MainNewsNumber) {
 function buildNewsPageViewHTML (news, MainNewsHTML, OtherNewsTitleHTML, OtherNewsHTML, MainNewsNumber) {
 	var finalHtml = MainNewsHTML;
 
-	// MainNewsNumber = parseInt(MainNewsNumber);
-
-	// console.log("Before the for loop, MainNewsNumber is: " + MainNewsNumber);
-
 	for (var j = 0; j < news.newsArray.length;) {
-		// console.log("j is: " + j);
 		if (news.newsArray[j].number == MainNewsNumber) {
-			// console.log("The j we are lokking for is: " + j);
 			MainNewsNumber = j;
-			// console.log("Inside the for loop, MainNewsNumber is: " + MainNewsNumber);
 			break
 		}
 		j++;
 	}
-
-	// console.log("After the for loop, MainNewsNumber is: " + MainNewsNumber);
 
 	var MainNewsContent = news.newsArray[MainNewsNumber].content;
 	var mainImage = news.newsArray[MainNewsNumber].image;
@@ -1587,10 +1170,8 @@ function buildNewsPageViewHTML (news, MainNewsHTML, OtherNewsTitleHTML, OtherNew
 
 	for (var j = 0; j < news.newsArray.length;) {
 		var a = 0;
-		// var specificNewsNumber = j;
-		// var html = OtherNewsHTML;
+
 		if (j == MainNewsNumber) {
-			// html = insertProperty(html, "number", specificNewsNumber);
 			j++;
 			if (j == 10) {
 				break;
@@ -1607,9 +1188,6 @@ function buildNewsPageViewHTML (news, MainNewsHTML, OtherNewsTitleHTML, OtherNew
 		html = insertProperty(html, "number", number);
 
 		finalHtml += html;
-
-		// specificNewsNumber = j;
-		// html = insertProperty(html, "number", specificNewsNumber);
 
 		if (a !== 0 && (a+1) % 2 == 0) {
 			finalHtml += "<div class='clearfix visible-sm-block'></div>";
@@ -1636,7 +1214,6 @@ function touchswipeStart () {
 	  $("#main-content").swipe( {
 	    //Generic swipe handler for all directions
 	    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-	      // $(this).text("You swiped " + direction );
 	      if (direction == "left") {
 	      	nextPicture();
 	      }
@@ -1645,94 +1222,5 @@ function touchswipeStart () {
 	      }
 	    }
 	  });
-	  // if (pageName != "Gallery") {
-	  // 	return;
-	  // }
 	});
 }
-
-// $(function() {
-//   $("#test").swipe( {
-//     //Generic swipe handler for all directions
-//     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-//       $(this).text("You swiped " + direction );  
-//     }
-//   });
- 
-//   //Set some options later
-//   $("#test").swipe( {fingers:2} );
-// });
-
-// $("#img-container").touchwipe({
-//      wipeLeft: function() { alert("left"); },
-//      wipeRight: function() { alert("right"); },
-//      wipeUp: function() { alert("up"); },
-//      wipeDown: function() { alert("down"); },
-//      min_move_x: 20,
-//      min_move_y: 20,
-//      preventDefaultEvents: true
-// });
-
-// document.addEventListener("DOMContentLoaded", function (event) {
-// 	var i=1;
-// for (i<=2; i++;) {
-// // 	// document.querySelector("#foward-arrow").addEventListener("click", function () {
-// // 		// function nextPicture() {
-//  		document.querySelector("#img-container").innerHTML = '<img src="images/gallery/gallery' + i + '.jpg" alt="Picture" heghit=100%>';
-// //  		// }		
-// // // 	});
-// }
-// });
-
-// (function (global) {
-
-// 	var ot = {};
-
-// 	var homeHtml = "snippets/home-snippet.html";
-// 	var aboutHtml = "snippets/about-snippet.html";
-
-// 	var html = homeHtml;
-// 	// convinience function for inserting innerHtml fot 'select'
-// 	var insertHtml = function (selector, html) {
-// 		var targetElem = document.querySelector(selector);
-// 		targetElem.innerHtml = html;
-// 	};
-
-// 	// showing loading icon inside element identified by 'selector'
-// 	var showLoading = function (selector) {
-// 		var html = "<div class='text-center'>";
-// 		html += "<img src='images/ajax-loader.gif'></div>";
-// 		insertHtml (selector, html);
-// 	};
-
-// 	// on page load - before images or css
-// 	document.addEventListener("DOMContentLoaded", function (event) {
-// 		// on first load, show home view
-// 		showLoading("#main-content");
-// 		$ajaxUtils.sendGetRequest(html, function (responseText) {
-// 			document.querySelector("#main-content").innerHTML = responseText;
-// 		},
-// 		false);
-// 	});
-// 	// document.querySelector("#about-bar").addEventListener("click", function (event) {
-// 	// 	document.querySelector("#main-content").innerHtml = "<h2>about</h2>"
-// 	// });
-// 	// function aboutBar (event) {
-// 	// 	// on first load, show home view
-// 	// 	showLoading("#main-content");
-// 	// 	$ajaxUtils.sendGetRequest("snippets/about-snippet.html", function (responseText) {
-// 	// 		document.querySelector("#main-content").innerHTML = responseText;
-// 	// 	},
-// 	// 	false);
-// 	// }
-
-// global.$ot = ot;
-
-// })(window);
-
-// 	function aboutLoad (event) {
-// 		$ajaxUtils.sendGetRequest("snippets/about-snippet.html", function (responseText) {
-// 			document.querySelector("#main-content").innerHTML = responseText;
-// 		},
-// 		false);
-// 	}

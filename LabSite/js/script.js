@@ -1070,8 +1070,11 @@ function buildFormerLabMembersViewHTML(members, FormerLabMembersTitleHTML, Forme
 		finalHtml += html;
 
 		if (j !== 0 && (j+1) % 2 == 0) {
-			finalHtml += "<div class='clearfix visible-xs-block'></div>";
+			finalHtml += "<div class='clearfix visible-pxs-block'></div>";
 		}
+        if (j !== 0 && (j+1) % 3 == 0) {
+            finalHtml += "<div class='clearfix visible-psm-block'></div>";
+        }
 		if (j !== 0 && (j+1) % 4 == 0) {
 			finalHtml += "<div class='clearfix visible-sm-block'></div>";
 		}

@@ -1150,20 +1150,20 @@ function pageTransformation (pageName) {
 		// 	j++;
 		// }
 
-		// waitForGalleryElementToDisplay("#gallery-container", 100);
+		waitForGalleryElementToDisplay("#gallery-container", 100);
 
-		// function waitForGalleryElementToDisplay(selector, time) {
-	 //        if(document.querySelector(selector)!=null) {
-	 //            touchswipeStart();
-	 //            return;
-	 //        }
-	 //        else {
-	 //            setTimeout(function() {
-	 //            	// console.log("Still dosen't exist")
-	 //                waitForGalleryElementToDisplay(selector, time);
-	 //            }, time);
-	 //        }
-	 //    }
+		function waitForGalleryElementToDisplay(selector, time) {
+	        if(document.querySelector(selector)!=null) {
+	            replacePicture(i);
+	            return;
+	        }
+	        else {
+	            setTimeout(function() {
+	            	// console.log("Still dosen't exist")
+	                waitForGalleryElementToDisplay(selector, time);
+	            }, time);
+	        }
+	    }
 
 		// console.log("It's working")
 
@@ -1271,12 +1271,15 @@ function prevPicture () {
 	replacePicture(i);
 }
 
-var playPictureTime;
+// var playPictureTime;
 // var galleryPlay = document.getElementById("gallery-play");
 
 function playPicture () {
 	document.getElementById("gallery-play").style.height = "0";
 	document.getElementById("gallery-stop").style.height = "auto";
+
+	waitForPictureToLoad("#currentImg", 100);
+
 	// console.log(galleryPlay.offsetWidth);
 
 	// playPictureTime = setInterval(function () {
@@ -1317,32 +1320,7 @@ function playPicture () {
 	// 	i++;
 	// }
 
-	waitForPictureToLoad("#currentImg", 100, i)
-
-	function waitForPictureToLoad(selector, time, i) {
-		console.log("We enterd the function");
-        if(document.querySelector(selector).complete) {
-        	// alert("The image is loaded!");
-        	if (i == galleryArray.length) {
-        		stopPlayPicture();
-        		return;
-        	}
-        	setTimeout(function () {
-        		i++;
-        		replacePicture(i);
-        		waitForPictureToLoad(selector, time, i);
-        	}, 2500);
-            // return;
-        }
-        else {
-            setTimeout(function() {
-            	// console.log("Still dosen't exist")
-                waitForPictureToLoad(selector, time, i);
-            }, time);
-        }
-	}
-
-
+	// global.$waitForPictureToLoad = waitForPictureToLoad;
 	// function waitForHomeElementToDisplay(selector, time, obj) {
  //        if(document.querySelector(selector)!=null) {
  //            document.querySelector(selector).innerHTML = obj.newsArray[0].shortContent; 
@@ -1358,10 +1336,80 @@ function playPicture () {
 
 }
 
+var wantToStop = "No";
+
+function wantToStopFunction () {
+	wantToStop = "Yes";
+	// console.log("I'm trying to stop...");
+	stopPlayPicture();
+}
+
+function waitForPictureToLoad(selector, time) {
+	// console.log("We enterd the function");
+	// var PtoL = {};
+	// PtoL.stopPlayPicture = function () {
+	// 	return;
+	// };
+
+	// global.$PtoL = PtoL;
+
+    if(document.querySelector(selector).complete) {
+    	// alert("The image is loaded!");
+  //   	if (a == 1) {
+		// 	console.log("I'm stopping the function");
+		// 	return;
+		// }
+		// var stopPlayPictureInside = function () {
+		// 	return;
+		// };
+		// function stopPlayPicture () {
+		// 	return;
+		// };
+		// if (wantToStop == "Yes") {
+		// 	console.log("I'm stopping1");
+		// 	stopPlayPicture();
+		// 	wantToStop = "No";
+  //   		return;
+		// }
+    	if (i == galleryArray.length) {
+    		stopPlayPicture();
+    		return;
+    	}
+    	setTimeout(function () {
+    		if (wantToStop == "Yes") {
+				// console.log("I'm stopping2");
+				wantToStop = "No";
+	    		return;
+			}
+    		i++;
+    		replacePicture(i);
+    		waitForPictureToLoad(selector, time);
+    	}, 2500);
+        // return;
+    }
+    else {
+  //   	if (wantToStop == "Yes") {
+		// 	console.log("I'm stopping");
+		// 	stopPlayPicture();
+		// 	wantToStop = "No";
+  //   		return;
+		// }
+        setTimeout(function() {
+        	// console.log("Still dosen't exist")
+            waitForPictureToLoad(selector, time);
+        }, time);
+    }
+}
+
 function stopPlayPicture () {
-	clearInterval(playPictureTime);
+	// clearInterval(playPictureTime);
 	document.getElementById("gallery-stop").style.height = "0";
 	document.getElementById("gallery-play").style.height = "auto";
+	// console.log(wantToStop);
+	// wantToStopFunction();
+	// console.log(wantToStop);
+	// waitForPictureToLoad("img", 100, i, 1);
+	// waitForPictureToLoad("img", 100, galleryArray.length)
 }
 
 function insertProperty (string, propName, propValue) {

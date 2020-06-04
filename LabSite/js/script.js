@@ -621,7 +621,7 @@ var currentMembersObj = {
 	{//6
 		fullName: "Salam Abu-Sharkia",
 		shortName: "SalamA",
-		content: "is a PhD student at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari. She has a BA in Social work and Criminology from Max Stern Academic College of Emek Yezreel, and a Master’s degree in Social Work from Bar-Ilan University. She is currently working as a social worker at Yoseftal hospital in Eilat. The series of studies she is conducting for her doctorate focuses on personal growth and cultural factors among Arab women in different stages of infertility treatment."
+		content: "is a PhD student at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman – Ben-Ari. She has a BA in Social work and Criminology from Max Stern Academic College of Emek Yezreel, and a Master’s degree in Social Work from Bar-Ilan University. She is currently working as a social worker at Maccabi Health Services. The series of studies she is conducting for her doctorate focuses on personal growth and cultural factors among Arab women in different stages of infertility treatment."
 	},
 	{//7
 		fullName: "Ofir Ben Yaakov",
@@ -636,7 +636,7 @@ var currentMembersObj = {
 	{//9
 		fullName: "Miriam Chasson",
 		shortName: "MiriamC",
-		content: "is a social worker and and a PhD student at the Louis and Gabi Weisfeld School of Social work at Bar-Ilan University. She has a BA and an MA from the School of Social work at Bar-Ilan University. Her MA thesis, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, investigated the transition to motherhood of single mothers by choice, focusing on the contribution of the mother's personal resources to her mental health and personal growth."
+		content: "is a clinical social worker and a PhD student at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in Social work from Ariel University and an MA in Social Work from Bar-Ilan University. Her MA thesis, under the supervision of Prof. Orit Taubman – Ben-Ari, investigated the transition to motherhood of single mothers by choice. The series of studies she is conducting for her doctorate, under the supervision of Prof. Orit Taubman – Ben-Ari, focuses on dissociative experiences and intrusive thoughts during mothers’ care of their infant in the first year after childbirth."
 	},
 	{//10
 		fullName: "Gal Rozen",

@@ -45,6 +45,7 @@ h1 {
 	overflow: visible;
 	padding: 0;
 	font-size: 0.8em;
+	text-align: center;
 }
 
 #nav-list li {

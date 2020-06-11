@@ -621,12 +621,12 @@ var currentMembersObj = {
 	{//6
 		fullName: "Salam Abu-Sharkia",
 		shortName: "SalamA",
-		content: "is a PhD student at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman – Ben-Ari. She has a BA in Social work and Criminology from Max Stern Academic College of Emek Yezreel, and a Master’s degree in Social Work from Bar-Ilan University. She is currently working as a social worker at Maccabi Health Services. The series of studies she is conducting for her doctorate focuses on personal growth and cultural factors among Arab women in different stages of infertility treatment."
+		content: "is a PhD student at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman &ndash; Ben-Ari. She has a BA in Social work and Criminology from Max Stern Academic College of Emek Yezreel, and a Master&rsquo;s degree in Social Work from Bar-Ilan University. She is currently working as a social worker at Maccabi Health Services. The series of studies she is conducting for her doctorate focuses on personal growth and cultural factors among Arab women in different stages of infertility treatment."
 	},
 	{//7
 		fullName: "Ofir Ben Yaakov",
 		shortName: "OfirB",
-		content: "is an PhD student at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari. He has a BA in Social Work from Haifa University and an MA from the School of Social Work at Bar-Ilan University. A clinical social worker with extensive experience in the field of mental health, he currently works as a clinician in mental health clinics, specializing in individual and group work with children and adolescents with emotional and behavioral problems and adults with mental health disorders. His MA thesis, under the supervision of Dr. Shirley Ben Shlomo, dealt with the experience of parenthood of young children in light of personality characteristics of the parent and child and the parent’s couple relationship. His studies focus on the transition to parenthood, parenthood of young children, and the parent-child relationship."
+		content: "is an PhD student at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari. He has a BA in Social Work from Haifa University and an MA from the School of Social Work at Bar-Ilan University. A clinical social worker with extensive experience in the field of mental health, he currently works as a clinician in mental health clinics, specializing in individual and group work with children and adolescents with emotional and behavioral problems and adults with mental health disorders. His MA thesis, under the supervision of Dr. Shirley Ben Shlomo, dealt with the experience of parenthood of young children in light of personality characteristics of the parent and child and the parent&rsquo;s couple relationship. His studies focus on the transition to parenthood, parenthood of young children, and the parent-child relationship."
 	},
 	{//8
 		fullName: "Keren Yuzuk",
@@ -636,12 +636,12 @@ var currentMembersObj = {
 	{//9
 		fullName: "Miriam Chasson",
 		shortName: "MiriamC",
-		content: "is a clinical social worker and a PhD student at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in Social work from Ariel University and an MA in Social Work from Bar-Ilan University. Her MA thesis, under the supervision of Prof. Orit Taubman – Ben-Ari, investigated the transition to motherhood of single mothers by choice. The series of studies she is conducting for her doctorate, under the supervision of Prof. Orit Taubman – Ben-Ari, focuses on dissociative experiences and intrusive thoughts during mothers’ care of their infant in the first year after childbirth."
+		content: "is a clinical social worker and a PhD student at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in Social work from Ariel University and an MA in Social Work from Bar-Ilan University. Her MA thesis, under the supervision of Prof. Orit Taubman &ndash; Ben-Ari, investigated the transition to motherhood of single mothers by choice. The series of studies she is conducting for her doctorate, under the supervision of Prof. Orit Taubman &ndash; Ben-Ari, focuses on dissociative experiences and intrusive thoughts during mothers&rsquo; care of their infant in the first year after childbirth."
 	},
 	{//10
 		fullName: "Gal Rozen",
 		shortName: "GalR",
-		content: "is a clinical social worker and a PhD candidate under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari. He has a BA in Philosophy and a BA and Master’s degree in Social Work from Bar-Ilan university, and he specializes in working with children and their parents and team training. He currently serves as the coordinator of clinical work at the Neve Hanna Children’s Home for youngsters from troubled families in Kiryat Gat. His Master’s thesis, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, dealt with personal growth among mothers of pre-term babies, examining the contribution of the health risk to the infants, the perceived stress of the mothers, and the emotional support of the grandmother."
+		content: "is a clinical social worker and a PhD candidate under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari. He has a BA in Philosophy and a BA and Master&rsquo;s degree in Social Work from Bar-Ilan university, and he specializes in working with children and their parents and team training. He currently serves as the coordinator of clinical work at the Neve Hanna Children&rsquo;s Home for youngsters from troubled families in Kiryat Gat. His Master&rsquo;s thesis, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, dealt with personal growth among mothers of pre-term babies, examining the contribution of the health risk to the infants, the perceived stress of the mothers, and the emotional support of the grandmother."
 	},
 	{//11
 		fullName: "Anna Zelkin",
@@ -656,12 +656,12 @@ var currentMembersObj = {
 	{//13
 		fullName: "Maram Yassin",
 		shortName: "MaramY",
-		content: "is a PhD candidate at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari. Maram is a community social worker, within the Community Security Program sponsored by the Ministry of Public Security, in the city of Tamra. As part of her work, she leads projects and initiates processes aimed at developing mechanisms that promote dialogue and cooperation within society and the community. For the past two years she has also served as an instructor at Sakhnin Academic College. Maram received an MA with Honors, after completing the Research Track with a specialization in Organization and Management, as well as a Certificate in Group Facilitation, from the University of Haifa. In addition, she has an instructor’s certificate in the field of education at Gordon Academic College. Maram’s current area of research, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, is parental involvement and its impact on teenage driving in the Arab society."
+		content: "is a PhD candidate at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari. Maram is a community social worker, within the Community Security Program sponsored by the Ministry of Public Security, in the city of Tamra. As part of her work, she leads projects and initiates processes aimed at developing mechanisms that promote dialogue and cooperation within society and the community. For the past two years she has also served as an instructor at Sakhnin Academic College. Maram received an MA with Honors, after completing the Research Track with a specialization in Organization and Management, as well as a Certificate in Group Facilitation, from the University of Haifa. In addition, she has an instructor&rsquo;s certificate in the field of education at Gordon Academic College. Maram&rsquo;s current area of research, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, is parental involvement and its impact on teenage driving in the Arab society."
 	},
 	{//14
 		fullName: "Sigalit Offer",
 		shortName: "SigalitO",
-		content: "is a clinical social worker and a PhD candidate. She is a lecturer at the Louis and Gabi Weisfeld School of Social Work of Bar-Ilan University. She is also a certified couple and family therapist. For more than 23 years, she worked at Schneider Children’s Medical Center of Israel in the Department of Premature and Newborns and at the Psychiatric Department of Eating Disorders. Today she works at the unit for Child Development. Her research, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, focuses on the meaning of giving birth to a premature baby on the motherhood experience in retrospect."
+		content: "is a clinical social worker and a PhD candidate. She is a lecturer at the Louis and Gabi Weisfeld School of Social Work of Bar-Ilan University. She is also a certified couple and family therapist. For more than 23 years, she worked at Schneider Children&rsquo;s Medical Center of Israel in the Department of Premature and Newborns and at the Psychiatric Department of Eating Disorders. Today she works at the unit for Child Development. Her research, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, focuses on the meaning of giving birth to a premature baby on the motherhood experience in retrospect."
 	},
 	{//15
 		fullName: "Shachar Taichner Katz",
@@ -671,7 +671,7 @@ var currentMembersObj = {
 	{//16
 		fullName: "Efrat Amitay",
 		shortName: "EfratA",
-		content: "is an MA student in the Clinical Social Work program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in Social Work from the Academic College of Judea and Samaria in Ariel, and is currently working as a juvenile probation officer in Jerusalem, working with youngsters who have committed criminal offenses. Her MA thesis, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, deals with the contribution of personal, social, and family characteristics on youngsters’ driving before they actually receive their license."
+		content: "is an MA student in the Clinical Social Work program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in Social Work from the Academic College of Judea and Samaria in Ariel, and is currently working as a juvenile probation officer in Jerusalem, working with youngsters who have committed criminal offenses. Her MA thesis, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, deals with the contribution of personal, social, and family characteristics on youngsters&rsquo; driving before they actually receive their license."
 	},
 	{//17
 		fullName: "Efrat Weiss",
@@ -681,7 +681,7 @@ var currentMembersObj = {
 	{//18
 		fullName: "Meital Mialy",
 		shortName: "MeitalM",
-		content: "is an MA student in the Rehabilitation and Health Social Work program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in social work from the Hebrew University in Jerusalem, and is working for more than a decade in the Israeli health system. Her MA thesis, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, deals with fertility physicians’ coping with their role and the associations between cognitive aspects and personal growth among them."
+		content: "is an MA student in the Rehabilitation and Health Social Work program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in social work from the Hebrew University in Jerusalem, and is working for more than a decade in the Israeli health system. Her MA thesis, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, deals with fertility physicians&rsquo; coping with their role and the associations between cognitive aspects and personal growth among them."
 	},
 	{//19
 		fullName: "Reut Ben-Kimhy",
@@ -701,7 +701,7 @@ var currentMembersObj = {
 	{//22
 		fullName: "Roni Meir",
 		shortName: "RoniM",
-		content: "is an MA student in the Clinical Social Work program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in psychology from Bar-Ilan University. Her MA thesis, under the supervision of Prof. Orit Taubman – Ben-Ari, examines the contribution of personality and cognitive variables to marital satisfaction, personal growth and well-being of women undergoing fertility treatments."
+		content: "is an MA student in the Clinical Social Work program at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University. She has a BA in psychology from Bar-Ilan University. Her MA thesis, under the supervision of Prof. Orit Taubman &ndash; Ben-Ari, examines the contribution of personality and cognitive variables to marital satisfaction, personal growth and well-being of women undergoing fertility treatments."
 	},
 	{//23
 		fullName: "Esther Joffe",
@@ -730,7 +730,7 @@ var formerMembersObj = {
 	{//3
 		fullName: "Dr. Ahinoam Eherenfreund-Hager",
 		shortName: "AhinoamE",
-		content: "is a clinical social worker and lecturer at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University and the Haredi campus in Jerusalem. The series of studies she conducted for her PhD, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, focused on the effect of positive and negative affect on young drivers’ risky driving."
+		content: "is a clinical social worker and lecturer at the Louis and Gabi Weisfeld School of Social Work at Bar-Ilan University and the Haredi campus in Jerusalem. The series of studies she conducted for her PhD, under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, focused on the effect of positive and negative affect on young drivers&rsquo; risky driving."
 	},
 	{//4
 		fullName: "Dr. Limor Magen",
@@ -745,7 +745,7 @@ var formerMembersObj = {
 	{//6
 		fullName: "Avinoam Solomon",
 		shortName: "AvinoamS",
-		content: "is a clinical social worker at the Social Services, working with youth at risk. His Master’s thesis under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, examined adolescents’ separation thoughts from their parents and their association to risk-taking behavior."
+		content: "is a clinical social worker at the Social Services, working with youth at risk. His Master&rsquo;s thesis under the supervision of Prof. Orit Taubman&nbsp;- Ben&#8209;Ari, examined adolescents separation thoughts from their parents and their association to risk-taking behavior."
 	},
 	{//7
 		fullName: "Dr. Shira Sobol Goldberg",

@@ -92,10 +92,6 @@ h1 {
 	width: fit-content;
 }
 
-/*#research-bar:hover ul, #research-bar:active ul, #people-bar:hover ul, #people-bar:active ul {
-	height: unset;
-}*/
-
 #nav-list ul li {
 	margin: 3px auto;
 }
@@ -446,7 +442,7 @@ h3 {
 
 /*****Media page*****/
 #media-content {
-	height: 400px;
+	height: 550px;
 	overflow: auto;
 	float: right;
 	margin-bottom: 15px; 

@@ -5,31 +5,29 @@ document.addEventListener("DOMContentLoaded", function (event) {
 var i = 1;
 var MainNewsNumber = newsArray.length;
 
+var HomeHTML = "snippets/Home-snippet.html";
+var AboutHTML = "snippets/About-snippet.html";
 var CurrentLabMembersTitleHTML = "snippets/CurrentLabMembers-title-snippet.html";
 var CurrentLabMembersHTML = "snippets/CurrentLabMember-snippet.html";
-var FormerLabMembersHTML = "snippets/FormerLabMember-snippet.html";
-var FormerLabMembersTitleHTML = "snippets/FormerLabMembers-title-snippet.html";
 var singleCurrentMemberPageHTML = "snippets/singleCurrentMemberPage-snippet.html";
+var FormerLabMembersTitleHTML = "snippets/FormerLabMembers-title-snippet.html";
+var FormerLabMembersHTML = "snippets/FormerLabMember-snippet.html";
 var singleFormerMemberPageHTML = "snippets/singleFormerMemberPage-snippet.html";
+var FormerStudentsTitleHTML = "snippets/FormerStudents-title-snippet.html";
+var FormerStudentHTML = "snippets/FormerStudent-snippet.html";
+var PublicationsTitleHTML = "snippets/Publications-title-snippet.html";
+var PublicationsLinkHTML = "snippets/Publications-link-snippet.html";
+var PublicationsContinueHTML = "snippets/Publications-continue-snippet.html";
+var PublicationSectionHTML = "snippets/Publication-section-snippet.html";
+var PublicationsEndingHTML = "snippets/Publications-ending-snippet.html";
+var ResearchTitleHTML = "snippets/Research-title-snippet.html";
+var ResearchEndingHTML = "snippets/Research-ending-snippet.html";
 var MainNewsHTML = "snippets/MainNews-snippet.html";
 var OtherNewsTitleHTML = "snippets/OtherNews-title-snippet.html";
 var OtherNewsHTML = "snippets/OtherNews-snippet.html";
 var MediaTitleHTML = "snippets/Media-title-snippet.html";
 var MediaHTML = "snippets/Media-snippet.html";
 var MediaContinueHTML = "snippets/Media-continue-snippet.html";
-var PublicationsTitleHTML = "snippets/Publications-title-snippet.html";
-var PublicationsLinkHTML = "snippets/Publications-link-snippet.html";
-var PublicationsContinueHTML = "snippets/Publications-continue-snippet.html";
-var PublicationSectionHTML = "snippets/Publication-section-snippet.html";
-var PublicationsEndingHTML = "snippets/Publications-ending-snippet.html";
-var FormerPhDStudentsTitleHTML = "snippets/FormerPhDStudents-title-snippet.html";
-var FormerMAStudentsTitleHTML = "snippets/FormerMAStudents-title-snippet.html";
-var FormerStudentsTitleHTML = "snippets/FormerStudents-title-snippet.html";
-var FormerStudentHTML = "snippets/FormerStudent-snippet.html";
-var AboutHTML = "snippets/About-snippet.html";
-var ResearchTitleHTML = "snippets/Research-title-snippet.html";
-var ResearchEndingHTML = "snippets/Research-ending-snippet.html";
-var HomeHTML = "snippets/Home-snippet.html";
 
 function pageTransformation (pageName) {
 	i = 1;
@@ -52,7 +50,6 @@ function pageTransformation (pageName) {
 	        }
 	        else {
 	            setTimeout(function() {
-	            	// console.log("Still dosen't exist")
 	                waitForGalleryElementToDisplay(selector, time);
 	            }, time);
 	        }
@@ -229,7 +226,6 @@ function waitForPictureToLoad(selector, time) {
     	}
     	setTimeout(function () {
     		if (wantToStop == "Yes") {
-				// console.log("I'm stopping2");
 				wantToStop = "No";
 	    		return;
 			}

@@ -13,6 +13,27 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
 	<script src="js/ajax-utils2.js"></script>
+
+	<!-- data -->
+	<script src="data/Gallery-data.js"></script>
+	<script src="data/News-data.js"></script>
+	<script src="data/Media-data.js"></script>
+	<script src="data/Publications-data.js"></script>
+	<script src="data/CurrentLabMembers-data.js"></script>
+	<script src="data/FormerLabMembers-data.js"></script>
+	<script src="data/FormerPhDStudents-data.js"></script>
+	<script src="data/FormerMAStudents-data.js"></script>
+	<script src="data/About-data.js"></script>
+	<script src="data/ResearchTransitionToParenthoot-data.js"></script>
+	<script src="data/ResearchMOST-data.js"></script>
+	<script src="data/ResearchPOWER-data.js"></script>
+	<script src="data/ResearchMDSI-data.js"></script>
+	<script src="data/ResearchRiskyDriving-data.js"></script>
+	<script src="data/ResearchUltraOrthodox-data.js"></script>
+	<script src="data/ResearchTMT-data.js"></script>
+	<script src="data/ResearchCovid19-data.js"></script>
+	<!-- end of data -->
+
 	<script src="js/script.js"></script>
 </head>
 <body>
@@ -35,41 +56,41 @@
       		<div id="collapsable-nav" class="collapse navbar-collapse">
       			<ul id="nav-list" class="nav navbar-nav PurpleBack">
       				<li>
-      					<a id="page-on" class="Home" href="#" onclick="pageTransformation('Home')"><span class="glyphicon glyphicon-home"></span>Home</a>
+      					<a id="page-on" class="Home" href="#" onclick="HomePageTransformation('Home')"><span class="glyphicon glyphicon-home"></span>Home</a>
       				</li>
       				<li>
-      					<a href="#" class="About" onclick="pageTransformation('About')"><span class="glyphicon glyphicon-info-sign"></span>About</a>
+      					<a href="#" class="About" onclick="AboutPageTransformation('About')"><span class="glyphicon glyphicon-info-sign"></span>About</a>
       				</li>
       				<li id="people-bar">
       					<a class="collapsible-a People FormerPhDStudents FormerMAStudents"><span class="glyphicon glyphicon-user"></span>People</a>
 						<ul class="PurpleBack">
 						  <li><a href="#" onclick="currentLabMembersPageTransformation('People')">Current Lab Members</a></li>
 						  <li><a href="#" onclick="formerLabMembersPageTransformation('People')">Former Lab Members</a></li>
-						  <li><a href="#" onclick="pageTransformation('FormerPhDStudents')">Former PhD Students</a></li>
-						  <li><a href="#" onclick="pageTransformation('FormerMAStudents')">Former M.A Students</a></li>
+						  <li><a href="#" onclick="FormerPhDStudentsPageTransformation('FormerPhDStudents')">Former PhD Students</a></li>
+						  <li><a href="#" onclick="FormerMAStudentsPageTransformation('FormerMAStudents')">Former M.A Students</a></li>
 						</ul>
       				</li>
       				<li>
-      					<a href="#" class="Publication" onclick="pageTransformation('Publication')"><span class="glyphicon glyphicon-book"></span>Publications</a>
+      					<a href="#" class="Publication" onclick="publicationsPageTransformation('Publication')"><span class="glyphicon glyphicon-book"></span>Publications</a>
       				</li>
       				<li id="research-bar">
-      					<a class="collapsible-a Research1 Research2 Research3 Research4 Research5 Research6 Research7 Research8"><span class="glyphicon glyphicon-stats"></span>Research</a>
+      					<a class="collapsible-a ResearchTransitionToParenthood ResearchMOST ResearchPOWER ResearchMDSI ResearchRiskyDriving ResearchUltraOrthodox ResearchTMT ResearchCovid19"><span class="glyphicon glyphicon-stats"></span>Research</a>
 						<ul class="PurpleBack">
-						  <li onclick="pageTransformation('Research1')"><a href="#">Transition to Parenthood and Grandparenthood</a></li>
-						  <li onclick="pageTransformation('Research2')"><a href="#">Mothers of Singletons and Twins (MOST)</a></li>
-						  <li onclick="pageTransformation('Research3')"><a href="#">Positive Outlook on Women Entering Reproductive treatments (POWER)</a></li>
-						  <li onclick="pageTransformation('Research4')"><a href="#">Driving Styles (MDSI) in the General Population</a></li>
-						  <li onclick="pageTransformation('Research5')"><a href="#">Risky Driving among Young Drivers</a></li>
-						  <li onclick="pageTransformation('Research6')"><a href="#">Driving in the Ultra-Orthodox Population in Israel</a></li>
-						  <li onclick="pageTransformation('Research7')"><a href="#">Terror Management Theory (TMT) in Everyday Life</a></li>
-						  <li onclick="pageTransformation('Research8')"><a href="#">Covid-19-related Research</a></li>
+						  <li onclick="ResearchTransitionToParenthoodPageTransformation('ResearchTransitionToParenthood')"><a href="#">Transition to Parenthood and Grandparenthood</a></li>
+						  <li onclick="ResearchMOSTPageTransformation('ResearchMOST')"><a href="#">Mothers of Singletons and Twins (MOST)</a></li>
+						  <li onclick="ResearchPOWERPageTransformation('ResearchPOWER')"><a href="#">Positive Outlook on Women Entering Reproductive treatments (POWER)</a></li>
+						  <li onclick="ResearchMDSIPageTransformation('ResearchMDSI')"><a href="#">Driving Styles (MDSI) in the General Population</a></li>
+						  <li onclick="ResearchRiskyDrivingPageTransformation('ResearchRiskyDriving')"><a href="#">Risky Driving among Young Drivers</a></li>
+						  <li onclick="ResearchUltraOrthodoxPageTransformation('ResearchUltraOrthodox')"><a href="#">Driving in the Ultra-Orthodox Population in Israel</a></li>
+						  <li onclick="ResearchTMTPageTransformation('ResearchTMT')"><a href="#">Terror Management Theory (TMT) in Everyday Life</a></li>
+						  <li onclick="ResearchCovid19PageTransformation('ResearchCovid19')"><a href="#">Covid-19-related Research</a></li>
 						</ul>
       				</li>
       				<li>     					
       					<a href="#" class="News" onclick="newsPageTransformation('News')"><span class="glyphicon glyphicon-bullhorn"></span>News</a>
       				</li>
       				<li>
-      					<a href="#" class="Media" onclick="pageTransformation('Media')"><span class="glyphicon glyphicon-globe"></span>Media</a>
+      					<a href="#" class="Media" onclick="mediaPageTransformation('Media')"><span class="glyphicon glyphicon-globe"></span>Media</a>
       				</li>
       				<li>
       					<a href="#" class="Gallery" onclick="pageTransformation('Gallery')"><span class="glyphicon glyphicon-camera"></span>Gallery</a>

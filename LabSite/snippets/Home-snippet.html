@@ -12,7 +12,8 @@
 <div class="prom-container col-md-4 col-sm-6 col-xs-12">
 	<div id="about-prom" class="prom-text">
 		<h3>About</h3>
-		<p>The lab is aimed at gaining a deeper understanding of human life-span development, with a special interest in life transitions and their potential to invoke personal growth, as well as the unique stage of adolescence and the tendency of adolescents to engage in risk taking.</p>
+		<p>{{about}}</p>
+		<!-- The lab is aimed at gaining a deeper understanding of human life-span development, with a special interest in life transitions and their potential to invoke personal growth, as well as the unique stage of adolescence and the tendency of adolescents to engage in risk taking. -->
 		<a href="#" onclick="pageTransformation('About')" class="read-more">read more &gt;</a>
 	</div>
 </div>
@@ -20,21 +21,21 @@
 	<div id="research-prom" class="prom-text">
 		<h3>Research<span> for more information click the relevant title</span></h3>
 		<p>
-			<a href="#" onclick="pageTransformation('Research1')">Transition to Parenthood and Grandparenthood</a>
-			<a href="#" onclick="pageTransformation('Research2')">Mothers of Singletons and Twins (MOST)</a>
-			<a href="#" onclick="pageTransformation('Research3')">Positive Outlook on Women Entering Reproductive treatments (POWER)</a>
-			<a href="#" onclick="pageTransformation('Research4')">Driving Styles (MDSI) in the General Population</a>
-			<a href="#" onclick="pageTransformation('Research5')">Risky Driving among Young Drivers</a>
-			<a href="#" onclick="pageTransformation('Research6')">Driving in the Ultra-Orthodox Population in Israel</a>
-			<a href="#" onclick="pageTransformation('Research7')">Terror Management Theory (TMT) in Everyday Life</a>
-			<a href="#" onclick="pageTransformation('Research8')">Covid-19-related Research</a>
+			<a href="#" onclick="ResearchTransitionToParenthoodPageTransformation('ResearchTransitionToParenthood')">Transition to Parenthood and Grandparenthood</a>
+			<a href="#" onclick="ResearchMOSTPageTransformation('ResearchMOST')">Mothers of Singletons and Twins (MOST)</a>
+			<a href="#" onclick="ResearchPOWERPageTransformation('ResearchPOWER')">Positive Outlook on Women Entering Reproductive treatments (POWER)</a>
+			<a href="#" onclick="ResearchMDSIPageTransformation('ResearchMDSI')">Driving Styles (MDSI) in the General Population</a>
+			<a href="#" onclick="ResearchRiskyDrivingPageTransformation('ResearchRiskyDriving')">Risky Driving among Young Drivers</a>
+			<a href="#" onclick="ResearchUltraOrthodoxPageTransformation('ResearchUltraOrthodox')">Driving in the Ultra-Orthodox Population in Israel</a>
+			<a href="#" onclick="ResearchTMTPageTransformation('ResearchTMT')">Terror Management Theory (TMT) in Everyday Life</a>
+			<a href="#" onclick="ResearchCovid19PageTransformation('ResearchCovid19')">Covid-19-related Research</a>
 		</p>
 	</div>
 </div>
 <div id="low-container" class="prom-container col-md-8 col-sm-12 col-xs-12">
 	<div id="news-prom" class="prom-text">
 		<h3>News</h3>
-		<p id="home-news"></p>
+		<p id="home-news">{{news}}</p>
 		<a href="#" onclick="newsPageTransformation('News')" class="read-more">read more &gt;</a>
 	</div>
 </div>

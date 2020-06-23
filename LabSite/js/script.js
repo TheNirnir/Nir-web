@@ -57,7 +57,7 @@ function pageTransformation (pageName) {
 	}
 }
 
-/////////////Every page function/////////////////
+/////////////Every page call function/////////////////
 function currentLabMembersPageTransformation (pageName) {
 	pageOnChanging(pageName);
 	HideButton();
@@ -159,7 +159,7 @@ function HomePageTransformation (pageName) {
     HideButton();
     buildAndShowHomePage ();
 }
-/////////////End of every page function/////////////////
+/////////////End of every page call function/////////////////
 
 function pageOnChanging (pageName) {
 	document.getElementById("page-on").id = "";
@@ -252,6 +252,7 @@ function insertProperty (string, propName, propValue) {
 	return string;
 }
 
+/////////////Every page function/////////////////
 function buildAndShowHomePage () {
     $ajaxUtils.sendGetRequest(HomeHTML, function(HomeHTML) {
         var HomeViewHTML = buildHomeViewHTML(HomeHTML);
@@ -691,6 +692,7 @@ function buildResearchPageViewHTML(ResearchObj, ResearchTitleHTML, ResearchEndin
     return finalHtml;
 
 }
+/////////////End of every page function/////////////////
 
 function changeNews (MainNewsNumber) {
 	buildAndShowNewsPage(newsArray, MainNewsNumber);

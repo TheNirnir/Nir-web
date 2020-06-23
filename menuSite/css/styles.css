@@ -36,7 +36,7 @@ h1 {
 }
 
 #menu-container div {
-	background-color: #fff;
+	/*background-color: #fff;*/
 	height: 139px;
 	width: 0;
 	transition: width 0.8s;

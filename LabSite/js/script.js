@@ -540,7 +540,7 @@ function buildPublicationsPageViewHTML(PublicationsObj, PublicationsTitleHTML, P
         var title = PublicationsObj.PublicationsArray[j].title;
         html = insertProperty(html, "title", title);
 
-        if (j == (PublicationsObj.PublicationsArray.length - 2) || j == PublicationsObj.PublicationsArray.length - 1) {
+        if (j == 3 || j == (PublicationsObj.PublicationsArray.length - 2) || j == PublicationsObj.PublicationsArray.length - 1) {
             html += '<div class="clearfix visible-xs-block"></div>';
         }
         

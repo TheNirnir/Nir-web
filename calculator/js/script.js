@@ -1,2 +1,4 @@
-var i = 1;
-console.log(document.getElementById(i).textContent);
+function numbersChoice (number) {
+	console.log(number);
+	document.getElementById("numbers-screen").innerHTML = number;
+}

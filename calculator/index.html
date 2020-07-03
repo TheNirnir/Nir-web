@@ -16,7 +16,7 @@
 	<div class="container">
 
 		<div id="output-container" class="container">
-			<div id="numbers-screen">0</div>
+			<div id="numbers-screen"></div>
 		</div>
 
 		<div id="options-container" class="container">
@@ -27,15 +27,15 @@
 			<div class="for-padding col-xs-3"><div class="option" onclick="numbersChoice(4)"><div class="internal-option">4</div></div></div>
 			<div class="for-padding col-xs-3"><div class="option" onclick="numbersChoice(5)"><div class="internal-option">5</div></div></div>
 			<div class="for-padding col-xs-3"><div class="option" onclick="numbersChoice(6)"><div class="internal-option">6</div></div></div>
-			<div class="for-padding col-xs-3"><div class="option"><div class="internal-option"><span class="glyphicon glyphicon-plus"></span></div></div></div>
+			<div class="for-padding col-xs-3"><div class="option" onclick="actionChoice('+')"><div class="internal-option"><span class="glyphicon glyphicon-plus"></span></div></div></div>
 			<div class="for-padding col-xs-3"><div class="option" onclick="numbersChoice(1)"><div class="internal-option">1</div></div></div>
 			<div class="for-padding col-xs-3"><div class="option" onclick="numbersChoice(2)"><div class="internal-option">2</div></div></div>
 			<div class="for-padding col-xs-3"><div class="option" onclick="numbersChoice(3)"><div class="internal-option">3</div></div></div>
-			<div class="for-padding col-xs-3"><div class="option"><div class="internal-option"><span class="glyphicon glyphicon-minus"></span></div></div></div>
+			<div class="for-padding col-xs-3"><div class="option" onclick="actionChoice('-')"><div class="internal-option"><span class="glyphicon glyphicon-minus"></span></div></div></div>
 			<div class="for-padding col-xs-3"><div class="option" onclick="numbersChoice(0)"><div class="internal-option">0</div></div></div>
 			<div class="for-padding col-xs-3"><div class="option"><div class="internal-option">.</div></div></div>
 			<div class="for-padding col-xs-3"><div class="option option-place-holder"><div class="internal-option"></div></div></div>
-			<div class="for-padding col-xs-3"><div class="option"><div class="internal-option"><span class="glyphicon glyphicon-ok"></span></div></div></div>
+			<div class="for-padding col-xs-3"><div class="option" onclick="checkChoice()"><div class="internal-option"><span class="glyphicon glyphicon-ok"></span></div></div></div>
 
 			<!-- <button id="0" class="col-xs-3">0</butoon>
 			<button id="1" class="col-xs-3">1</button>

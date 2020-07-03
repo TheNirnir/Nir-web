@@ -1,7 +1,78 @@
+/*****************From bootstrap***********************/
+.col-ht-xs-1,
+.col-ht-xs-2,
+.col-ht-xs-3,
+.col-ht-xs-4,
+.col-ht-xs-5,
+.col-ht-xs-6,
+.col-ht-xs-7,
+.col-ht-xs-8,
+.col-ht-xs-9,
+.col-ht-xs-10,
+.col-ht-xs-11,
+.col-ht-xs-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-ht-xs-1,
+.col-ht-xs-2,
+.col-ht-xs-3,
+.col-ht-xs-4,
+.col-ht-xs-5,
+.col-ht-xs-6,
+.col-ht-xs-7,
+.col-ht-xs-8,
+.col-ht-xs-9,
+.col-ht-xs-10,
+.col-ht-xs-11,
+.col-ht-xs-12 {
+  float: left;
+}
+.col-ht-xs-12 {
+  height: 100%;
+}
+.col-ht-xs-11 {
+  height: 91.66666667%;
+}
+.col-ht-xs-10 {
+  height: 83.33333333%;
+}
+.col-ht-xs-9 {
+  height: 75%;
+}
+.col-ht-xs-8 {
+  height: 66.66666667%;
+}
+.col-ht-xs-7 {
+  height: 58.33333333%;
+}
+.col-ht-xs-6 {
+  height: 50%;
+}
+.col-ht-xs-5 {
+  height: 41.66666667%;
+}
+.col-ht-xs-4 {
+  height: 33.33333333%;
+}
+.col-ht-xs-3 {
+  height: 25%;
+}
+.col-ht-xs-2 {
+  height: 16.66666667%;
+}
+.col-ht-xs-1 {
+  height: 8.33333333%;
+}
+
 #output-container {
 	padding: 8px;
-	min-height: 150px;
+	min-height: 120px;
 	border: 3px solid #000;
+	border-bottom: 0;
+	width: 100%;
 }
 
 #numbers-screen {
@@ -12,16 +83,20 @@
 #options-container {
 	background-color: #000;
 	padding: 10px;
+	width: 100%;
 }
 
 .for-padding {
-	padding: 3px;
+	padding: 8px;
 }
 
 .option {
 	background-color: #0000cc;
 	padding: 5px;
 	border-radius: 10px;
+	height: 100%;
+	width: 100%;
+	/*vertical-align: middle;*/
 }
 
 .internal-option {
@@ -30,7 +105,8 @@
 	color: #fff;
 	text-align: center;
 	font-weight: bold;
-	font-size: 1.4em;
+	font-size: 2em;
+	margin: 9%;
 }
 
 .option:hover .internal-option {

@@ -1,19 +1,19 @@
 var	FormerMAStudentsObj = {
 	
-	title: "Former M.A Students of Prof.&nbsp;Orit Taubman&nbsp;– Ben-Ari",
+	title: "Former M.A Students of Prof.&nbsp;Orit Taubman&nbsp;&ndash; Ben&#8209;Ari",
 
 	Students: [
 		{
 			nameAndYear: "Rachel Vaturi (2000)",
-			content: "Post trauma in primary clinics in Israel [co-supervised with Prof. Rabinowitz]"
+			content: "Post trauma in primary clinics in Israel [co&#8209;supervised with Prof. Rabinowitz]"
 		},
 		{
-			nameAndYear: "Ayelet Kelmer-Adler (2001)",
-			content: "The role of mother's attachment style as a moderator or catalyzer of conduct disorders in children with ADD/H [co-supervised with Prof. Mikulincer]"
+			nameAndYear: "Ayelet Kelmer&#8209;Adler (2001)",
+			content: "The role of mother's attachment style as a moderator or catalyzer of conduct disorders in children with ADD/H [co&#8209;supervised with Prof. Mikulincer]"
 		},
 		{
 			nameAndYear: "Tamar Weiser (2002)",
-			content: "The association between early loss, attachment styles, self-esteem and need for intimacy during adolescence, among native Israelis, CIS immigrants and Ethiopian immigrants"
+			content: "The association between early loss, attachment styles, self&#8209;esteem and need for intimacy during adolescence, among native Israelis, CIS immigrants and Ethiopian immigrants"
 		},
 		{
 			nameAndYear: "Gila Miller (2002)",
@@ -21,15 +21,15 @@ var	FormerMAStudentsObj = {
 		},
 		{
 			nameAndYear: "Ofra Lahav (2003)",
-			content: "The effect of mortality salience on social acceptance of adolescents with disabilities – The moderating role of attachment style"
+			content: "The effect of mortality salience on social acceptance of adolescents with disabilities &ndash; The moderating role of attachment style"
 		},
 		{
 			nameAndYear: "Oshrat Yamin (2004)",
-			content: "The effect of mortality salience on meaning in life – The role of symbolic immortality and religious belief"
+			content: "The effect of mortality salience on meaning in life &ndash; The role of symbolic immortality and religious belief"
 		},
 		{
 			nameAndYear: "Liat Katz &ndash; Ben Ami (2004)",
-			content: "Death awareness and maternal separation anxiety – The role of attachment style"
+			content: "Death awareness and maternal separation anxiety &ndash; The role of attachment style"
 		},
 		{
 			nameAndYear: "Tali Hirsh &ndash; Rothenberg (2004)",
@@ -37,7 +37,7 @@ var	FormerMAStudentsObj = {
 		},
 		{
 			nameAndYear: "Galit Siton &ndash; Zaarur (2005)",
-			content: "The effect of mortality salience on men's reactions towards a non-stereotypic woman"
+			content: "The effect of mortality salience on men's reactions towards a non&#8209;stereotypic woman"
 		},
 		{
 			nameAndYear: "Varda Spielman (2006)",
@@ -45,7 +45,7 @@ var	FormerMAStudentsObj = {
 		},
 		{
 			nameAndYear: "Adi Noy (2006)",
-			content: "The association between self-consciousness and the reaction to mortality salience and death-related thoughts accessibility"
+			content: "The association between self&#8209;consciousness and the reaction to mortality salience and death&#8209;related thoughts accessibility"
 		},
 		{
 			nameAndYear: "Hagit Motika (2006)",
@@ -53,11 +53,11 @@ var	FormerMAStudentsObj = {
 		},
 		{
 			nameAndYear: "Ahinoam Eherenfreund (2006)",
-			content: "The effect of death reminders and positive affect on social acceptance of adolescents with disabilities - The role of attachment style"
+			content: "The effect of death reminders and positive affect on social acceptance of adolescents with disabilities &#8209; The role of attachment style"
 		},
 		{
 			nameAndYear: "Adi Weintraub (2006)",
-			content: "The association between optimism, professional self-esteem, personal growth and meaning in life, following daily exposure to death of a professional team"
+			content: "The association between optimism, professional self&#8209;esteem, personal growth and meaning in life, following daily exposure to death of a professional team"
 		},
 		{
 			nameAndYear: "Dalia Yechiel (2008)",
@@ -77,7 +77,7 @@ var	FormerMAStudentsObj = {
 		},
 		{
 			nameAndYear: "Gay Simchi (2011)",
-			content: "The effect of mortality salience on willingness for a social relationship with a person with or without blindness [co-supervised with Dr. Findler]"
+			content: "The effect of mortality salience on willingness for a social relationship with a person with or without blindness [co&#8209;supervised with Dr. Findler]"
 		},
 		{
 			nameAndYear: "Mor Pascal (2014)",
@@ -89,7 +89,7 @@ var	FormerMAStudentsObj = {
 		},
 		{
 			nameAndYear: "Shani Gil (2015)",
-			content: "Multidimensional intergenerational model for the explanation of young male novice drivers’ driving style [co-supervised with Prof. Toledo, Technion]"
+			content: "Multidimensional intergenerational model for the explanation of young male novice drivers&rsquo; driving style [co&#8209;supervised with Prof. Toledo, Technion]"
 		},
 		{
 			nameAndYear: "Salam Abu Sharkia (2015)",
@@ -97,7 +97,7 @@ var	FormerMAStudentsObj = {
 		},
 		{
 			nameAndYear: "Gal Rozen (2016)",
-			content: "Personal growth following the birth of a premature baby – comparison between levels of risk"
+			content: "Personal growth following the birth of a premature baby &ndash; comparison between levels of risk"
 		},
 		{
 			nameAndYear: "Miriam Chasson (2017)",
@@ -105,7 +105,7 @@ var	FormerMAStudentsObj = {
 		},
 		{
 			nameAndYear: "Avinoam Solomon (2017)",
-			content: "Thoughts on separation from parents, death thought accessibility, and risk taking among teenagers – The moderating role of the separation-individuation level, attachment style, and meaning in life"
+			content: "Thoughts on separation from parents, death thought accessibility, and risk taking among teenagers &ndash; The moderating role of the separation&#8209;individuation level, attachment style, and meaning in life"
 		},
 		{
 			nameAndYear: "Meital Navon (2018)",

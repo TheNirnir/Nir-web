@@ -1,0 +1,23 @@
+#options-container {
+	background-color: #ccc;
+	padding: 10px;
+}
+
+.for-padding {
+	padding: 5px;
+}
+
+.option {
+	background-color: #0000cc;
+	padding: 5px;
+}
+
+.internal-option {
+	background-color: #0000cc;
+	color: #fff;
+	text-align: center;
+}
+
+.option:hover .internal-option {
+	box-shadow: 0 0 10px #000;
+}

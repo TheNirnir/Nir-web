@@ -49,7 +49,7 @@ var galleryArray = [
 
     {//7
 
-            "title" : "From left to right: Shirley Ben Shlomo, Orit Taubman&nbsp;- Ben&#8209;Ari & Liora Findler (STAR conference, Tel Aviv, June 2015)",
+            "title" : "From left to right: Shirley Ben Shlomo, Orit Taubman&nbsp;&ndash; Ben&#8209;Ari & Liora Findler (STAR conference, Tel Aviv, June 2015)",
 
             "url" : "from_word_doc_04.jpg"
 
@@ -73,7 +73,7 @@ var galleryArray = [
 
     {//10
 
-    "title" : "Orit Taubman&nbsp;- Ben&#8209;Ari & Vered Mey-Zahav Oren (May 2016)",
+    "title" : "Orit Taubman&nbsp;&ndash; Ben&#8209;Ari & Vered Mey&#8209;Zahav Oren (May 2016)",
 
     "url" : "A07A0107.jpg"
 
@@ -81,7 +81,7 @@ var galleryArray = [
 
     {//11
 
-    "title" : "Orit Taubman&nbsp;- Ben&#8209;Ari & Noga Guggenheim (May 2016)",
+    "title" : "Orit Taubman&nbsp;&ndash; Ben&#8209;Ari & Noga Guggenheim (May 2016)",
 
     "url" : "A07A0117.jpg"
 
@@ -89,7 +89,7 @@ var galleryArray = [
 
     {//12
 
-    "title" : "Orit Taubman&nbsp;- Ben&#8209;Ari & Vera Skvirsky (May 2016)",
+    "title" : "Orit Taubman&nbsp;&ndash; Ben&#8209;Ari & Vera Skvirsky (May 2016)",
 
     "url" : "A07A0102.jpg"
 
@@ -97,7 +97,7 @@ var galleryArray = [
 
     {//13
 
-    "title" : "Shirley Ben Shlomo & Orit Taubman&nbsp;- Ben&#8209;Ari (May 2016)",
+    "title" : "Shirley Ben Shlomo & Orit Taubman&nbsp;&ndash; Ben&#8209;Ari (May 2016)",
 
     "url" : "from_word_doc_01.jpg"
 
@@ -105,7 +105,7 @@ var galleryArray = [
 
     {//14
 
-    "title" : "Shirley Ben Shlomo & Ofir Ben-Yaakov (May 2016)",
+    "title" : "Shirley Ben Shlomo & Ofir Ben&#8209;Yaakov (May 2016)",
 
     "url" : "from_word_doc_02.jpg"
 
@@ -121,7 +121,7 @@ var galleryArray = [
 
     {//16
 
-    "title" : "Miriam Chasson, Ginna Porat-Zyman, Adi Noy, & Noga Guggenheim (Lab meeting, May 2016)",
+    "title" : "Miriam Chasson, Ginna Porat&#8209;Zyman, Adi Noy, & Noga Guggenheim (Lab meeting, May 2016)",
 
     "url" : "June 16, 2016 060.jpg"
 
@@ -201,7 +201,7 @@ var galleryArray = [
 
     {//26             
 
-    "title" : "Our lab is hosting two interns (June-July 2017)",
+    "title" : "Our lab is hosting two interns (June&#8209;July 2017)",
 
     "url" : "IMG_hosting interns130617.jpg"
 
@@ -225,7 +225,7 @@ var galleryArray = [
 
     {//29             
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_010_resize.JPG"
 
@@ -233,7 +233,7 @@ var galleryArray = [
 
     {//30             
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_063_resize.JPG"
 
@@ -241,7 +241,7 @@ var galleryArray = [
 
     {//31             
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_307_resize.JPG"
 
@@ -249,7 +249,7 @@ var galleryArray = [
 
     {//32             
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_034_resize.JPG"
 
@@ -257,7 +257,7 @@ var galleryArray = [
 
     {//33              
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_047_resize.JPG"
 
@@ -265,7 +265,7 @@ var galleryArray = [
 
     {//34             
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_111_resize.JPG"
 
@@ -273,7 +273,7 @@ var galleryArray = [
 
     {//35             
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_115_resize.JPG"
 
@@ -281,7 +281,7 @@ var galleryArray = [
 
     { //36             
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_118_resize.JPG"
 
@@ -289,7 +289,7 @@ var galleryArray = [
 
     {//37            
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_132_resize.JPG"
 
@@ -297,7 +297,7 @@ var galleryArray = [
 
     {//38              
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_133_resize.JPG"
 
@@ -305,7 +305,7 @@ var galleryArray = [
 
     {//39             
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_137_resize.JPG"
 
@@ -313,7 +313,7 @@ var galleryArray = [
 
     {//40             
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_067_resize.JPG"
 
@@ -321,7 +321,7 @@ var galleryArray = [
 
     {//41             
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_049_resize.JPG"
 
@@ -329,7 +329,7 @@ var galleryArray = [
 
     {//42              
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_167_resize.JPG"
 
@@ -337,7 +337,7 @@ var galleryArray = [
 
     {//43             
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_141_resize.JPG"
 
@@ -345,7 +345,7 @@ var galleryArray = [
 
     {//44             
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_155_resize.JPG"
 
@@ -353,14 +353,14 @@ var galleryArray = [
 
     {//45
 
-    	"title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    	"title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     	"url" : "img_197_resize.JPG"
     },
 
     {//46             
 
-    "title" : "Prof. Shulamit Michaeli, VP for Research, at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "Prof. Shulamit Michaeli, VP for Research, at the international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_179_resize.JPG"
 
@@ -368,7 +368,7 @@ var galleryArray = [
 
     {//47             
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_386_resize.JPG"
 
@@ -376,7 +376,7 @@ var galleryArray = [
 
     {//48             
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_224_resize.JPG"
 
@@ -384,7 +384,7 @@ var galleryArray = [
 
     {//49             
 
-    "title" : "Prof. Michael Steger at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "Prof. Michael Steger at the international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_239_resize.JPG"
 
@@ -392,7 +392,7 @@ var galleryArray = [
 
     {//50              
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_246_resize.JPG"
 
@@ -400,7 +400,7 @@ var galleryArray = [
 
     {//51              
 
-    "title" : "Prof. Brennan Peterson at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "Prof. Brennan Peterson at the international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_261_resize.JPG"
 
@@ -408,7 +408,7 @@ var galleryArray = [
 
     {//52             
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_203_resize.JPG"
 
@@ -416,7 +416,7 @@ var galleryArray = [
 
     {//53             
 
-    "title" : "Dr. Eran Horowitz at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "Dr. Eran Horowitz at the international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_311_resize.JPG"
 
@@ -424,7 +424,7 @@ var galleryArray = [
 
     {//54             
 
-    "title" : "Dr. Avi Tsafrir at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "Dr. Avi Tsafrir at the international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_317_resize.JPG"
 
@@ -432,7 +432,7 @@ var galleryArray = [
 
     {//55              
 
-    "title" : "Prof. Dov Feldberg at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "Prof. Dov Feldberg at the international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_338_resize.JPG"
 
@@ -440,7 +440,7 @@ var galleryArray = [
 
     {//56             
 
-    "title" : "Prof. Liat Lerner-Geva at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "Prof. Liat Lerner&#8209;Geva at the international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_352_resize.JPG"
 
@@ -448,7 +448,7 @@ var galleryArray = [
 
     {//57             
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_336_resize.JPG"
 
@@ -456,7 +456,7 @@ var galleryArray = [
 
     {//58              
 
-    "title" : "Vera Skvirsky at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "Vera Skvirsky at the international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_362_resize.JPG"
 
@@ -464,7 +464,7 @@ var galleryArray = [
 
     {//59             
 
-    "title" : "Dr. Floor van Rooij at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "Dr. Floor van Rooij at the international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_378_resize.JPG"
 
@@ -472,7 +472,7 @@ var galleryArray = [
 
     {//60             
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "img_408_resize.JPG"
 
@@ -480,7 +480,7 @@ var galleryArray = [
 
     {//61              
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "80312-resize.jpg"
 
@@ -488,7 +488,7 @@ var galleryArray = [
 
     {//62              
 
-    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "726.jpg"
 
@@ -496,7 +496,7 @@ var galleryArray = [
 
     {//63              
 
-    "title" : "Prof. Orit Taubman&nbsp;- Ben&#8209;Ari at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "Prof. Orit Taubman&nbsp;&ndash; Ben&#8209;Ari at the international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "314.jpg"
 
@@ -504,7 +504,7 @@ var galleryArray = [
 
     {//64             
 
-    "title" : "Prof. Susan Ayers at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "Prof. Susan Ayers at the international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "534.jpg"
 
@@ -512,7 +512,7 @@ var galleryArray = [
 
     {//65             
 
-    "title" : "Prof. Sheldon Solomon at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "Prof. Sheldon Solomon at the international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "743.jpg"
 
@@ -520,14 +520,14 @@ var galleryArray = [
 
     {//66
 
-    	"title" : "The international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    	"title" : "The international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     	"url" : "f6527296.jpg"
     },
 
     {//67             
 
-    "title" : "Prof. Mario Mikulincer at the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "Prof. Mario Mikulincer at the international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "904.jpg"
 
@@ -535,7 +535,7 @@ var galleryArray = [
 
     {//68             
 
-    "title" : "Evening tour in Old Jaffa during the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "Evening tour in Old Jaffa during the international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "f6484544.jpg"
 
@@ -543,7 +543,7 @@ var galleryArray = [
 
     {//69             
 
-    "title" : "Evening tour in Old Jaffa during the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "Evening tour in Old Jaffa during the international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "f6434240.jpg"
 
@@ -551,7 +551,7 @@ var galleryArray = [
 
     {//70             
 
-    "title" : "Evening tour in Old Jaffa during the international symposium: Barriers and pathways in the transition to parenthood (12-14 March, 2018)",
+    "title" : "Evening tour in Old Jaffa during the international symposium: Barriers and pathways in the transition to parenthood (12&#8209;14 March, 2018)",
 
     "url" : "f6430208.jpg"
 

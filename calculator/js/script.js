@@ -5,6 +5,9 @@ var result = "";
 var globalAction = "";
 
 function numbersChoice (number) {
+	if (document.getElementById("numbers-screen").innerHTML == 0) {
+		document.getElementById("numbers-screen").innerHTML = "";
+	}
 	console.log(number);
 	document.getElementById("numbers-screen").innerHTML += number;
 	if (number2Start == "start") {
@@ -33,4 +36,12 @@ function checkChoice () {
 
 	console.log(result);
 	document.getElementById("numbers-screen").innerHTML += "<br>= " + result;
+}
+
+function deleteChoice () {
+	document.getElementById("numbers-screen").innerHTML -= document.getElementById("numbers-screen").innerHTML.slice(-1);
+}
+
+function ACChoice () {
+	document.getElementById("numbers-screen").innerHTML -= document.getElementById("numbers-screen").innerHTML.substring();
 }

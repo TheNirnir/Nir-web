@@ -8,12 +8,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	// var screenWidth = screen.width;
 	// screenWidth += "px";
 
-	var optionsHeight = screen.availHeight - 120;
+	// var optionsHeight = screen.availHeight - 120;
+	var optionsHeight = screen.availHeight;
 	optionsHeight += "px";
 
 	// console.log(document.getElementById("options-container").style.width);
 	// document.getElementById("options-container").style.width = screenWidth;
-	document.getElementById("options-container").style.height = optionsHeight;
+	// document.getElementById("options-container").style.height = optionsHeight;
+	document.getElementById("The-container").style.height = optionsHeight;
 
 	// console.log(screen.width);
 	// console.log(document.getElementById("options-container").style.width);

@@ -10,6 +10,68 @@ h1 {
 	padding: 0 30px;
 }
 
+
+ul#menu-bar {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+}
+
+ul#menu-bar li {
+	display: inline-block;
+	margin: 0 10px;
+	height: 30px;
+	width: 90px;
+	position: relative;
+}
+
+ul#menu-bar li .default-background {
+	position: absolute;
+	z-index: 1;
+	width: 90px;
+	height: 30px;
+	background-color: #b4b4ff;
+	border-radius: 10px;
+	top: 0;
+	left: 0;
+}
+
+ul#menu-bar li .second-background {
+	position: absolute;
+	z-index: 2;
+	width: 0;
+	height: 30px;
+	border-radius: 10px;
+	background-color: #fff;
+	top: 0;
+	left: 0;
+	transition: width 0.8s;
+}
+
+ul#menu-bar li:hover, ul#menu-bar li:active {
+	cursor: pointer;
+}
+
+ul#menu-bar li:hover .second-background, ul#menu-bar li:active .second-background {
+	width: 90px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+ul#menu-bar li .menu-bar-text {
+	position: absolute;
+	z-index: 3;
+	width: 90px;
+	height: 30px;
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 30px;
+	font-weight: bold;
+	top: 0;
+	left: 0;
+}
+
+
 #menu-container {
 	position: fixed;
 	/*background-color: #fff;*/
@@ -53,13 +115,13 @@ h1 {
 }
 
 #menu-container div ul li {
-	background-color: #0000ff;
+	background-color: #b4b4ff;
 	margin-bottom: 3px;
 	text-align: center;
 	border-radius: 20px;
 	transition: color 1s;
 	transition: background-color 1s;
-	color: #fff;
+	color: #000;
 }
 
 
@@ -75,7 +137,7 @@ h1 {
 }
 
 #menu-container div ul li:hover {
-	color: #000;
+	/*color: #000;*/
 	background-color: #fff;
 	cursor: pointer;
 }

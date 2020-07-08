@@ -30,16 +30,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	// console.log(internalOptionPadding);
 	// document.getElementsByClassName("internal-option").style.paddingTop = internalOptionPadding;
 
-	var internalOptionHeight = document.getElementById("example").offsetHeight;
-	console.log(internalOptionHeight);
-	var internalOptionPadding = parseInt(internalOptionHeight);
-	internalOptionPadding = internalOptionPadding/4;
-	internalOptionPadding += "px";
-	console.log(internalOptionPadding);
-	for (var i = 0; i < document.getElementsByClassName("internal-option").length; i++) {
-		document.getElementsByClassName("internal-option")[i].style.paddingTop = internalOptionPadding;
-		// document.getElementsByClassName("internal-option")[i].style.paddingBottom = internalOptionPadding;
-	}
+	// var internalOptionHeight = document.getElementById("example").offsetHeight;
+	// console.log(internalOptionHeight);
+	// var internalOptionPadding = parseInt(internalOptionHeight);
+	// internalOptionPadding = internalOptionPadding/4;
+	// internalOptionPadding += "px";
+	// console.log(internalOptionPadding);
+	// for (var i = 0; i < document.getElementsByClassName("internal-option").length; i++) {
+	// 	document.getElementsByClassName("internal-option")[i].style.paddingTop = internalOptionPadding;
+	// 	// document.getElementsByClassName("internal-option")[i].style.paddingBottom = internalOptionPadding;
+	// }
 	// document.getElementsByClassName("internal-option")[0].style.paddingTop = internalOptionPadding;
 });
 

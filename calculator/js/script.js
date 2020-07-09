@@ -65,7 +65,7 @@ function actionChoice (action) {
 		ACChoice();
 		clearBoard = "";
 		document.getElementById("numbers-screen").innerHTML = "ANS";
-		number1 = parseInt(result);
+		number1 = Number(result);
 	}
 	else {
 		number1 = document.getElementById("numbers-screen").innerHTML;
@@ -82,12 +82,14 @@ function checkChoice () {
 	// if (number1 == "") {
 	// 	number1 = parseInt(result);
 	// }
-	console.log(number1 + " " + globalAction + " " + number2)
+	// console.log(number1 + " " + globalAction + " " + number2)
+	console.log(Number(number1) + " " + globalAction + " " + Number(number2))
+
 	if (globalAction == "+") {
-		result = parseInt(number1) + parseInt(number2);
+		result = Number(number1) + Number(number2);
 	}
 	if (globalAction == "-") {
-		result = parseInt(number1) - parseInt(number2);
+		result = Number(number1) - Number(number2);
 	}
 
 	console.log(result);
@@ -96,8 +98,12 @@ function checkChoice () {
 }
 
 function deleteChoice () {
-	document.getElementById("numbers-screen").innerHTML -= document.getElementById("numbers-screen").innerHTML.slice(-1);
-	// document.getElementById("numbers-screen").innerHTML.substring(0, document.getElementById("numbers-screen").innerHTML.length - 1);
+	// document.getElementById("numbers-screen").innerHTML -= document.getElementById("numbers-screen").innerHTML.slice(-1);
+	document.getElementById("numbers-screen").innerHTML = document.getElementById("numbers-screen").innerHTML.substring(0, document.getElementById("numbers-screen").innerHTML.length - 1);
+	if (number2Start == "start") {
+		// console.log("start");
+		number2 = number2.substring(0, number2.length - 1);
+	}
 	// document.getElementById("numbers-screen").innerHTML -= "5";
 }
 
@@ -106,3 +112,10 @@ function ACChoice () {
 	number1 = "0";
 	number2 = "0";
 }
+
+// var str = "Hello World";
+// console.log("The original string: " + str);
+// // str -= str.slice(-1);
+// // str.substring(0, str.length - 1)
+// str = str.substring(0, 4);
+// console.log("The new string: " + str)

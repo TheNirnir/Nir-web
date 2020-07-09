@@ -75,7 +75,7 @@
 #output-container {
 	padding: 8px;
 	/*min-height: 120px;*/
-	height: 20%;
+	height: 100%;
 	border: 3px solid #000;
 	border-bottom: 0;
 	width: 100%;
@@ -93,7 +93,7 @@
 	background-color: #000;
 	padding: 10px;
 	width: 100%;
-	height: 80%;
+	/*height: 80%;*/
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -105,11 +105,12 @@
 
 .option {
 	background-color: #0000cc;
-	/*padding: 5px;*/
+	padding: 5px;
 	border-radius: 10px;
-	height: 100%;
-	width: 100%;
-	padding-top: 8%;
+	/*height: 55px;*/
+	/*width: 60px;*/
+	margin: 0 auto;
+	/*padding-top: 8%;*/
 	/*vertical-align: middle;*/
 }
 
@@ -119,18 +120,19 @@
 	color: #fff;
 	text-align: center;
 	font-weight: bold;
-	/*font-size: 2em;*/
+	/*font-size: 1.5em;*/
 	margin: auto;
-	width: 85%;
-	height: 85%;
-	padding-top: 10%;
+	/*width: 85%;
+	height: 85%;*/
+	/*padding-top: 10%;*/
+	/*line-height: 45px;*/
 	/*padding: 16.085px 0;*/
 }
 
-.internal-option span {
+/*.internal-option span {
 	margin: 10px;
 	vertical-align: middle;
-}
+}*/
 
 .option:hover .internal-option {
 	box-shadow: 0 0 15px #000;
@@ -149,13 +151,13 @@
 
 @media (min-width: 769px) and (max-width: 991px) {
 	.internal-option {
-		font-size: 3em;
+		font-size: 3.7em;
 	}
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	.internal-option {
-		font-size: 4em;
+		font-size: 3.7em;
 	}
 }
 
@@ -163,4 +165,12 @@
 	.internal-option {
 		font-size: 4em;
 	}
+	/*.option {
+		height: 55px;
+		width: 60px;
+	}
+	.internal-option {
+		font-size: 1.5em;
+		line-height: 45px;
+	}*/
 }

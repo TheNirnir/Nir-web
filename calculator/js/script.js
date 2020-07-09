@@ -3,6 +3,7 @@ var number2 = "";
 var number2Start;
 var result = "";
 var globalAction = "";
+var clearBoard;
 
 document.addEventListener("DOMContentLoaded", function (event) {
 	// var screenWidth = screen.width;
@@ -44,7 +45,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 function numbersChoice (number) {
-	if (document.getElementById("numbers-screen").innerHTML == 0) {
+	if (clearBoard == "start") {
+		ACChoice();
+		clearBoard = "";
+	}
+	if (document.getElementById("numbers-screen").innerHTML == "0") {
 		document.getElementById("numbers-screen").innerHTML = "";
 	}
 	console.log(number);
@@ -65,6 +70,7 @@ function actionChoice (action) {
 }
 
 function checkChoice () {
+	number2Start = "";
 	console.log(number1 + " " + globalAction+ " " + number2)
 	if (globalAction == "+") {
 		result = parseInt(number1) + parseInt(number2);
@@ -75,6 +81,7 @@ function checkChoice () {
 
 	console.log(result);
 	document.getElementById("numbers-screen").innerHTML += "<br>= " + result;
+	clearBoard = "start";
 }
 
 function deleteChoice () {
@@ -82,5 +89,7 @@ function deleteChoice () {
 }
 
 function ACChoice () {
-	document.getElementById("numbers-screen").innerHTML -= document.getElementById("numbers-screen").innerHTML.substring();
+	document.getElementById("numbers-screen").innerHTML = "0";
+	number1 = "0";
+	number2 = "0";
 }

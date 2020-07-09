@@ -61,8 +61,16 @@ function numbersChoice (number) {
 }
 
 function actionChoice (action) {
+	if (clearBoard == "start") {
+		ACChoice();
+		clearBoard = "";
+		document.getElementById("numbers-screen").innerHTML = "ANS";
+		number1 = parseInt(result);
+	}
+	else {
+		number1 = document.getElementById("numbers-screen").innerHTML;
+	}
 	globalAction = action;
-	number1 = document.getElementById("numbers-screen").innerHTML;
 	number2Start = "start";
 
 	console.log(action);
@@ -71,7 +79,10 @@ function actionChoice (action) {
 
 function checkChoice () {
 	number2Start = "";
-	console.log(number1 + " " + globalAction+ " " + number2)
+	// if (number1 == "") {
+	// 	number1 = parseInt(result);
+	// }
+	console.log(number1 + " " + globalAction + " " + number2)
 	if (globalAction == "+") {
 		result = parseInt(number1) + parseInt(number2);
 	}
@@ -86,6 +97,8 @@ function checkChoice () {
 
 function deleteChoice () {
 	document.getElementById("numbers-screen").innerHTML -= document.getElementById("numbers-screen").innerHTML.slice(-1);
+	// document.getElementById("numbers-screen").innerHTML.substring(0, document.getElementById("numbers-screen").innerHTML.length - 1);
+	// document.getElementById("numbers-screen").innerHTML -= "5";
 }
 
 function ACChoice () {

@@ -128,7 +128,7 @@
 }
 
 .option {
-	background-color: #0000cc;
+	background-color: #2e5cb8;
 	padding: 5px;
 	border-radius: 10px;
 	/*height: 55px;*/
@@ -139,7 +139,7 @@
 }
 
 .internal-option {
-	background-color: #0000cc;
+	background-color: #2e5cb8;
 	border-radius: 10px;
 	color: #fff;
 	text-align: center;
@@ -157,6 +157,10 @@
 	margin: 10px;
 	vertical-align: middle;
 }*/
+
+.option:hover {
+	cursor: pointer;
+}
 
 .option:hover .internal-option {
 	box-shadow: 0 0 15px #000;

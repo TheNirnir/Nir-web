@@ -91,6 +91,12 @@ function checkChoice () {
 	if (globalAction == "-") {
 		result = Number(number1) - Number(number2);
 	}
+	if (globalAction == "X") {
+		result = Number(number1) * Number(number2);
+	}
+	if (globalAction == "/") {
+		result = Number(number1) / Number(number2);
+	}
 
 	console.log(result);
 	document.getElementById("numbers-screen").innerHTML += "<br>= " + result;

@@ -99,6 +99,30 @@
 	right: 0;
 }
 
+#numbers-options-container {
+	float: left;
+	width: 66%;
+}
+
+#actions-options-container {
+	float: right;
+	width: 33%;
+}
+
+#vertical-line {
+	padding: 8px 0;
+	width: 1%;
+	height: 200px;
+}
+
+#vertical-line div {
+	border: 2.5px solid #fff;
+	border-radius: 10px;
+	padding: 0;
+	width: 0;
+	height: 100%;
+}
+
 .for-padding {
 	padding: 8px;
 }
@@ -145,7 +169,8 @@
 
 @media (max-width: 768px) {
 	.internal-option {
-		font-size: 3.5em;
+		/*font-size: 1em;*/
+		font-size: 3em;
 	}
 }
 

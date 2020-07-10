@@ -177,7 +177,7 @@
 		font-size: 2.5em;
 	}
 	#actions-options-container {
-		font-size: 0.8em;
+		font-size: 0.6em;
 	}
 }
 
@@ -195,7 +195,10 @@
 
 @media (min-width: 1200px) {
 	.internal-option {
-		font-size: 4em;
+		font-size: 3.5em;
+	}
+	#actions-options-container {
+		font-size: 0.9em;
 	}
 	/*.option {
 		height: 55px;

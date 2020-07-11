@@ -95,7 +95,7 @@
 	display: inline-block;
 }
 
-#power-numbers-box {
+#power-numbers-box, #power-sign-box {
 	display: inline-block;
 	/*border: 2px solid red;*/
 	font-size: 0.7em;
@@ -103,8 +103,13 @@
 	/*margin: -5px 0 0 -5px;*/
 	min-width: 10px;
 	min-height: 10px;
-	margin-left: -5px
+	margin-left: -5px;
 	/*margin-top: -5px;*/
+}
+
+#power-sign-box {
+	border: 1px solid #fff;
+	margin-left: 4px;
 }
 
 #all-options-container {

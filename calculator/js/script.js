@@ -169,14 +169,18 @@ function closeMoreOptionsBar () {
 }
 
 function openModeOptions () {
-	document.getElementById("mode-options-container").style.opacity = 10;
-	document.getElementById("mode-options-container").style.zIndex = 1;
+	document.getElementById("mode-options-padding-container").style.opacity = 1;
+	document.getElementById("mode-options-padding-container").style.zIndex = 2;
+	document.getElementById("mode-blur").style.opacity = 0.4;
+	document.getElementById("mode-blur").style.zIndex = 1;
 }
 
 function closeModeOptions () {
 	console.log("close");
-	document.getElementById("mode-options-container").style.opacity = 0;
-	document.getElementById("mode-options-container").style.zIndex = -1;
+	document.getElementById("mode-options-padding-container").style.opacity = 0;
+	document.getElementById("mode-options-padding-container").style.zIndex = -1;
+	document.getElementById("mode-blur").style.opacity = 0;
+	document.getElementById("mode-blur").style.zIndex = -1;
 }
 
 // var str = "Hello World";

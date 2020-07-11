@@ -49,15 +49,7 @@
 				<div class="col-xs-3 for-padding"><div class="option" onclick="actionChoice('sin')"><div class="internal-option">sin</div></div></div>
 				<div class="col-xs-3 for-padding"><div class="option" onclick="actionChoice('cos')"><div class="internal-option">cos</div></div></div>
 				<div class="col-xs-3 for-padding"><div class="option" onclick="actionChoice('tan')"><div class="internal-option">tan</div></div></div>
-				<div class="col-xs-3 for-padding"><div id="mode-option" class="option" onclick="openModeOptions()"><div class="internal-option">mode
-					<div id="mode-options-container" class="container">
-						<div id="exit-mode" onclick="closeModeOptions()"><span class="glyphicon glyphicon-remove"></span></div>
-						<h1>mode</h1>
-						<div class="col-xs-6 for-padding"><div class="option" onclick="actionChoice('tan')"><div class="internal-option">deg</div></div></div>
-						<div class="col-xs-6 for-padding"><div class="option" onclick="actionChoice('tan')"><div class="internal-option">rad</div></div></div>
-						<div class="col-xs-12 for-padding"><div class="option" onclick="actionChoice('tan')"><div class="internal-option">aX^2+bX+c</div></div></div>
-					</div>
-				</div></div></div>
+				<div class="col-xs-3 for-padding"><div id="mode-option" class="option" onclick="openModeOptions()"><div class="internal-option">mode</div></div></div>
 			</div>
 			<div class="clearfix"></div>
 			<div id="options-container" class="container">
@@ -109,6 +101,16 @@
 		</div>
 		
 	</div>
+	<div id="mode-options-padding-container" class="container">
+						<div id="mode-options-container" class="container">
+							<div id="exit-mode" onclick="closeModeOptions()"><span class="glyphicon glyphicon-remove"></span></div>
+							<h1>mode</h1>
+							<div class="col-xs-6 for-padding"><div class="option" onclick="actionChoice('tan')"><div class="internal-option">deg</div></div></div>
+							<div class="col-xs-6 for-padding"><div class="option" onclick="actionChoice('tan')"><div class="internal-option">rad</div></div></div>
+							<div class="col-xs-12 for-padding"><div class="option" onclick="actionChoice('tan')"><div class="internal-option">aX^2+bX+c</div></div></div>
+						</div>
+					</div>
+	<div id="mode-blur"></div>
 
 </body>
 </html>

@@ -168,6 +168,17 @@ function closeMoreOptionsBar () {
 	document.getElementById("more-options-close-arrow").style.height = 0;
 }
 
+function openModeOptions () {
+	document.getElementById("mode-options-container").style.opacity = 10;
+	document.getElementById("mode-options-container").style.zIndex = 1;
+}
+
+function closeModeOptions () {
+	console.log("close");
+	document.getElementById("mode-options-container").style.opacity = 0;
+	document.getElementById("mode-options-container").style.zIndex = -1;
+}
+
 // var str = "Hello World";
 // console.log("The original string: " + str);
 // // str -= str.slice(-1);

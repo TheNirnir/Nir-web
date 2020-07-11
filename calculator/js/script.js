@@ -127,7 +127,7 @@ function checkChoice () {
 	}
 
 	console.log(result);
-	var resultToShow = Math.round(result*Math.pow(10, 10))/10;
+	var resultToShow = Math.round(result*Math.pow(10, 10))/Math.pow(10, 10);
 	document.getElementById("numbers-screen").innerHTML += "<br>= " + resultToShow;
 	clearBoard = "start";
 }

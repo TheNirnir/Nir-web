@@ -52,8 +52,14 @@ function numbersChoice (number) {
 	if (document.getElementById("numbers-screen").innerHTML == "0") {
 		document.getElementById("numbers-screen").innerHTML = "";
 	}
+	if (number == "Pi") {
+		number = Math.PI;
+		document.getElementById("numbers-screen").innerHTML += "&Pi;";
+	}
+	else {
+		document.getElementById("numbers-screen").innerHTML += number;
+	}
 	console.log(number);
-	document.getElementById("numbers-screen").innerHTML += number;
 	if (number2Start == "start") {
 		// console.log("start");
 		number2 += number;
@@ -70,10 +76,12 @@ function actionChoice (action) {
 	else {
 		number1 = document.getElementById("numbers-screen").innerHTML;
 	}
-	if (action == "Sqrt") {
-		console.log("&Sqrt;");
-		action = "&Sqrt;";
+	if (action == "sqrt" || action == "sin" || action == "cos" || action == "tan") {
 		document.getElementById("numbers-screen").innerHTML = "";
+	}
+	if (action == "Sqrt") {
+		// console.log("&Sqrt;");
+		action = "&Sqrt;";
 	}
 	globalAction = action;
 	number2Start = "start";
@@ -108,9 +116,19 @@ function checkChoice () {
 	if (globalAction == "&Sqrt;") {
 		result = Math.sqrt(Number(number2));
 	}
+	if (globalAction == "sin") {
+		result = Math.sin(Number(number2));
+	}
+	if (globalAction == "cos") {
+		result = Math.cos(Number(number2));
+	}
+	if (globalAction == "tan") {
+		result = (Math.sin(Number(number2)))/(Math.cos(Number(number2)));
+	}
 
 	console.log(result);
-	document.getElementById("numbers-screen").innerHTML += "<br>= " + result;
+	var resultToShow = Math.round(result*Math.pow(10, 10))/10;
+	document.getElementById("numbers-screen").innerHTML += "<br>= " + resultToShow;
 	clearBoard = "start";
 }
 

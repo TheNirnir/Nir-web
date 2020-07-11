@@ -73,7 +73,7 @@
 }
 
 #output-container {
-	padding: 10px;
+	padding: 15px;
 	/*min-height: 120px;*/
 	height: 100%;
 	/*border: 3px solid #000;*/
@@ -87,6 +87,24 @@
 #numbers-screen {
 	color: #000;
 	font-size: 2em;
+	/*border: 2px solid #000;*/
+}
+
+#numbers-box {
+	/*border: 2px solid #000;*/
+	display: inline-block;
+}
+
+#power-numbers-box {
+	display: inline-block;
+	/*border: 2px solid red;*/
+	font-size: 0.7em;
+	vertical-align: top;
+	/*margin: -5px 0 0 -5px;*/
+	min-width: 10px;
+	min-height: 10px;
+	margin-left: -5px
+	/*margin-top: -5px;*/
 }
 
 #all-options-container {

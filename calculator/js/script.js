@@ -5,6 +5,7 @@ var result = "";
 var globalAction = "";
 var clearBoard;
 var ANS;
+var globalDegOrRad = "rad";
 
 document.addEventListener("DOMContentLoaded", function (event) {
 	// var screenWidth = screen.width;
@@ -50,15 +51,23 @@ function numbersChoice (number) {
 		ACChoice();
 		clearBoard = "";
 	}
-	if (document.getElementById("numbers-screen").innerHTML == "0") {
-		document.getElementById("numbers-screen").innerHTML = "";
+	console.log(document.getElementById("numbers-box").innerHTML);
+	if (document.getElementById("numbers-box").innerHTML == "0") {
+		document.getElementById("numbers-box").innerHTML = "";
 	}
-	if (number == "Pi") {
-		number = Math.PI;
-		document.getElementById("numbers-screen").innerHTML += "&Pi;";
+	if (number == "Pi" || globalAction == "^") {
+		if (number == "Pi") {
+			number = Math.PI;
+			document.getElementById("numbers-box").innerHTML += "&Pi;";
+		}
+		if (globalAction == "^") {
+			document.getElementById("power-numbers-box").innerHTML += number;
+			document.getElementById("power-numbers-box").style.border = "none";
+			document.getElementById("power-numbers-box").style.marginTop = "-5px";
+		}
 	}
 	else {
-		document.getElementById("numbers-screen").innerHTML += number;
+		document.getElementById("numbers-box").innerHTML += number;
 	}
 	console.log(number);
 	if (number2Start == "start") {
@@ -78,15 +87,15 @@ function numbersChoice (number) {
 }
 
 function actionChoice (action) {
-	number1 = document.getElementById("numbers-screen").innerHTML;
+	number1 = document.getElementById("numbers-box").innerHTML;
 	if (clearBoard == "start") {
 		ACChoice();
 		clearBoard = "";
-		document.getElementById("numbers-screen").innerHTML = "ANS";
+		document.getElementById("numbers-box").innerHTML = "ANS";
 		number1 = Number(result);
 	}
 	if (action == "sqrt" || action == "sin" || action == "cos" || action == "tan") {
-		document.getElementById("numbers-screen").innerHTML = "";
+		document.getElementById("numbers-box").innerHTML = "";
 	}
 	if (action == "Sqrt") {
 		// console.log("&Sqrt;");
@@ -96,7 +105,13 @@ function actionChoice (action) {
 	number2Start = "start";
 
 	console.log(action);
-	document.getElementById("numbers-screen").innerHTML += action;
+	if (action == "^") {
+		document.getElementById("power-numbers-box").style.border = "1px solid black";
+		document.getElementById("power-numbers-box").style.marginTop = "0";
+	}
+	else {
+		document.getElementById("numbers-box").innerHTML += action;
+	}
 }
 
 function checkChoice () {
@@ -112,6 +127,12 @@ function checkChoice () {
 		number2 = result;
 	}
 	console.log(Number(number1) + " " + globalAction + " " + Number(number2))
+
+	if (globalAction == "sin" || globalAction == "cos" || globalAction == "tan") {
+		if (globalDegOrRad == "deg") {
+			number2 = number2*Math.PI/180;
+		}
+	}
 
 	if (globalAction == "+") {
 		result = Number(number1) + Number(number2);
@@ -142,25 +163,35 @@ function checkChoice () {
 	}
 
 	console.log(result);
-	var resultToShow = Math.round(result*Math.pow(10, 10))/Math.pow(10, 10);
-	document.getElementById("numbers-screen").innerHTML += "<br>= " + resultToShow;
+	// var resultToShow = Math.round(result*Math.pow(10, 10))/Math.pow(10, 10);
+	// document.getElementById("numbers-box").innerHTML += "<br>= " + resultToShow;
+	result = Math.round(result*Math.pow(10, 10))/Math.pow(10, 10);
+	document.getElementById("result-box").innerHTML += "= " + result;
 	clearBoard = "start";
 }
 
 function deleteChoice () {
-	// document.getElementById("numbers-screen").innerHTML -= document.getElementById("numbers-screen").innerHTML.slice(-1);
-	document.getElementById("numbers-screen").innerHTML = document.getElementById("numbers-screen").innerHTML.substring(0, document.getElementById("numbers-screen").innerHTML.length - 1);
+	// document.getElementById("numbers-box").innerHTML -= document.getElementById("numbers-box").innerHTML.slice(-1);
+	document.getElementById("numbers-box").innerHTML = document.getElementById("numbers-box").innerHTML.substring(0, document.getElementById("numbers-box").innerHTML.length - 1);
 	if (number2Start == "start") {
 		// console.log("start");
 		number2 = number2.substring(0, number2.length - 1);
 	}
-	// document.getElementById("numbers-screen").innerHTML -= "5";
+	// document.getElementById("numbers-box").innerHTML -= "5";
 }
 
 function ACChoice () {
-	document.getElementById("numbers-screen").innerHTML = "0";
+	document.getElementById("numbers-box").innerHTML = "0";
+	document.getElementById("power-numbers-box").innerHTML = "";
+	document.getElementById("result-box").innerHTML = "";
 	number1 = "0";
 	number2 = "0";
+	globalAction = "";
+}
+
+function DegOrRadFunction (DegOrRad) {
+	globalDegOrRad = DegOrRad;
+	closeModeOptions();
 }
 
 function openMoreOptionsBar () {
@@ -191,7 +222,7 @@ function openModeOptions () {
 }
 
 function closeModeOptions () {
-	console.log("close");
+	// console.log("close");
 	document.getElementById("mode-options-padding-container").style.opacity = 0;
 	document.getElementById("mode-options-padding-container").style.zIndex = -1;
 	document.getElementById("mode-blur").style.opacity = 0;

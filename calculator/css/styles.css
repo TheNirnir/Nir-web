@@ -95,7 +95,7 @@
 	display: inline-block;
 }
 
-#power-numbers-box, #power-sign-box {
+#power-numbers-box, #power-sign-box, #power-2-box {
 	display: inline-block;
 	/*border: 2px solid red;*/
 	font-size: 0.7em;
@@ -267,6 +267,7 @@
 	border: 3px solid #000;
 	border-radius: 10px 0 10px 10px;
 	background-color: #d6e0f5;
+	padding-bottom: 10px;
 	/*top: 30px;*/
 	/*left: 30px;*/
 	color: #000;
@@ -295,6 +296,11 @@
 	opacity: 10;
 	z-index: 1;
 }*/
+
+#power-2-box {
+	margin-left: 0px;
+	margin-right: 1px; 
+}
 
 #exit-mode {
 	position: absolute;

@@ -51,14 +51,18 @@ function numbersChoice (number) {
 		ACChoice();
 		clearBoard = "";
 	}
-	console.log(document.getElementById("numbers-box").innerHTML);
+	// console.log(document.getElementById("numbers-box").innerHTML);
 	if (document.getElementById("numbers-box").innerHTML == "0") {
 		document.getElementById("numbers-box").innerHTML = "";
 	}
-	if (number == "Pi" || globalAction == "^") {
+	if (number == "Pi" || number == "e" || globalAction == "^") {
 		if (number == "Pi") {
 			number = Math.PI;
 			document.getElementById("numbers-box").innerHTML += "&Pi;";
+		}
+		if (number == "e") {
+			number = Math.E;
+			document.getElementById("numbers-box").innerHTML += "e";
 		}
 		if (globalAction == "^") {
 			document.getElementById("power-numbers-box").innerHTML += number;
@@ -94,6 +98,12 @@ function actionChoice (action) {
 		document.getElementById("numbers-box").innerHTML = "ANS";
 		number1 = Number(result);
 	}
+	if (number1 == "e") {
+		number1 = Math.E;
+	}
+	// if (number1 == "&Pi;") {
+	// 	number1 = Math.PI;
+	// }
 	if (action == "sqrt" || action == "sin" || action == "cos" || action == "tan") {
 		document.getElementById("numbers-box").innerHTML = "";
 	}

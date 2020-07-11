@@ -99,19 +99,20 @@
 
 #more-options-container {
 	background-color: #ddd;
-	height: 150px;
+	/*height: 150px;*/
 	width: 100%;
 	padding: 0;
 	position: relative;
-	width: 25px;
+	left: -94%;
+	/*width: 25px;*/
 	overflow: hidden;
 	float: left;
-	transition: width 1s;
+	transition: left 1s;
 }
 
 #more-options-container:hover {
-	width: 100%;
-	height: unset;
+	/*width: 100%;*/
+	left: 0;
 }
 
 #more-options {
@@ -123,11 +124,12 @@
 	display: inline-block;
 	background-color: red;
 	height: 100%;
-	font-size: 25px;
+	font-size: 1.7em;
 	position: absolute;
 	right: 0;
 	top: 0;
-	width: 25px;
+	width: 6%;
+	text-align: center;
 	/*border-radius: 0 10px 10px 0;*/
 }
 

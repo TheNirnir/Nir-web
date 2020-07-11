@@ -110,17 +110,16 @@
 	transition: left 1s;
 }
 
-#more-options-container:hover {
-	/*width: 100%;*/
+/*#more-options-container:hover {
 	left: 0;
-}
+}*/
 
 #more-options {
 	padding: 0 15px;
 	width: 90%;
 }
 
-#more-options-arrow {
+#more-options-open-arrow, #more-options-close-arrow {
 	display: inline-block;
 	background-color: red;
 	height: 100%;
@@ -133,8 +132,13 @@
 	/*border-radius: 0 10px 10px 0;*/
 }
 
-#more-options-arrow span {
+#more-options-open-arrow span, #more-options-close-arrow span {
 	line-height: 150px;
+}
+
+#more-options-close-arrow {
+	width: 0;
+	height: 0;
 }
 
 #options-container {

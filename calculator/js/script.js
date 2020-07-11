@@ -70,6 +70,11 @@ function actionChoice (action) {
 	else {
 		number1 = document.getElementById("numbers-screen").innerHTML;
 	}
+	if (action == "Sqrt") {
+		console.log("&Sqrt;");
+		action = "&Sqrt;";
+		document.getElementById("numbers-screen").innerHTML = "";
+	}
 	globalAction = action;
 	number2Start = "start";
 
@@ -97,6 +102,12 @@ function checkChoice () {
 	if (globalAction == "/") {
 		result = Number(number1) / Number(number2);
 	}
+	if (globalAction == "^") {
+		result = Math.pow(Number(number1), Number(number2));
+	}
+	if (globalAction == "&Sqrt;") {
+		result = Math.sqrt(Number(number2));
+	}
 
 	console.log(result);
 	document.getElementById("numbers-screen").innerHTML += "<br>= " + result;
@@ -117,6 +128,26 @@ function ACChoice () {
 	document.getElementById("numbers-screen").innerHTML = "0";
 	number1 = "0";
 	number2 = "0";
+}
+
+function openMoreOptionsBar () {
+	document.getElementById("more-options-container").style.left = 0;
+
+	document.getElementById("more-options-open-arrow").style.width = 0;
+	document.getElementById("more-options-open-arrow").style.height = 0;
+
+	document.getElementById("more-options-close-arrow").style.width = "6%";
+	document.getElementById("more-options-close-arrow").style.height = "100%";
+}
+
+function closeMoreOptionsBar () {
+	document.getElementById("more-options-container").style.left = "-94%";
+
+	document.getElementById("more-options-open-arrow").style.width = "6%";
+	document.getElementById("more-options-open-arrow").style.height = "100%";
+
+	document.getElementById("more-options-close-arrow").style.width = 0;
+	document.getElementById("more-options-close-arrow").style.height = 0;
 }
 
 // var str = "Hello World";

@@ -35,8 +35,13 @@
 					<div class="col-xs-2 for-padding"><div class="option" onclick="numbersChoice(3)"><div class="internal-option">3</div></div></div>
 					<div class="col-xs-2 for-padding"><div class="option" onclick="numbersChoice(0)"><div class="internal-option">0</div></div></div>
 				</div>
-				<div id="more-options-arrow">
+				<div id="more-options-open-arrow" onclick="openMoreOptionsBar()">
 					<span class="glyphicon glyphicon-menu-right"></span>
+					<!-- <span id="close-arrow" class="glyphicon glyphicon-menu-left"></span> -->
+				</div>
+				<div id="more-options-close-arrow" onclick="closeMoreOptionsBar()">
+					<!-- <span id="open-arrow" class="glyphicon glyphicon-menu-right"></span> -->
+					<span class="glyphicon glyphicon-menu-left"></span>
 				</div>
 			</div>
 			<div class="clearfix"></div>
@@ -64,6 +69,8 @@
 				<div class="col-xs-6 col-ht-xs-3 for-padding"><div class="option" onclick="actionChoice('-')"><div class="internal-option"><span class="glyphicon glyphicon-minus"></span></div></div></div>
 				<div class="col-xs-6 col-ht-xs-3 for-padding"><div class="option" onclick="actionChoice('X')"><div class="internal-option"><span class="glyphicon glyphicon-remove"></span></div></div></div>
 				<div class="col-xs-6 col-ht-xs-3 for-padding"><div class="option" onclick="actionChoice('/')"><div class="internal-option">/</div></div></div>
+				<div class="col-xs-6 col-ht-xs-3 for-padding"><div class="option" onclick="actionChoice('^')"><div class="internal-option">^</div></div></div>
+				<div class="col-xs-6 col-ht-xs-3 for-padding"><div class="option" onclick="actionChoice('Sqrt')"><div class="internal-option">&Sqrt;</div></div></div>
 				<div class="col-xs-6 col-ht-xs-3 for-padding"><div class="option" onclick="checkChoice()"><div class="internal-option"><!-- <span class="glyphicon glyphicon-ok"></span> -->=</div></div></div>
 			</div>
 

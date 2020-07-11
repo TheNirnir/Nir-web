@@ -4,6 +4,7 @@ var number2Start;
 var result = "";
 var globalAction = "";
 var clearBoard;
+var ANS;
 
 document.addEventListener("DOMContentLoaded", function (event) {
 	// var screenWidth = screen.width;
@@ -63,18 +64,26 @@ function numbersChoice (number) {
 	if (number2Start == "start") {
 		// console.log("start");
 		number2 += number;
+		if (number == "ANS") {
+			number2 = result;
+			ANS = "number2";
+		}
+	}
+	else {
+		if (number == "ANS") {
+			number1 = result;
+			ANS = "number1";
+		}
 	}
 }
 
 function actionChoice (action) {
+	number1 = document.getElementById("numbers-screen").innerHTML;
 	if (clearBoard == "start") {
 		ACChoice();
 		clearBoard = "";
 		document.getElementById("numbers-screen").innerHTML = "ANS";
 		number1 = Number(result);
-	}
-	else {
-		number1 = document.getElementById("numbers-screen").innerHTML;
 	}
 	if (action == "sqrt" || action == "sin" || action == "cos" || action == "tan") {
 		document.getElementById("numbers-screen").innerHTML = "";
@@ -96,6 +105,12 @@ function checkChoice () {
 	// 	number1 = parseInt(result);
 	// }
 	// console.log(number1 + " " + globalAction + " " + number2)
+	if (ANS == "number1") {
+		number1 = result;
+	}
+	if (ANS == "number2") {
+		number2 = result;
+	}
 	console.log(Number(number1) + " " + globalAction + " " + Number(number2))
 
 	if (globalAction == "+") {

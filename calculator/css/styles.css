@@ -141,6 +141,10 @@
 	height: 0;
 }
 
+#top-options {
+	background-color: #999;
+}
+
 #options-container {
 	background-color: #000;
 	width: 100%;

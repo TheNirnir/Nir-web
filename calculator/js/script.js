@@ -13,7 +13,7 @@ var quadraticEquationArray = ["","",""];
 var abc = 0;
 
 document.addEventListener("DOMContentLoaded", function (event) {
-	changeMode("Quadratic-equation");
+	changeMode("Regular"); //Quadratic-equation
 
 	// var screenWidth = screen.width;
 	// screenWidth += "px";

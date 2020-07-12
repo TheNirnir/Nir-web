@@ -154,12 +154,17 @@
 #quadratic-equation-numbers div span {
 	display: inline-block;
 	vertical-align: middle;
+	color: #000;
 }
 
 #quadratic-equation-numbers #quadratic-equation0, #quadratic-equation-numbers #quadratic-equation1, #quadratic-equation-numbers #quadratic-equation2 {
-	border: 1px solid #000;
+	/*border: 1px solid #000;*/
 	min-width: 40px;
 	min-height: 20px;
+}
+
+#quadratic-equation-numbers #quadratic-equation0 {
+	box-shadow: 0 0 10px #000;
 }
 
 #quadratic-equation-result div {
@@ -170,7 +175,7 @@
 	min-height: 10px;*/
 }
 
-#quadratic-equation-result #quadratic-equation-result-12 {
+#quadratic-equation-result #quadratic-equation-result-1, #quadratic-equation-result #quadratic-equation-result-2 {
 	font-size: 0.9em;
 	margin-right: 5px;
 }

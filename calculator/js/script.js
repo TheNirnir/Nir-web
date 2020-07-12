@@ -8,7 +8,7 @@ var globalAction = "";
 var clearBoard;
 var ANS;
 var globalDegOrRad = "rad";
-var globalMode = "quadratic-equation";
+var globalMode = "";
 var quadraticEquationArray = ["","",""];
 var abc = 0;
 
@@ -67,9 +67,11 @@ function numbersChoice (number) {
 		ACChoice();
 		clearBoard = "";
 	}
-	if (globalMode == "quadratic-equation") {
+	if (globalMode == "Quadratic-equation") {
+		console.log(number);
 		quadraticEquationArray[abc] += number;
 		document.getElementById("quadratic-equation"+abc).innerHTML += number;
+		document.getElementById("quadratic-equation"+abc).style.border = "none";
 	}
 	if (globalMode == "Regular") {
 		// console.log(document.getElementById("numbers-box").innerHTML);
@@ -152,29 +154,32 @@ function checkChoice () {
 	// 	number1 = parseInt(result);
 	// }
 	// console.log(number1 + " " + globalAction + " " + number2)
-	if (globalMode == "quadratic-equation") {
+	if (globalMode == "Quadratic-equation") {
 		if (abc == 2) {
+			document.getElementById("quadratic-equation"+abc).style.boxShadow = "none";
 			number1 = Number(quadraticEquationArray[0]);
 			number2 = Number(quadraticEquationArray[1]);
 			number3 = Number(quadraticEquationArray[2]);
 
-			result = number1 + number2 + number3;
+			// result = number1 + number2 + number3;
 
 			result = (-number2 + (Math.sqrt(Math.pow(number2, 2) - 4*number1*number3)))/(2*number1);
 			result2 = (-number2 - (Math.sqrt(Math.pow(number2, 2) - 4*number1*number3)))/(2*number1)
 
 			console.log(result + ", " + result2);
-			document.getElementById("quadratic-equation-result-X").innerHTML = "X";
-			document.getElementById("quadratic-equation-result-12").innerHTML = "1,2";
-			if (result == result2) {
-				document.getElementById("quadratic-equation-result-numbers").innerHTML = "= " + result;
-			}
-			else {
-				document.getElementById("quadratic-equation-result-numbers").innerHTML = "= " + result + ", " + result2;
+			document.getElementById("quadratic-equation-result-X1").innerHTML = "X";
+			document.getElementById("quadratic-equation-result-1").innerHTML = "1";
+			document.getElementById("quadratic-equation-result1-numbers").innerHTML = "= " + result;
+			if (result !== result2) {
+				document.getElementById("quadratic-equation-result-X2").innerHTML = "X";
+				document.getElementById("quadratic-equation-result-2").innerHTML = "2";
+				document.getElementById("quadratic-equation-result2-numbers").innerHTML = "= " + result2;
 			}
 		}
 		else {
+			document.getElementById("quadratic-equation"+abc).style.boxShadow = "none";
 			abc ++;
+			document.getElementById("quadratic-equation"+abc).style.boxShadow = "0 0 10px #000";
 		}
 	}
 	if (globalMode == "Regular") {

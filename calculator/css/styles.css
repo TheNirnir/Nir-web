@@ -74,7 +74,11 @@
 	font-weight: bold;
 	font-size: 1.1em;
 	margin-bottom: 10px;
-	padding: 5px 10px;
+	padding: 5px 7px;
+}
+
+#rad, #deg {
+	padding: 0 3px;
 }
 
 #rad {
@@ -83,7 +87,7 @@
 }
 
 #deg {
-	color: #999;
+	color: #555;
 }
 
 /*#The-container {

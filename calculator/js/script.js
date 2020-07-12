@@ -210,7 +210,7 @@ function DegOrRadFunction (DegOrRad) {
 
 	document.getElementById(DegOrRad).style.color = "#fff";
 	document.getElementById(DegOrRad).style.textShadow = "0 0 7px #fff";
-	document.getElementById(notDegOrRad).style.color = "#999";
+	document.getElementById(notDegOrRad).style.color = "#555";
 	document.getElementById(notDegOrRad).style.textShadow = "none";
 
 	closeModeOptions();

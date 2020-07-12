@@ -13,7 +13,7 @@ var quadraticEquationArray = ["","",""];
 var abc = 0;
 
 document.addEventListener("DOMContentLoaded", function (event) {
-	changeMode("Regular");
+	changeMode("Quadratic-equation");
 
 	// var screenWidth = screen.width;
 	// screenWidth += "px";
@@ -63,17 +63,21 @@ function changeMode (mode) {
 }
 
 function numbersChoice (number) {
-	if (clearBoard == "start") {
-		ACChoice();
-		clearBoard = "";
-	}
 	if (globalMode == "Quadratic-equation") {
+		if (clearBoard == "start") {
+			QuadraticEquationACChoice();
+			clearBoard = "";
+		}
 		console.log(number);
 		quadraticEquationArray[abc] += number;
 		document.getElementById("quadratic-equation"+abc).innerHTML += number;
-		document.getElementById("quadratic-equation"+abc).style.border = "none";
+		// document.getElementById("quadratic-equation"+abc).style.border = "none";
 	}
 	if (globalMode == "Regular") {
+		if (clearBoard == "start") {
+			RegularACChoice();
+			clearBoard = "";
+		}
 		// console.log(document.getElementById("numbers-box").innerHTML);
 		if (document.getElementById("numbers-box").innerHTML == "0") {
 			document.getElementById("numbers-box").innerHTML = "";
@@ -89,7 +93,7 @@ function numbersChoice (number) {
 			}
 			if (globalAction == "^") {
 				document.getElementById("power-numbers-box").innerHTML += number;
-				document.getElementById("power-numbers-box").style.border = "none";
+				// document.getElementById("power-numbers-box").style.border = "none";
 				document.getElementById("power-numbers-box").style.marginTop = "-5px";
 			}
 		}
@@ -117,7 +121,7 @@ function numbersChoice (number) {
 function actionChoice (action) {
 	number1 = document.getElementById("numbers-box").innerHTML;
 	if (clearBoard == "start") {
-		ACChoice();
+		RegularACChoice();
 		clearBoard = "";
 		document.getElementById("numbers-box").innerHTML = "ANS";
 		number1 = Number(result);
@@ -175,6 +179,7 @@ function checkChoice () {
 				document.getElementById("quadratic-equation-result-2").innerHTML = "2";
 				document.getElementById("quadratic-equation-result2-numbers").innerHTML = "= " + result2;
 			}
+			clearBoard = "start";
 		}
 		else {
 			document.getElementById("quadratic-equation"+abc).style.boxShadow = "none";
@@ -244,12 +249,41 @@ function deleteChoice () {
 }
 
 function ACChoice () {
+	if (globalMode == "Regular") {
+		RegularACChoice();
+	}
+	if (globalMode == "Quadratic-equation") {
+		QuadraticEquationACChoice();
+	}
+}
+
+function RegularACChoice () {
 	document.getElementById("numbers-box").innerHTML = "0";
 	document.getElementById("power-numbers-box").innerHTML = "";
 	document.getElementById("result-box").innerHTML = "";
 	number1 = "0";
 	number2 = "0";
 	globalAction = "";
+}
+
+function QuadraticEquationACChoice () {
+	for (var i = 0; i < quadraticEquationArray.length;) {
+		quadraticEquationArray[i] = "";
+		i++;
+	}
+	abc = 0;
+	document.getElementById("quadratic-equation0").innerHTML = "";
+	document.getElementById("quadratic-equation1").innerHTML = "";
+	document.getElementById("quadratic-equation2").innerHTML = "";
+
+	document.getElementById("quadratic-equation-result-X1").innerHTML = "";
+	document.getElementById("quadratic-equation-result-1").innerHTML = "";
+	document.getElementById("quadratic-equation-result1-numbers").innerHTML = "";
+	document.getElementById("quadratic-equation-result-X2").innerHTML = "";
+	document.getElementById("quadratic-equation-result-2").innerHTML = "";
+	document.getElementById("quadratic-equation-result2-numbers").innerHTML = "";
+
+	document.getElementById("quadratic-equation0").style.boxShadow = "0 0 10px #000";
 }
 
 function DegOrRadFunction (DegOrRad) {

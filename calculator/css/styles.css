@@ -134,6 +134,47 @@
 	margin-left: 4px;
 }
 
+#quadratic-equation-abc div {
+	text-align: center;
+	font-size: 1.7em;
+	font-weight: bold;
+	color: #2e5cb8;
+}
+
+#quadratic-equation-numbers {
+	/*padding-top: 10px;*/
+	margin: 15px auto;
+}
+
+#quadratic-equation-numbers div {
+	text-align: center;
+	font-size: 1.3em;
+}
+
+#quadratic-equation-numbers div span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#quadratic-equation-numbers #quadratic-equation0, #quadratic-equation-numbers #quadratic-equation1, #quadratic-equation-numbers #quadratic-equation2 {
+	border: 1px solid #000;
+	min-width: 40px;
+	min-height: 20px;
+}
+
+#quadratic-equation-result div {
+	display: inline-block;
+	font-size: 1.5em;
+/*	border: 2px solid #000;
+	min-width: 10px;
+	min-height: 10px;*/
+}
+
+#quadratic-equation-result #quadratic-equation-result-12 {
+	font-size: 0.9em;
+	margin-right: 5px;
+}
+
 #all-options-container {
 	position: absolute;
 	bottom: 0;

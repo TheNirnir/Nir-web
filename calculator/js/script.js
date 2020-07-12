@@ -1,13 +1,20 @@
 var number1 = "";
 var number2 = "";
+var number3 = "";
 var number2Start;
 var result = "";
+var result2 = "";
 var globalAction = "";
 var clearBoard;
 var ANS;
 var globalDegOrRad = "rad";
+var globalMode = "quadratic-equation";
+var quadraticEquationArray = ["","",""];
+var abc = 0;
 
 document.addEventListener("DOMContentLoaded", function (event) {
+	changeMode("Regular");
+
 	// var screenWidth = screen.width;
 	// screenWidth += "px";
 
@@ -46,46 +53,61 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	// document.getElementsByClassName("internal-option")[0].style.paddingTop = internalOptionPadding;
 });
 
+function changeMode (mode) {
+	$ajaxUtils.sendGetRequest("snippets/" + mode + "-mode-snippet.html", function (responseText) {
+			document.querySelector("#output-container").innerHTML = responseText;
+		},
+		false);
+	globalMode = mode;
+	closeModeOptions();
+}
+
 function numbersChoice (number) {
 	if (clearBoard == "start") {
 		ACChoice();
 		clearBoard = "";
 	}
-	// console.log(document.getElementById("numbers-box").innerHTML);
-	if (document.getElementById("numbers-box").innerHTML == "0") {
-		document.getElementById("numbers-box").innerHTML = "";
+	if (globalMode == "quadratic-equation") {
+		quadraticEquationArray[abc] += number;
+		document.getElementById("quadratic-equation"+abc).innerHTML += number;
 	}
-	if (number == "Pi" || number == "e" || globalAction == "^") {
-		if (number == "Pi") {
-			number = Math.PI;
-			document.getElementById("numbers-box").innerHTML += "&Pi;";
+	if (globalMode == "Regular") {
+		// console.log(document.getElementById("numbers-box").innerHTML);
+		if (document.getElementById("numbers-box").innerHTML == "0") {
+			document.getElementById("numbers-box").innerHTML = "";
 		}
-		if (number == "e") {
-			number = Math.E;
-			document.getElementById("numbers-box").innerHTML += "e";
+		if (number == "Pi" || number == "e" || globalAction == "^") {
+			if (number == "Pi") {
+				number = Math.PI;
+				document.getElementById("numbers-box").innerHTML += "&Pi;";
+			}
+			if (number == "e") {
+				number = Math.E;
+				document.getElementById("numbers-box").innerHTML += "e";
+			}
+			if (globalAction == "^") {
+				document.getElementById("power-numbers-box").innerHTML += number;
+				document.getElementById("power-numbers-box").style.border = "none";
+				document.getElementById("power-numbers-box").style.marginTop = "-5px";
+			}
 		}
-		if (globalAction == "^") {
-			document.getElementById("power-numbers-box").innerHTML += number;
-			document.getElementById("power-numbers-box").style.border = "none";
-			document.getElementById("power-numbers-box").style.marginTop = "-5px";
+		else {
+			document.getElementById("numbers-box").innerHTML += number;
 		}
-	}
-	else {
-		document.getElementById("numbers-box").innerHTML += number;
-	}
-	console.log(number);
-	if (number2Start == "start") {
-		// console.log("start");
-		number2 += number;
-		if (number == "ANS") {
-			number2 = result;
-			ANS = "number2";
+		console.log(number);
+		if (number2Start == "start") {
+			// console.log("start");
+			number2 += number;
+			if (number == "ANS") {
+				number2 = result;
+				ANS = "number2";
+			}
 		}
-	}
-	else {
-		if (number == "ANS") {
-			number1 = result;
-			ANS = "number1";
+		else {
+			if (number == "ANS") {
+				number1 = result;
+				ANS = "number1";
+			}
 		}
 	}
 }
@@ -104,7 +126,7 @@ function actionChoice (action) {
 	// if (number1 == "&Pi;") {
 	// 	number1 = Math.PI;
 	// }
-	if (action == "sqrt" || action == "sin" || action == "cos" || action == "tan") {
+	if (action == "Sqrt" || action == "sin" || action == "cos" || action == "tan") {
 		document.getElementById("numbers-box").innerHTML = "";
 	}
 	if (action == "Sqrt") {
@@ -130,54 +152,80 @@ function checkChoice () {
 	// 	number1 = parseInt(result);
 	// }
 	// console.log(number1 + " " + globalAction + " " + number2)
-	if (ANS == "number1") {
-		number1 = result;
-	}
-	if (ANS == "number2") {
-		number2 = result;
-	}
-	console.log(Number(number1) + " " + globalAction + " " + Number(number2))
+	if (globalMode == "quadratic-equation") {
+		if (abc == 2) {
+			number1 = Number(quadraticEquationArray[0]);
+			number2 = Number(quadraticEquationArray[1]);
+			number3 = Number(quadraticEquationArray[2]);
 
-	if (globalAction == "sin" || globalAction == "cos" || globalAction == "tan") {
-		if (globalDegOrRad == "deg") {
-			number2 = number2*Math.PI/180;
+			result = number1 + number2 + number3;
+
+			result = (-number2 + (Math.sqrt(Math.pow(number2, 2) - 4*number1*number3)))/(2*number1);
+			result2 = (-number2 - (Math.sqrt(Math.pow(number2, 2) - 4*number1*number3)))/(2*number1)
+
+			console.log(result + ", " + result2);
+			document.getElementById("quadratic-equation-result-X").innerHTML = "X";
+			document.getElementById("quadratic-equation-result-12").innerHTML = "1,2";
+			if (result == result2) {
+				document.getElementById("quadratic-equation-result-numbers").innerHTML = "= " + result;
+			}
+			else {
+				document.getElementById("quadratic-equation-result-numbers").innerHTML = "= " + result + ", " + result2;
+			}
+		}
+		else {
+			abc ++;
 		}
 	}
+	if (globalMode == "Regular") {
+		if (ANS == "number1") {
+			number1 = result;
+		}
+		if (ANS == "number2") {
+			number2 = result;
+		}
+		console.log(Number(number1) + " " + globalAction + " " + Number(number2))
 
-	if (globalAction == "+") {
-		result = Number(number1) + Number(number2);
-	}
-	if (globalAction == "-") {
-		result = Number(number1) - Number(number2);
-	}
-	if (globalAction == "X") {
-		result = Number(number1) * Number(number2);
-	}
-	if (globalAction == "/") {
-		result = Number(number1) / Number(number2);
-	}
-	if (globalAction == "^") {
-		result = Math.pow(Number(number1), Number(number2));
-	}
-	if (globalAction == "&Sqrt;") {
-		result = Math.sqrt(Number(number2));
-	}
-	if (globalAction == "sin") {
-		result = Math.sin(Number(number2));
-	}
-	if (globalAction == "cos") {
-		result = Math.cos(Number(number2));
-	}
-	if (globalAction == "tan") {
-		result = (Math.sin(Number(number2)))/(Math.cos(Number(number2)));
-	}
+		if (globalAction == "sin" || globalAction == "cos" || globalAction == "tan") {
+			if (globalDegOrRad == "deg") {
+				number2 = number2*Math.PI/180;
+			}
+		}
 
-	console.log(result);
-	// var resultToShow = Math.round(result*Math.pow(10, 10))/Math.pow(10, 10);
-	// document.getElementById("numbers-box").innerHTML += "<br>= " + resultToShow;
-	result = Math.round(result*Math.pow(10, 10))/Math.pow(10, 10);
-	document.getElementById("result-box").innerHTML += "= " + result;
-	clearBoard = "start";
+		if (globalAction == "+") {
+			result = Number(number1) + Number(number2);
+		}
+		if (globalAction == "-") {
+			result = Number(number1) - Number(number2);
+		}
+		if (globalAction == "X") {
+			result = Number(number1) * Number(number2);
+		}
+		if (globalAction == "/") {
+			result = Number(number1) / Number(number2);
+		}
+		if (globalAction == "^") {
+			result = Math.pow(Number(number1), Number(number2));
+		}
+		if (globalAction == "&Sqrt;") {
+			result = Math.sqrt(Number(number2));
+		}
+		if (globalAction == "sin") {
+			result = Math.sin(Number(number2));
+		}
+		if (globalAction == "cos") {
+			result = Math.cos(Number(number2));
+		}
+		if (globalAction == "tan") {
+			result = (Math.sin(Number(number2)))/(Math.cos(Number(number2)));
+		}
+		console.log(result);
+		// var resultToShow = Math.round(result*Math.pow(10, 10))/Math.pow(10, 10);
+		// document.getElementById("numbers-box").innerHTML += "<br>= " + resultToShow;
+		result = Math.round(result*Math.pow(10, 10))/Math.pow(10, 10);
+		document.getElementById("result-box").innerHTML += "= " + result;
+		clearBoard = "start";
+	}
 }
 
 function deleteChoice () {

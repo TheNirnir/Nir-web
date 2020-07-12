@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/ajax-utils2.js"></script>
 	<script src="js/script.js"></script>
 </head>
 <body>
@@ -16,16 +17,35 @@
 	<div id="The-container">
 
 		<div id="current-modes-container" class="container">
-			<span id="rad">R</span>
 			<span id="deg">D</span>
+			<span id="rad">R</span>
 		</div>
 
 		<div id="output-container" class="container">
-			<div id="numbers-screen">
+			<!-- <div id="numbers-screen">
 				<div id="numbers-box">0</div>
 				<div id="power-numbers-box"></div>
 				<br><div id="result-box"></div>
+			</div> -->
+
+			<!-- <div id="quadratic-equation-abc" class="container">
+				<div class="col-xs-4">a</div>
+				<div class="col-xs-4">b</div>
+				<div class="col-xs-4">c</div>
 			</div>
+			<div class="clearfix"></div>
+			<div id="quadratic-equation-numbers" class="container">
+				<div class="col-xs-4"><span id="quadratic-equation0"></span></div>
+				<div class="col-xs-4"><span id="quadratic-equation1"></span></div>
+				<div class="col-xs-4"><span id="quadratic-equation2"></span></div>
+			</div>
+			<div class="clearfix"></div>
+			<div id="quadratic-equation-result" class="container">
+				<div id="quadratic-equation-result-X"></div>
+				<div id="quadratic-equation-result-12"></div>
+				<div id="quadratic-equation-result-numbers"></div>
+			</div> -->
+
 		</div>
 
 		<div id="all-options-container" class="container">
@@ -117,7 +137,8 @@
 							<h1>mode</h1>
 							<div class="col-xs-6 for-padding"><div class="option" onclick="DegOrRadFunction('deg')"><div class="internal-option">deg</div></div></div>
 							<div class="col-xs-6 for-padding"><div class="option" onclick="DegOrRadFunction('rad')"><div class="internal-option">rad</div></div></div>
-							<div class="col-xs-12 for-padding"><div class="option" onclick="actionChoice('tan')"><div class="internal-option">aX<div id="power-2-box">2</div>+bX+c</div></div></div>
+							<div class="col-xs-12 for-padding"><div class="option" onclick="changeMode('Regular')"><div class="internal-option">Regular</div></div></div>
+							<div class="col-xs-12 for-padding"><div class="option" onclick="changeMode('Quadratic-equation')"><div class="internal-option">quadratic-equation<!-- aX<div id="power-2-box">2</div>+bX+c --></div></div></div>
 						</div>
 					</div>
 	<div id="mode-blur"></div>

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	background-color: #38e0f2;
 	font-family: 'Comic Neue', cursive;

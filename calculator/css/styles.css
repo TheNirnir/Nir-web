@@ -112,7 +112,7 @@
 	/*border: 2px solid #000;*/
 }
 
-#numbers-box {
+#numbers-box, #numbers-box2 {
 	/*border: 2px solid #000;*/
 	display: inline-block;
 }

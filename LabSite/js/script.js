@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 	HomePageTransformation('Home');
+	closeAccess();
 });
 
 var i = 1;
@@ -713,3 +714,25 @@ function touchswipeStart () {
 	  });
 	});
 }
+
+//////////////////Accessabilty///////////////////
+// function openAccess() {
+// 	document.getElementById("access-icon").style.left = document.getElementById("access-options-container").offsetWidth + "px";
+// 	document.getElementById("access-options-container").style.left = 0;
+// }
+// function closeAccess() {
+// 	document.getElementById("access-options-container").style.left = "-" + document.getElementById("access-options-container").offsetWidth + "px";
+// 	document.getElementById("access-icon").style.left = 0;
+// }
+function openAccess() {
+	document.getElementById("access-icon").style.left = "250px";
+	document.getElementById("access-options-container").style.left = 0;
+}
+function closeAccess() {
+	document.getElementById("access-options-container").style.left = "-250px";
+	document.getElementById("access-icon").style.left = 0;
+	// for (var i = 0; i < document.getElementsByClassName("access-option").length; i++) {
+	// 	document.getElementsByClassName("access-option")[i].style.left = "-225px"
+	// }
+}
+//////////////////end of accessabilty///////////////////

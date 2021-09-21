@@ -7,7 +7,77 @@ body {
 	font-family: 'Comic Neue', cursive;
 }
 
+/*****access*****/
+#access-container {
+	
+}
+
+#access-icon {
+	background-image: url("../images/access_icon2.png");
+	background-color: #ccdbee;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	top: 100px;
+	left: 0px;
+	width: 60px;
+	height: 70px;
+	border-radius: 0 100px 100px 0;
+	z-index: 100;
+	transition: left ease 2s;
+}
+
+/*#access-icon:hover {
+	left: 50px;
+}*/
+
+#access-options-container {
+	background-color: #ccdbee;
+	width: 250px;
+	height: 200px;
+	position: fixed;
+	top: 100px;
+	z-index: 100;
+	transition: left ease 2s;
+}
+
+#access-container .left-border-access-option {
+	border: 1px #000 solid;
+	width: 87px;
+	height: 87px;
+	margin-top: 25px;
+	margin-left: 25px;
+	padding: 5px;
+}
+
+#access-container .right-border-access-option {
+	border: 1px #000 solid;
+	width: 87px;
+	height: 87px;
+	margin-top: -87px;
+	margin-left: 138px;
+	padding: 5px;
+}
+
+#access-container .access-option {
+	width: 75px;
+	height: 75px;
+	border: 2px #000 solid;
+	padding: 3px;
+}
+
+#access-container .access-option-text {
+	text-align: center;
+	padding-top: 5px;
+}
+/*****end of access*****/
+
 /*****header*****/
+.navbar {
+	border-radius: 0;
+}
+
 #header-row {
 	background-color: white;
 	width: 100%;

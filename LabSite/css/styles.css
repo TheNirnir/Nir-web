@@ -40,6 +40,7 @@ body {
 	top: 100px;
 	z-index: 100;
 	transition: left ease 2s;
+	border-radius: 0 0 50px 0;
 }
 
 #access-container .left-border-access-option {

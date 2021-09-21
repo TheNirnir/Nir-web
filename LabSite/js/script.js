@@ -3,12 +3,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	closeAccess();
 });
 
-var fontSize = 1;
-var gPageName = "Home";
-var linkshighlighted = false;
-
-var aboutAudio = new Audio("../audio/about-audio.mp3");
-
 var i = 1;
 var MainNewsNumber = newsArray.length;
 
@@ -848,6 +842,13 @@ function touchswipeStart () {
 }
 
 //////////////////Accessabilty///////////////////
+var fontSize = 1;
+var gPageName = "Home";
+var linkshighlighted = false;
+var brightCon = false;
+var darkCon = false;
+
+var aboutAudio = new Audio("../audio/about-audio.mp3");
 // function openAccess() {
 // 	document.getElementById("access-icon").style.left = document.getElementById("access-options-container").offsetWidth + "px";
 // 	document.getElementById("access-options-container").style.left = 0;
@@ -904,20 +905,45 @@ function highlightLinks() {
 }
 
 function brightContrast() {
-	document.querySelectorAll("body")[0].style.background = "#fff";
-	document.querySelectorAll("footer")[0].style.backgroundColor = "#fff";
-	document.querySelectorAll("footer")[0].style.borderTop = "2px #000 solid";
-	document.querySelectorAll("nav")[0].style.borderBottom = "2px #000 solid";
-	// document.getElementById("header-row").style.background = "#dde3ff";
+	darkCon = false;
+	if (!brightCon) {
+		document.querySelectorAll("body")[0].style.background = "#fff";
+		document.getElementById("main-content").style.color = "#000";
+		document.querySelectorAll("footer")[0].style.backgroundColor = "#fff";
+		document.querySelectorAll("footer")[0].style.borderTop = "2px #000 solid";
+		document.querySelectorAll("footer")[0].style.color = "#000";
+		document.querySelectorAll("nav")[0].style.borderBottom = "2px #000 solid";
+		brightCon = true;
+	}
+	else {
+		document.querySelectorAll("body")[0].style.background = "#38e0f2";
+		document.getElementById("main-content").style.color = "#000";
+		document.querySelectorAll("footer")[0].style.backgroundColor = "#fff";
+		document.querySelectorAll("footer")[0].style.borderTop = "0px";
+		document.querySelectorAll("footer")[0].style.color = "#000";
+		document.querySelectorAll("nav")[0].style.borderBottom = "0px";
+		brightCon = false;
+	}
 }
 
 function darkContrast() {
-	document.querySelectorAll("body")[0].style.background = "#000";
-	document.getElementById("main-content").style.color = "#fff";
-	document.querySelectorAll("footer")[0].style.backgroundColor = "#000";
-	document.querySelectorAll("footer")[0].style.color = "#fff";
-	document.querySelectorAll("footer")[0].style.borderTop = "2px #fff solid";
-	// document.getElementById("header-row").style.background = "#dde3ff";
+	brightCon = false;
+	if (!darkCon) {
+		document.querySelectorAll("body")[0].style.background = "#000";
+		document.getElementById("main-content").style.color = "#fff";
+		document.querySelectorAll("footer")[0].style.backgroundColor = "#000";
+		document.querySelectorAll("footer")[0].style.color = "#fff";
+		document.querySelectorAll("footer")[0].style.borderTop = "2px #fff solid";
+		darkCon = true;
+	}
+	else {
+		document.querySelectorAll("body")[0].style.background = "#38e0f2";
+		document.getElementById("main-content").style.color = "#000";
+		document.querySelectorAll("footer")[0].style.backgroundColor = "#fff";
+		document.querySelectorAll("footer")[0].style.color = "#000";
+		document.querySelectorAll("footer")[0].style.borderTop = "0px";
+		darkCon = false;
+	}
 }
 function playAbout() {
 	aboutAudio.play();

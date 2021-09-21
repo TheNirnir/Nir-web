@@ -7,6 +7,8 @@ var fontSize = 1;
 var gPageName = "Home";
 var linkshighlighted = false;
 
+var aboutAudio = new Audio("../audio/about-audio.mp3");
+
 var i = 1;
 var MainNewsNumber = newsArray.length;
 
@@ -916,5 +918,8 @@ function darkContrast() {
 	document.querySelectorAll("footer")[0].style.color = "#fff";
 	document.querySelectorAll("footer")[0].style.borderTop = "2px #fff solid";
 	// document.getElementById("header-row").style.background = "#dde3ff";
+}
+function playAbout() {
+	aboutAudio.play();
 }
 //////////////////end of accessabilty///////////////////

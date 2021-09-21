@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 var fontSize = 1;
 var gPageName = "Home";
+var linkshighlighted = false;
 
 var i = 1;
 var MainNewsNumber = newsArray.length;
@@ -35,6 +36,12 @@ var MediaContinueHTML = "snippets/Media-continue-snippet.html";
 
 function pageTransformation (pageName) {
 	gPageName = pageName;
+	document.getElementById("main-content").style.fontSize = fontSize + "em";
+	if (linkshighlighted) {
+		setTimeout(function() {
+	                highlightLinks();
+	        }, 100);
+	}
 	i = 1;
 	$ajaxUtils.sendGetRequest("snippets/" + pageName + "-snippet.html", function (responseText) {
 			document.querySelector("#main-content").innerHTML = responseText;
@@ -65,6 +72,12 @@ function pageTransformation (pageName) {
 /////////////Every page call function/////////////////
 function currentLabMembersPageTransformation (pageName) {
 	gPageName = pageName;
+	document.getElementById("main-content").style.fontSize = fontSize + "em";
+	if (linkshighlighted) {
+		setTimeout(function() {
+	                highlightLinks();
+	        }, 100);
+	}
 	pageOnChanging(pageName);
 	HideButton();
 	buildAndShowCurrentLabMembersPage(currentMembersArray);
@@ -72,6 +85,12 @@ function currentLabMembersPageTransformation (pageName) {
 
 function formerLabMembersPageTransformation (pageName) {
 	gPageName = pageName;
+	document.getElementById("main-content").style.fontSize = fontSize + "em";
+	if (linkshighlighted) {
+		setTimeout(function() {
+	                highlightLinks();
+	        }, 100);
+	}
 	pageOnChanging(pageName);
 	HideButton();
 	buildAndShowFormerLabMembersPage(formerMembersArray);
@@ -79,6 +98,12 @@ function formerLabMembersPageTransformation (pageName) {
 
 function newsPageTransformation (pageName) {
 	gPageName = pageName;
+	document.getElementById("main-content").style.fontSize = fontSize + "em";
+	if (linkshighlighted) {
+		setTimeout(function() {
+	                highlightLinks();
+	        }, 100);
+	}
 	pageOnChanging(pageName);
 	HideButton();
 	buildAndShowNewsPage(newsArray, MainNewsNumber);
@@ -86,6 +111,12 @@ function newsPageTransformation (pageName) {
 
 function mediaPageTransformation (pageName) {
 	gPageName = pageName;
+	document.getElementById("main-content").style.fontSize = fontSize + "em";
+	if (linkshighlighted) {
+		setTimeout(function() {
+	                highlightLinks();
+	        }, 100);
+	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowMediaPage(mediaObj);
@@ -93,6 +124,12 @@ function mediaPageTransformation (pageName) {
 
 function publicationsPageTransformation (pageName) {
 	gPageName = pageName;
+	document.getElementById("main-content").style.fontSize = fontSize + "em";
+	if (linkshighlighted) {
+		setTimeout(function() {
+	                highlightLinks();
+	        }, 100);
+	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowPublicationsPage(PublicationsObj);
@@ -100,6 +137,12 @@ function publicationsPageTransformation (pageName) {
 
 function FormerPhDStudentsPageTransformation (pageName) {
 	gPageName = pageName;
+	document.getElementById("main-content").style.fontSize = fontSize + "em";
+	if (linkshighlighted) {
+		setTimeout(function() {
+	                highlightLinks();
+	        }, 100);
+	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowFormerStudentsPage (FormerPhDStudentsObj);
@@ -107,6 +150,12 @@ function FormerPhDStudentsPageTransformation (pageName) {
 
 function FormerMAStudentsPageTransformation (pageName) {
 	gPageName = pageName;
+	document.getElementById("main-content").style.fontSize = fontSize + "em";
+	if (linkshighlighted) {
+		setTimeout(function() {
+	                highlightLinks();
+	        }, 100);
+	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowFormerStudentsPage (FormerMAStudentsObj);
@@ -114,6 +163,12 @@ function FormerMAStudentsPageTransformation (pageName) {
 
 function AboutPageTransformation (pageName) {
 	gPageName = pageName;
+	document.getElementById("main-content").style.fontSize = fontSize + "em";
+	if (linkshighlighted) {
+		setTimeout(function() {
+	                highlightLinks();
+	        }, 100);
+	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowAboutPage (AboutObj);
@@ -121,6 +176,12 @@ function AboutPageTransformation (pageName) {
 
 function ResearchTransitionToParenthoodPageTransformation (pageName) {
 	gPageName = pageName;
+	document.getElementById("main-content").style.fontSize = fontSize + "em";
+	if (linkshighlighted) {
+		setTimeout(function() {
+	                highlightLinks();
+	        }, 100);
+	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchTransitionToParenthoodObj);
@@ -128,6 +189,12 @@ function ResearchTransitionToParenthoodPageTransformation (pageName) {
 
 function ResearchMOSTPageTransformation (pageName) {
 	gPageName = pageName;
+	document.getElementById("main-content").style.fontSize = fontSize + "em";
+	if (linkshighlighted) {
+		setTimeout(function() {
+	                highlightLinks();
+	        }, 100);
+	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchMOSTObj);
@@ -135,6 +202,12 @@ function ResearchMOSTPageTransformation (pageName) {
 
 function ResearchPOWERPageTransformation (pageName) {
 	gPageName = pageName;
+	document.getElementById("main-content").style.fontSize = fontSize + "em";
+	if (linkshighlighted) {
+		setTimeout(function() {
+	                highlightLinks();
+	        }, 100);
+	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchPOWERObj);
@@ -142,6 +215,12 @@ function ResearchPOWERPageTransformation (pageName) {
 
 function ResearchMDSIPageTransformation (pageName) {
 	gPageName = pageName;
+	document.getElementById("main-content").style.fontSize = fontSize + "em";
+	if (linkshighlighted) {
+		setTimeout(function() {
+	                highlightLinks();
+	        }, 100);
+	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchMDSIObj);
@@ -149,6 +228,12 @@ function ResearchMDSIPageTransformation (pageName) {
 
 function ResearchRiskyDrivingPageTransformation (pageName) {
 	gPageName = pageName;
+	document.getElementById("main-content").style.fontSize = fontSize + "em";
+	if (linkshighlighted) {
+		setTimeout(function() {
+	                highlightLinks();
+	        }, 100);
+	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchRiskyDrivingObj);
@@ -156,6 +241,12 @@ function ResearchRiskyDrivingPageTransformation (pageName) {
 
 function ResearchUltraOrthodoxPageTransformation (pageName) {
 	gPageName = pageName;
+	document.getElementById("main-content").style.fontSize = fontSize + "em";
+	if (linkshighlighted) {
+		setTimeout(function() {
+	                highlightLinks();
+	        }, 100);
+	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchUltraOrthodoxObj);
@@ -163,6 +254,12 @@ function ResearchUltraOrthodoxPageTransformation (pageName) {
 
 function ResearchTMTPageTransformation (pageName) {
 	gPageName = pageName;
+	document.getElementById("main-content").style.fontSize = fontSize + "em";
+	if (linkshighlighted) {
+		setTimeout(function() {
+	                highlightLinks();
+	        }, 100);
+	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchTMTObj);
@@ -170,6 +267,12 @@ function ResearchTMTPageTransformation (pageName) {
 
 function ResearchCovid19PageTransformation (pageName) {
 	gPageName = pageName;
+	document.getElementById("main-content").style.fontSize = fontSize + "em";
+	if (linkshighlighted) {
+		setTimeout(function() {
+	                highlightLinks();
+	        }, 100);
+	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchCovid19Obj);
@@ -177,6 +280,12 @@ function ResearchCovid19PageTransformation (pageName) {
 
 function HomePageTransformation (pageName) {
 	gPageName = pageName;
+	document.getElementById("main-content").style.fontSize = "1em";
+	if (linkshighlighted) {
+		setTimeout(function() {
+	                highlightLinks();
+	        }, 100);
+	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowHomePage ();
@@ -749,6 +858,7 @@ function openAccess() {
 	document.getElementById("access-icon").style.left = "250px";
 	document.getElementById("access-options-container").style.left = 0;
 }
+
 function closeAccess() {
 	document.getElementById("access-options-container").style.left = "-250px";
 	document.getElementById("access-icon").style.left = 0;
@@ -756,6 +866,7 @@ function closeAccess() {
 	// 	document.getElementsByClassName("access-option")[i].style.left = "-225px"
 	// }
 }
+
 function largerText() {
 	if (gPageName != "Home") {
 		fontSize += 0.1;
@@ -767,5 +878,43 @@ function smallerText() {
 		fontSize -= 0.1;
 		document.getElementById("main-content").style.fontSize = fontSize + "em";
 	}
+}
+
+function highlightLinks() {
+	// for (var i = 0; i < document.getElementsByClassName("link").length; i++) {
+	// 	document.getElementsByClassName("link")[i].style.setProperty('textDecoration', 'underline', 'important');
+	// }
+	if (linkshighlighted) {
+		for (var i = 0; i < document.querySelectorAll("a").length; i++) {
+			document.querySelectorAll("a")[i].style.textDecoration = "";
+		}
+		linkshighlighted = false;
+	}
+	else {
+		for (var i = 0; i < document.querySelectorAll("a").length; i++) {
+			document.querySelectorAll("a")[i].style.textDecoration = "underline";
+		}
+		linkshighlighted = true;
+	}
+	// console.log(document.querySelectorAll("a").length);
+	// document.querySelectorAll("a").style.setProperty('textDecoration', 'underline', 'important');
+	// document.getElementById("home-news").style.textDecoration = "underline";
+}
+
+function brightContrast() {
+	document.querySelectorAll("body")[0].style.background = "#fff";
+	document.querySelectorAll("footer")[0].style.backgroundColor = "#fff";
+	document.querySelectorAll("footer")[0].style.borderTop = "2px #000 solid";
+	document.querySelectorAll("nav")[0].style.borderBottom = "2px #000 solid";
+	// document.getElementById("header-row").style.background = "#dde3ff";
+}
+
+function darkContrast() {
+	document.querySelectorAll("body")[0].style.background = "#000";
+	document.getElementById("main-content").style.color = "#fff";
+	document.querySelectorAll("footer")[0].style.backgroundColor = "#000";
+	document.querySelectorAll("footer")[0].style.color = "#fff";
+	document.querySelectorAll("footer")[0].style.borderTop = "2px #fff solid";
+	// document.getElementById("header-row").style.background = "#dde3ff";
 }
 //////////////////end of accessabilty///////////////////

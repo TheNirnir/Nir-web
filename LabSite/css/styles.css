@@ -35,7 +35,7 @@ body {
 #access-options-container {
 	background-color: #ccdbee;
 	width: 250px;
-	height: 250px;
+	height: 380px;
 	position: fixed;
 	top: 100px;
 	z-index: 100;
@@ -78,6 +78,7 @@ body {
 #access-container .access-option-text {
 	text-align: center;
 	padding-top: 5px;
+	font-size: 0.9em;
 }
 /*****end of access*****/
 

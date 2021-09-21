@@ -107,11 +107,20 @@
 	<div id="access-container">
 		<div id="access-icon" onmouseover="openAccess()" onmouseleave="closeAccess()"></div>
 		<div id="access-options-container" onmouseover="openAccess()" onmouseleave="closeAccess()">
-			<div class="left-border-access-option">
+			<div class="border-access-option">
+				<img src="images/access_icon.png" id="big-text-option" class="access-option" onclick="largerText()">
+				<div id="big-text-text" class="access-option-text">larger text</div>
+			</div>
+			<div class="border-access-option">
+				<img src="images/access_icon.png" id="big-text-option" class="access-option" onclick="smallerText()">
+				<div id="big-text-text" class="access-option-text">smaller text</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="border-access-option">
 				<img src="images/access_icon.png" id="big-text-option" class="access-option">
 				<div id="big-text-text" class="access-option-text">bigger text</div>
 			</div>
-			<div class="right-border-access-option">
+			<div class="border-access-option">
 				<img src="images/access_icon.png" id="big-text-option" class="access-option">
 				<div id="big-text-text" class="access-option-text">smaller text</div>
 			</div>

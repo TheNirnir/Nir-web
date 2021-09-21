@@ -35,7 +35,7 @@ body {
 #access-options-container {
 	background-color: #ccdbee;
 	width: 250px;
-	height: 200px;
+	height: 250px;
 	position: fixed;
 	top: 100px;
 	z-index: 100;
@@ -43,24 +43,31 @@ body {
 	border-radius: 0 0 50px 0;
 }
 
-#access-container .left-border-access-option {
+#access-container .border-access-option {
 	border: 1px #000 solid;
 	width: 87px;
 	height: 87px;
 	margin-top: 25px;
 	margin-left: 25px;
 	padding: 5px;
+	float: left;
 }
 
-#access-container .right-border-access-option {
+#access-container .border-access-option:hover {
+	cursor: pointer;
+	box-shadow: 0 0 10px #000;
+}
+
+/*#access-container .right-border-access-option {
 	border: 1px #000 solid;
 	width: 87px;
 	height: 87px;
 	margin-top: -87px;
+	float: left;
 	margin-left: 138px;
 	padding: 5px;
 }
-
+*/
 #access-container .access-option {
 	width: 75px;
 	height: 75px;
@@ -212,6 +219,7 @@ button#navbarToggle {
 #main-content {
 	padding: 0px 15px 15px 15px;
 	margin-bottom: 10px;
+	font-size: 1em;
 }
 
 /*****home page*****/

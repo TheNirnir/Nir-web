@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	closeAccess();
 });
 
+var fontSize = 1;
+var gPageName = "Home";
+
 var i = 1;
 var MainNewsNumber = newsArray.length;
 
@@ -31,6 +34,7 @@ var MediaHTML = "snippets/Media-snippet.html";
 var MediaContinueHTML = "snippets/Media-continue-snippet.html";
 
 function pageTransformation (pageName) {
+	gPageName = pageName;
 	i = 1;
 	$ajaxUtils.sendGetRequest("snippets/" + pageName + "-snippet.html", function (responseText) {
 			document.querySelector("#main-content").innerHTML = responseText;
@@ -60,102 +64,119 @@ function pageTransformation (pageName) {
 
 /////////////Every page call function/////////////////
 function currentLabMembersPageTransformation (pageName) {
+	gPageName = pageName;
 	pageOnChanging(pageName);
 	HideButton();
 	buildAndShowCurrentLabMembersPage(currentMembersArray);
 }
 
 function formerLabMembersPageTransformation (pageName) {
+	gPageName = pageName;
 	pageOnChanging(pageName);
 	HideButton();
 	buildAndShowFormerLabMembersPage(formerMembersArray);
 }
 
 function newsPageTransformation (pageName) {
+	gPageName = pageName;
 	pageOnChanging(pageName);
 	HideButton();
 	buildAndShowNewsPage(newsArray, MainNewsNumber);
 }
 
 function mediaPageTransformation (pageName) {
+	gPageName = pageName;
     pageOnChanging(pageName);
     HideButton();
     buildAndShowMediaPage(mediaObj);
 }
 
 function publicationsPageTransformation (pageName) {
+	gPageName = pageName;
     pageOnChanging(pageName);
     HideButton();
     buildAndShowPublicationsPage(PublicationsObj);
 }
 
 function FormerPhDStudentsPageTransformation (pageName) {
+	gPageName = pageName;
     pageOnChanging(pageName);
     HideButton();
     buildAndShowFormerStudentsPage (FormerPhDStudentsObj);
 }
 
 function FormerMAStudentsPageTransformation (pageName) {
+	gPageName = pageName;
     pageOnChanging(pageName);
     HideButton();
     buildAndShowFormerStudentsPage (FormerMAStudentsObj);
 }
 
 function AboutPageTransformation (pageName) {
+	gPageName = pageName;
     pageOnChanging(pageName);
     HideButton();
     buildAndShowAboutPage (AboutObj);
 }
 
 function ResearchTransitionToParenthoodPageTransformation (pageName) {
+	gPageName = pageName;
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchTransitionToParenthoodObj);
 }
 
 function ResearchMOSTPageTransformation (pageName) {
+	gPageName = pageName;
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchMOSTObj);
 }
 
 function ResearchPOWERPageTransformation (pageName) {
+	gPageName = pageName;
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchPOWERObj);
 }
 
 function ResearchMDSIPageTransformation (pageName) {
+	gPageName = pageName;
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchMDSIObj);
 }
 
 function ResearchRiskyDrivingPageTransformation (pageName) {
+	gPageName = pageName;
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchRiskyDrivingObj);
 }
 
 function ResearchUltraOrthodoxPageTransformation (pageName) {
+	gPageName = pageName;
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchUltraOrthodoxObj);
 }
 
 function ResearchTMTPageTransformation (pageName) {
+	gPageName = pageName;
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchTMTObj);
 }
 
 function ResearchCovid19PageTransformation (pageName) {
+	gPageName = pageName;
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchCovid19Obj);
 }
 
 function HomePageTransformation (pageName) {
+	gPageName = pageName;
     pageOnChanging(pageName);
     HideButton();
     buildAndShowHomePage ();
@@ -734,5 +755,17 @@ function closeAccess() {
 	// for (var i = 0; i < document.getElementsByClassName("access-option").length; i++) {
 	// 	document.getElementsByClassName("access-option")[i].style.left = "-225px"
 	// }
+}
+function largerText() {
+	if (gPageName != "Home") {
+		fontSize += 0.1;
+		document.getElementById("main-content").style.fontSize = fontSize + "em";
+	}
+}
+function smallerText() {
+	if (gPageName != "Home") {
+		fontSize -= 0.1;
+		document.getElementById("main-content").style.fontSize = fontSize + "em";
+	}
 }
 //////////////////end of accessabilty///////////////////

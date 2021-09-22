@@ -21,11 +21,18 @@ body {
 	position: fixed;
 	top: 100px;
 	left: 0px;
-	width: 60px;
-	height: 70px;
+	width: 40px;
+	height: 50px;
 	border-radius: 0 100px 100px 0;
 	z-index: 100;
 	transition: left ease 2s;
+}
+
+#big-text-option, #small-text-option {
+	/*background-image: url("../images/x-sign.png");*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /*#access-icon:hover {

@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 	HomePageTransformation('Home');
 	closeAccess();
+	openAccess();
 });
 
 var i = 1;
@@ -31,13 +32,6 @@ var MediaHTML = "snippets/Media-snippet.html";
 var MediaContinueHTML = "snippets/Media-continue-snippet.html";
 
 function pageTransformation (pageName) {
-	gPageName = pageName;
-	document.getElementById("main-content").style.fontSize = fontSize + "em";
-	if (linkshighlighted) {
-		setTimeout(function() {
-	                highlightLinks();
-	        }, 100);
-	}
 	i = 1;
 	$ajaxUtils.sendGetRequest("snippets/" + pageName + "-snippet.html", function (responseText) {
 			document.querySelector("#main-content").innerHTML = responseText;
@@ -67,103 +61,53 @@ function pageTransformation (pageName) {
 
 /////////////Every page call function/////////////////
 function currentLabMembersPageTransformation (pageName) {
-	gPageName = pageName;
-	document.getElementById("main-content").style.fontSize = fontSize + "em";
-	if (linkshighlighted) {
-		setTimeout(function() {
-	                highlightLinks();
-	        }, 100);
-	}
+	// pageTransAcc(pageName);
 	pageOnChanging(pageName);
 	HideButton();
 	buildAndShowCurrentLabMembersPage(currentMembersArray);
 }
 
 function formerLabMembersPageTransformation (pageName) {
-	gPageName = pageName;
-	document.getElementById("main-content").style.fontSize = fontSize + "em";
-	if (linkshighlighted) {
-		setTimeout(function() {
-	                highlightLinks();
-	        }, 100);
-	}
 	pageOnChanging(pageName);
 	HideButton();
 	buildAndShowFormerLabMembersPage(formerMembersArray);
 }
 
 function newsPageTransformation (pageName) {
-	gPageName = pageName;
-	document.getElementById("main-content").style.fontSize = fontSize + "em";
-	if (linkshighlighted) {
-		setTimeout(function() {
-	                highlightLinks();
-	        }, 100);
-	}
 	pageOnChanging(pageName);
 	HideButton();
 	buildAndShowNewsPage(newsArray, MainNewsNumber);
 }
 
 function mediaPageTransformation (pageName) {
-	gPageName = pageName;
-	document.getElementById("main-content").style.fontSize = fontSize + "em";
-	if (linkshighlighted) {
-		setTimeout(function() {
-	                highlightLinks();
-	        }, 100);
-	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowMediaPage(mediaObj);
 }
 
 function publicationsPageTransformation (pageName) {
-	gPageName = pageName;
-	document.getElementById("main-content").style.fontSize = fontSize + "em";
-	if (linkshighlighted) {
-		setTimeout(function() {
-	                highlightLinks();
-	        }, 100);
-	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowPublicationsPage(PublicationsObj);
 }
 
 function FormerPhDStudentsPageTransformation (pageName) {
-	gPageName = pageName;
-	document.getElementById("main-content").style.fontSize = fontSize + "em";
-	if (linkshighlighted) {
-		setTimeout(function() {
-	                highlightLinks();
-	        }, 100);
-	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowFormerStudentsPage (FormerPhDStudentsObj);
 }
 
 function FormerMAStudentsPageTransformation (pageName) {
-	gPageName = pageName;
-	document.getElementById("main-content").style.fontSize = fontSize + "em";
-	if (linkshighlighted) {
-		setTimeout(function() {
-	                highlightLinks();
-	        }, 100);
-	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowFormerStudentsPage (FormerMAStudentsObj);
 }
 
 function AboutPageTransformation (pageName) {
-	gPageName = pageName;
-	document.getElementById("main-content").style.fontSize = fontSize + "em";
 	if (linkshighlighted) {
 		setTimeout(function() {
 	                highlightLinks();
-	        }, 100);
+	        }, 1000);
 	}
     pageOnChanging(pageName);
     HideButton();
@@ -171,117 +115,57 @@ function AboutPageTransformation (pageName) {
 }
 
 function ResearchTransitionToParenthoodPageTransformation (pageName) {
-	gPageName = pageName;
-	document.getElementById("main-content").style.fontSize = fontSize + "em";
-	if (linkshighlighted) {
-		setTimeout(function() {
-	                highlightLinks();
-	        }, 100);
-	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchTransitionToParenthoodObj);
 }
 
 function ResearchMOSTPageTransformation (pageName) {
-	gPageName = pageName;
-	document.getElementById("main-content").style.fontSize = fontSize + "em";
-	if (linkshighlighted) {
-		setTimeout(function() {
-	                highlightLinks();
-	        }, 100);
-	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchMOSTObj);
 }
 
 function ResearchPOWERPageTransformation (pageName) {
-	gPageName = pageName;
-	document.getElementById("main-content").style.fontSize = fontSize + "em";
-	if (linkshighlighted) {
-		setTimeout(function() {
-	                highlightLinks();
-	        }, 100);
-	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchPOWERObj);
 }
 
 function ResearchMDSIPageTransformation (pageName) {
-	gPageName = pageName;
-	document.getElementById("main-content").style.fontSize = fontSize + "em";
-	if (linkshighlighted) {
-		setTimeout(function() {
-	                highlightLinks();
-	        }, 100);
-	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchMDSIObj);
 }
 
 function ResearchRiskyDrivingPageTransformation (pageName) {
-	gPageName = pageName;
-	document.getElementById("main-content").style.fontSize = fontSize + "em";
-	if (linkshighlighted) {
-		setTimeout(function() {
-	                highlightLinks();
-	        }, 100);
-	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchRiskyDrivingObj);
 }
 
 function ResearchUltraOrthodoxPageTransformation (pageName) {
-	gPageName = pageName;
-	document.getElementById("main-content").style.fontSize = fontSize + "em";
-	if (linkshighlighted) {
-		setTimeout(function() {
-	                highlightLinks();
-	        }, 100);
-	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchUltraOrthodoxObj);
 }
 
 function ResearchTMTPageTransformation (pageName) {
-	gPageName = pageName;
-	document.getElementById("main-content").style.fontSize = fontSize + "em";
-	if (linkshighlighted) {
-		setTimeout(function() {
-	                highlightLinks();
-	        }, 100);
-	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchTMTObj);
 }
 
 function ResearchCovid19PageTransformation (pageName) {
-	gPageName = pageName;
-	document.getElementById("main-content").style.fontSize = fontSize + "em";
-	if (linkshighlighted) {
-		setTimeout(function() {
-	                highlightLinks();
-	        }, 100);
-	}
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchCovid19Obj);
 }
 
 function HomePageTransformation (pageName) {
-	gPageName = pageName;
 	document.getElementById("main-content").style.fontSize = "1em";
-	if (linkshighlighted) {
-		setTimeout(function() {
-	                highlightLinks();
-	        }, 100);
-	}
+	document.getElementById("big-text-option").style.backgroundImage = "url('../images/x-sign.png')";
+	document.getElementById("small-text-option").style.backgroundImage = "url('../images/x-sign.png')";
     pageOnChanging(pageName);
     HideButton();
     buildAndShowHomePage ();
@@ -291,6 +175,20 @@ function HomePageTransformation (pageName) {
 function pageOnChanging (pageName) {
 	document.getElementById("page-on").id = "";
 	document.getElementsByClassName(pageName)[0].id = "page-on";
+	///accessability
+	gPageName = pageName;
+	if (gPageName != "Home") {
+		document.getElementById("main-content").style.fontSize = fontSize + "em";
+		document.getElementById("big-text-option").style.backgroundImage = "none";
+		document.getElementById("small-text-option").style.backgroundImage = "none";
+		if (linkshighlighted) {
+		setTimeout(function() {
+					for (var i = 0; i < document.querySelectorAll("a").length; i++) {
+					document.querySelectorAll("a")[i].style.textDecoration = "underline";
+				}
+	        }, 100);
+	}
+	}
 }
 
 function HideButton () {
@@ -849,6 +747,16 @@ var brightCon = false;
 var darkCon = false;
 
 var aboutAudio = new Audio("../audio/about-audio.mp3");
+
+// function pageTransAcc(pageName) {
+// 	gPageName = pageName;
+// 	document.getElementById("main-content").style.fontSize = fontSize + "em";
+// 	if (linkshighlighted) {
+// 		setTimeout(function() {
+// 	                highlightLinks();
+// 	        }, 100);
+// 	}
+// }
 // function openAccess() {
 // 	document.getElementById("access-icon").style.left = document.getElementById("access-options-container").offsetWidth + "px";
 // 	document.getElementById("access-options-container").style.left = 0;
@@ -942,6 +850,7 @@ function darkContrast() {
 		document.querySelectorAll("footer")[0].style.backgroundColor = "#fff";
 		document.querySelectorAll("footer")[0].style.color = "#000";
 		document.querySelectorAll("footer")[0].style.borderTop = "0px";
+		document.querySelectorAll("nav")[0].style.borderBottom = "0px";
 		darkCon = false;
 	}
 }

@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 	HomePageTransformation('Home');
 	closeAccess();
-	openAccess();
 });
 
 var i = 1;
@@ -104,11 +103,11 @@ function FormerMAStudentsPageTransformation (pageName) {
 }
 
 function AboutPageTransformation (pageName) {
-	if (linkshighlighted) {
-		setTimeout(function() {
-	                highlightLinks();
-	        }, 1000);
-	}
+	// if (linkshighlighted) {
+	// 	setTimeout(function() {
+	//                 highlightLinks();
+	//         }, 1000);
+	// }
     pageOnChanging(pageName);
     HideButton();
     buildAndShowAboutPage (AboutObj);
@@ -181,13 +180,23 @@ function pageOnChanging (pageName) {
 		document.getElementById("main-content").style.fontSize = fontSize + "em";
 		document.getElementById("big-text-option").style.backgroundImage = "none";
 		document.getElementById("small-text-option").style.backgroundImage = "none";
-		if (linkshighlighted) {
+	}
+	if (linkshighlighted) {
+			setTimeout(function() {
+						for (var j = 0; j < document.querySelectorAll("a").length; j++) {
+						document.querySelectorAll("a")[j].style.textDecoration = "underline";
+					}
+		        }, 100);
+		}
+	if (monochromed) {
+		monochromed = false;
+		monochrome();
 		setTimeout(function() {
-					for (var i = 0; i < document.querySelectorAll("a").length; i++) {
-					document.querySelectorAll("a")[i].style.textDecoration = "underline";
+				for (var j = 0; j < document.querySelectorAll("img").length; j++) {
+					monochromed = false;
+					monochrome();
 				}
 	        }, 100);
-	}
 	}
 }
 
@@ -210,6 +219,10 @@ function replacePicture (i) {
 	document.querySelector("#img-container").innerHTML = '<img id="currentImg" src="images/gallery/' + galleryArray[i-1].url + '">';
 	document.querySelector("#picture-title").innerHTML = galleryArray[i-1].title;
 	document.getElementById("picture-number").innerHTML = i;
+	if (monochromed) {
+		document.getElementById("currentImg").style.webkitFilter = "grayscale(100%)";
+		document.getElementById("currentImg").style.filter = "grayscale(100%)";
+	}
 }
 
 function nextPicture () {
@@ -745,8 +758,10 @@ var gPageName = "Home";
 var linkshighlighted = false;
 var brightCon = false;
 var darkCon = false;
+var monochromed = false;
 
 var aboutAudio = new Audio("../audio/about-audio.mp3");
+var bigTitleAudio = new Audio("../audio/bigTitle-audio.mp3");
 
 // function pageTransAcc(pageName) {
 // 	gPageName = pageName;
@@ -796,14 +811,14 @@ function highlightLinks() {
 	// 	document.getElementsByClassName("link")[i].style.setProperty('textDecoration', 'underline', 'important');
 	// }
 	if (linkshighlighted) {
-		for (var i = 0; i < document.querySelectorAll("a").length; i++) {
-			document.querySelectorAll("a")[i].style.textDecoration = "";
+		for (var j = 0; j < document.querySelectorAll("a").length; j++) {
+			document.querySelectorAll("a")[j].style.textDecoration = "";
 		}
 		linkshighlighted = false;
 	}
 	else {
-		for (var i = 0; i < document.querySelectorAll("a").length; i++) {
-			document.querySelectorAll("a")[i].style.textDecoration = "underline";
+		for (var j = 0; j < document.querySelectorAll("a").length; j++) {
+			document.querySelectorAll("a")[j].style.textDecoration = "underline";
 		}
 		linkshighlighted = true;
 	}
@@ -854,7 +869,131 @@ function darkContrast() {
 		darkCon = false;
 	}
 }
+
+function monochrome() {
+	if (!monochromed) {
+		document.querySelectorAll("h1")[0].style.color = "#555";
+		document.getElementById("nav-list").style.background = "#555";
+		document.querySelectorAll("body")[0].style.background = "#555";
+		document.getElementById("main-content").style.color = "#fff";
+		// document.getElementById("nav-list").querySelectorAll("#page-on")[0].style.color = "#000";
+		for (var j = 0; j < document.querySelectorAll(".PurpleBack").length; j++) {
+			document.querySelectorAll(".PurpleBack")[j].style.backgroundImage = "none";
+			document.querySelectorAll(".PurpleBack")[j].style.backgroundColor = "#555";
+		}
+		for (var j = 0; j < document.querySelectorAll("img").length; j++) {
+			document.querySelectorAll("img")[j].style.webkitFilter = "grayscale(100%)";
+			document.querySelectorAll("img")[j].style.filter = "grayscale(100%)";
+		}
+		for (var j = 0; j < document.getElementById("nav-list").querySelectorAll("li").length; j++) {
+			// if (document.getElementById("nav-list").querySelectorAll("li")[j].querySelectorAll("a")[0].id != "page-on") {
+				document.getElementById("nav-list").querySelectorAll("li")[j].querySelectorAll("a")[0].style.color = "#fff";				
+			// }
+		}
+		////home////
+		if (gPageName == "Home") {
+			for (var j = 0; j < document.querySelectorAll(".prom-text").length; j++) {
+				document.querySelectorAll(".prom-text")[j].style.background = "#000";
+				document.querySelectorAll(".prom-text")[j].querySelectorAll("p")[0].style.color = "#fff";
+				for (var k = 0; k < document.querySelectorAll(".prom-text")[j].querySelectorAll("p")[0].querySelectorAll("a").length; k++) {
+					document.querySelectorAll(".prom-text")[j].querySelectorAll("p")[0].querySelectorAll("a")[k].style.color = "#fff";
+				}
+			}
+		}
+		////end of home////
+		////publications////
+		if (gPageName == "Publication") {
+			for (var j = 0; j < document.querySelectorAll(".year-link-container").length; j++) {
+				document.querySelectorAll(".year-link-container")[j].querySelectorAll("a")[0].style.backgroundColor = "#000";
+				document.querySelectorAll(".year-link-container")[j].querySelectorAll("a")[0].style.color = "#fff";
+			}
+		}
+		////end of publications////
+		////news////
+		if (gPageName == "News") {
+			for (var j = 0; j < document.querySelectorAll(".other-news-container").length; j++) {
+				document.querySelectorAll(".other-news-container")[j].style.backgroundColor = "#000";
+				document.querySelectorAll(".other-news-container")[j].querySelectorAll("p")[0].style.color = "#fff";
+			}
+		}
+		////end of news////
+		////gallery////
+		if (gPageName == "Gallery") {
+			setTimeout(function() {
+				for (var j = 0; j < document.getElementById("gallery-options-container").querySelectorAll("div").length; j++) {
+					document.getElementById("gallery-options-container").querySelectorAll("div")[j].style.backgroundColor = "#000";
+					document.getElementById("gallery-options-container").querySelectorAll("div")[j].style.color = "#fff";
+				}
+	        }, 100);
+		}
+		////end of gallery////
+		monochromed = true;
+	}
+	else {
+		document.querySelectorAll("h1")[0].style.color = "#d580ff";
+		document.getElementById("nav-list").style.backgroundImage = "linear-gradient(#663FA9, #2626A8)";
+		document.querySelectorAll("body")[0].style.background = "#38e0f2";
+		document.getElementById("main-content").style.color = "#000";
+		for (var j = 0; j < document.querySelectorAll(".PurpleBack").length; j++) {
+			document.querySelectorAll(".PurpleBack")[j].style.backgroundImage = "linear-gradient(#663FA9, #2626A8)";
+			document.querySelectorAll(".PurpleBack")[j].style.backgroundColor = "none";
+		}
+		for (var j = 0; j < document.querySelectorAll("img").length; j++) {
+			document.querySelectorAll("img")[j].style.webkitFilter = "none";
+			document.querySelectorAll("img")[j].style.filter = "none";
+		}
+		for (var j = 0; j < document.getElementById("nav-list").querySelectorAll("li").length; j++) {
+			document.getElementById("nav-list").querySelectorAll("li")[j].querySelectorAll("a")[0].style.color = "#1bbef5";
+		}
+		// document.getElementById("nav-list").querySelectorAll("#page-on")[0].style.color = "#444444";
+		////home////
+		if (gPageName == "Home") {
+			for (var j = 0; j < document.querySelectorAll(".prom-text").length; j++) {
+				document.querySelectorAll(".prom-text")[j].style.background = "#5c1ce6";
+				document.querySelectorAll(".prom-text")[j].querySelectorAll("p")[0].style.color = "#60ffff";
+				for (var k = 0; k < document.querySelectorAll(".prom-text")[j].querySelectorAll("p")[0].querySelectorAll("a").length; k++) {
+					document.querySelectorAll(".prom-text")[j].querySelectorAll("p")[0].querySelectorAll("a")[k].style.color = "#60ffff";
+				}
+			}
+		}
+		////end of home////
+		////publications////
+		if (gPageName == "Publication") {
+			for (var j = 0; j < document.querySelectorAll(".year-link-container").length; j++) {
+				document.querySelectorAll(".year-link-container")[j].querySelectorAll("a")[0].style.backgroundColor = "#88e0ff";
+				document.querySelectorAll(".year-link-container")[j].querySelectorAll("a")[0].style.color = "#0000b3";
+			}
+		}
+		////end of publications////
+		////news////
+		if (gPageName == "News") {
+			for (var j = 0; j < document.querySelectorAll(".other-news-container").length; j++) {
+				document.querySelectorAll(".other-news-container")[j].style.backgroundColor = "#5c1ce6";
+				document.querySelectorAll(".other-news-container")[j].querySelectorAll("p")[0].style.color = "#60ffff";
+			}
+		}
+		////end of news////
+		////gallery////
+		if (gPageName == "Gallery") {
+			setTimeout(function() {
+				for (var j = 0; j < document.getElementById("gallery-options-container").querySelectorAll("div").length; j++) {
+					document.getElementById("gallery-options-container").querySelectorAll("div")[j].style.backgroundColor = "#88e0ff";
+					document.getElementById("gallery-options-container").querySelectorAll("div")[j].style.color = "#000";
+				}
+	        }, 100);
+		}
+		////end of gallery////
+		monochromed = false;
+	}
+}
+
 function playAbout() {
 	aboutAudio.play();
 }
+
+/////audio/////
+function bigTitlePlay() {
+	bigTitleAudio.play();
+}
+/////end of audio/////
 //////////////////end of accessabilty///////////////////

@@ -31,6 +31,12 @@ var MediaHTML = "snippets/Media-snippet.html";
 var MediaContinueHTML = "snippets/Media-continue-snippet.html";
 
 function pageTransformation (pageName) {
+	if (pageName == "Gallery") {
+		mainTitleAudio = new Audio("../audio/GalleryTitle-audio.mp3");
+	}
+	else {
+		mainTitleAudio = new Audio("../audio/ContactTitle-audio.mp3");
+	}
 	i = 1;
 	$ajaxUtils.sendGetRequest("snippets/" + pageName + "-snippet.html", function (responseText) {
 			document.querySelector("#main-content").innerHTML = responseText;
@@ -60,43 +66,49 @@ function pageTransformation (pageName) {
 
 /////////////Every page call function/////////////////
 function currentLabMembersPageTransformation (pageName) {
-	// pageTransAcc(pageName);
+	mainTitleAudio = new Audio("../audio/currentLabMembersTitle-audio.mp3");
 	pageOnChanging(pageName);
 	HideButton();
 	buildAndShowCurrentLabMembersPage(currentMembersArray);
 }
 
 function formerLabMembersPageTransformation (pageName) {
+	mainTitleAudio = new Audio("../audio/formerLabMembersTitle-audio.mp3");
 	pageOnChanging(pageName);
 	HideButton();
 	buildAndShowFormerLabMembersPage(formerMembersArray);
 }
 
 function newsPageTransformation (pageName) {
+	mainTitleAudio = new Audio("../audio/NewsTitle-audio.mp3");
 	pageOnChanging(pageName);
 	HideButton();
 	buildAndShowNewsPage(newsArray, MainNewsNumber);
 }
 
 function mediaPageTransformation (pageName) {
+	mainTitleAudio = new Audio("../audio/MediaTitle-audio.mp3");
     pageOnChanging(pageName);
     HideButton();
     buildAndShowMediaPage(mediaObj);
 }
 
 function publicationsPageTransformation (pageName) {
+	mainTitleAudio = new Audio("../audio/PublicationsTitle-audio.mp3");
     pageOnChanging(pageName);
     HideButton();
     buildAndShowPublicationsPage(PublicationsObj);
 }
 
 function FormerPhDStudentsPageTransformation (pageName) {
+	mainTitleAudio = new Audio("../audio/FormerPhDStudentsTitle-audio.mp3");
     pageOnChanging(pageName);
     HideButton();
     buildAndShowFormerStudentsPage (FormerPhDStudentsObj);
 }
 
 function FormerMAStudentsPageTransformation (pageName) {
+	mainTitleAudio = new Audio("../audio/FormerMAStudentsTitle-audio.mp3");
     pageOnChanging(pageName);
     HideButton();
     buildAndShowFormerStudentsPage (FormerMAStudentsObj);
@@ -108,54 +120,63 @@ function AboutPageTransformation (pageName) {
 	//                 highlightLinks();
 	//         }, 1000);
 	// }
+	mainTitleAudio = new Audio("../audio/aboutTitle-audio.mp3");
     pageOnChanging(pageName);
     HideButton();
     buildAndShowAboutPage (AboutObj);
 }
 
 function ResearchTransitionToParenthoodPageTransformation (pageName) {
+	mainTitleAudio = new Audio("../audio/transitionToParenthoodTitle-audio.mp3");
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchTransitionToParenthoodObj);
 }
 
 function ResearchMOSTPageTransformation (pageName) {
+	mainTitleAudio = new Audio("../audio/MOSTTitle-audio.mp3");
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchMOSTObj);
 }
 
 function ResearchPOWERPageTransformation (pageName) {
+	mainTitleAudio = new Audio("../audio/POWERTitle-audio.mp3");
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchPOWERObj);
 }
 
 function ResearchMDSIPageTransformation (pageName) {
+	mainTitleAudio = new Audio("../audio/MDSITitle-audio.mp3");
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchMDSIObj);
 }
 
 function ResearchRiskyDrivingPageTransformation (pageName) {
+	mainTitleAudio = new Audio("../audio/riskyDrivingTitle-audio.mp3");
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchRiskyDrivingObj);
 }
 
 function ResearchUltraOrthodoxPageTransformation (pageName) {
+	mainTitleAudio = new Audio("../audio/ultraOrthodoxTitle-audio.mp3");
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchUltraOrthodoxObj);
 }
 
 function ResearchTMTPageTransformation (pageName) {
+	mainTitleAudio = new Audio("../audio/TMTTitle-audio.mp3");
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchTMTObj);
 }
 
 function ResearchCovid19PageTransformation (pageName) {
+	mainTitleAudio = new Audio("../audio/covid19Title-audio.mp3");
     pageOnChanging(pageName);
     HideButton();
     buildAndShowResearchPage (ResearchCovid19Obj);
@@ -165,6 +186,7 @@ function HomePageTransformation (pageName) {
 	document.getElementById("main-content").style.fontSize = "1em";
 	document.getElementById("big-text-option").style.backgroundImage = "url('../images/x-sign.png')";
 	document.getElementById("small-text-option").style.backgroundImage = "url('../images/x-sign.png')";
+	mainTitleAudio = new Audio("../audio/homeTitle-audio.mp3");
     pageOnChanging(pageName);
     HideButton();
     buildAndShowHomePage ();
@@ -198,6 +220,9 @@ function pageOnChanging (pageName) {
 				}
 	        }, 100);
 	}
+	setTimeout(function() {
+		enableTitleAudio();
+	}, 100);
 }
 
 function HideButton () {
@@ -405,6 +430,24 @@ function buildAndShowCurrentMemberPage (members, memberName) {
 		}
 		j++;
 	}
+	setTimeout(function() {
+		document.getElementById("member-content").addEventListener("click", function() {
+			if(tts) {
+				if (!onPlay) {
+					labMemberAudio = new Audio("../audio/" + memberName + "Content-audio.mp3");
+					labMemberAudio.play();
+					onPlay = true;
+					labMemberAudio.addEventListener("ended", function() {
+						onPlay = false;
+					});
+				}
+				else {
+					labMemberAudio.pause();
+					onPlay = false;
+				}
+			}
+		});
+	}, 100);
 }
 
 function buildCurrentMemberPageViewHTML (members, singleCurrentMemberPageHTML, memberNumber) {
@@ -759,9 +802,8 @@ var linkshighlighted = false;
 var brightCon = false;
 var darkCon = false;
 var monochromed = false;
-
-var aboutAudio = new Audio("../audio/about-audio.mp3");
-var bigTitleAudio = new Audio("../audio/bigTitle-audio.mp3");
+var isBigWhiteCur = false;
+var isBigBlackCur = false;
 
 // function pageTransAcc(pageName) {
 // 	gPageName = pageName;
@@ -987,13 +1029,102 @@ function monochrome() {
 	}
 }
 
+function bigWhiteCur() {
+	if(!isBigWhiteCur) {
+		// document.querySelectorAll("body")[0].style.setProperty("cursor","url(../images/cursor-white.png), default","important");
+		document.querySelectorAll("body")[0].style.cursor = "url(../images/cursor-white.png) 25 25, default";
+		isBigWhiteCur = true;
+	}
+	else {
+		document.querySelectorAll("body")[0].style.cursor = "default";
+		isBigWhiteCur = false;
+	}
+}
+
+function bigBlackCur() {
+	if (!isBigBlackCur) {
+		document.querySelectorAll("body")[0].style.cursor = "url(../images/cursor-black.png), default";
+		isBigBlackCur = true;
+	}
+	else {
+		document.querySelectorAll("body")[0].style.cursor = "default";
+		isBigBlackCur = false;
+	}
+}
+
+/////audio/////
+var tts = false;
+function textToSpeach() {
+	if (!tts) {
+		tts = true;
+	}
+	else {
+		tts = false;
+	}
+}
+
+var onPlay = false;
+var labMemberAudio;
+var aboutAudio = new Audio("../audio/about-audio.mp3");
+var bigTitleAudio = new Audio("../audio/bigTitle-audio.mp3");
+var mainTitleAudio = new Audio();
+
+function enableTitleAudio() {
+	waitForMainTitleToDisplay("#main-title", 100);
+
+	function waitForMainTitleToDisplay(selector, time) {
+	    if(document.querySelector(selector)!=null) {
+	        document.getElementById("main-title").addEventListener("click", function() {
+	        	// mainTitleAudio = new Audio("../audio/" + gPageName + "Title-audio.mp3");
+	        	if (tts) {
+	        		if (!onPlay) {
+		        		mainTitleAudio.play();
+		        		onPlay = true;
+		        		mainTitleAudio.addEventListener("ended", function() {
+							onPlay = false;
+						});
+		        	}
+		        	else {
+		        		mainTitleAudio.pause();
+		        		onPlay = false;
+		        	}
+					// console.log("clicked");
+	        	}
+			});
+	        return;
+	    }
+	    else {
+	        setTimeout(function() {
+	            waitForMainTitleToDisplay(selector, time);
+	        }, time);
+	    }
+	}
+}
+
+function bigTitlePlay() {
+	if (tts) {
+		if (!onPlay) {
+			bigTitleAudio.play();
+			onPlay = true;
+			bigTitleAudio.addEventListener("ended", function() {
+				onPlay = false;
+			});
+		}
+		else {
+			bigTitleAudio.pause();
+			onPlay = false;
+		}
+	}
+}
+
 function playAbout() {
 	aboutAudio.play();
 }
 
-/////audio/////
-function bigTitlePlay() {
-	bigTitleAudio.play();
-}
+// setTimeout(function() {
+// 	document.querySelectorAll(".border-access-option")[0].addEventListener("onmouseover", function() {
+// 		querySelectorAll(".border-access-option")[0].style.cursor = "url(../images/cursor-black.cur)";
+// 	});
+// }, 100);
 /////end of audio/////
 //////////////////end of accessabilty///////////////////

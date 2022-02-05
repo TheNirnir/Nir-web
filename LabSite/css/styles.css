@@ -293,6 +293,42 @@ button#navbarToggle {
 	cursor: pointer;
 	color: #aaa;
 }
+
+#facebook-container {
+	text-align: center;
+	margin-top: 20px;
+	font-family: 'Comic Neue', cursive;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#facebook-container div {
+	display: inline;
+}
+
+.follow-img {
+	width: 2.9%;
+	position: relative;
+	left: -3%;
+	margin-left: -4.5px;
+}
+
+.facebook-logo {
+	width: 3%;
+	position: relative;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	transform: rotate(0);
+	transition: all .2s ease;
+}
+
+.facebook-logo:hover, .facebook-logo:active {
+	top: -6px;
+	left: 6px;
+	transform: rotate(60deg);
+	cursor: pointer;
+}
 /*****end home page*****/
 
 /*****about page*****/
@@ -684,6 +720,24 @@ h3 {
 
 #contact-content div {
 	margin-bottom: 3px;
+}
+
+#contact-follow-img {
+	width: 11.5%;
+	position: relative;
+	left: -12%;
+	margin-left: -6px;
+}
+
+#contact-facebook-logo {
+	width: 12%;
+}
+
+#contact-facebook-logo:hover, #contact-facebook-logo:active {
+	top: -8px;
+	left: 8px;
+	transform: rotate(60deg);
+	cursor: pointer;
 }
 /*****end contact page*****/
 

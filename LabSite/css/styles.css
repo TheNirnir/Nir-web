@@ -176,7 +176,9 @@ h1 {
 	overflow: hidden;
 	font-size: 0.7em;
 	height: 0;
-	transition: height .2s;
+	transition: height 0.2s;
+	/*max-height: 0;*/
+	/*transition: max-heigt 1s;*/
 }
 
 #research-bar, #people-bar {
@@ -306,6 +308,7 @@ button#navbarToggle {
 	display: inline;
 }
 
+/**here**/
 .follow-img {
 	width: 2.9%;
 	position: relative;
@@ -723,7 +726,7 @@ h3 {
 }
 
 #contact-follow-img {
-	width: 11.5%;
+	width: 11.%;
 	position: relative;
 	left: -12%;
 	margin-left: -6px;
@@ -884,6 +887,20 @@ h3 {
 	#people-bar:hover ul, #people-bar:active ul {
 		height: unset;
 	}
+
+	.follow-img {
+		width: 8.9%;
+		left: -9%;
+	}
+
+	.facebook-logo {
+		width: 9%;
+	}
+
+	.facebook-logo:hover, .facebook-logo:active {
+		top: -8px;
+		left: 8px;
+	}
 }
 /*****end extra small devices only*****/
 
@@ -928,11 +945,25 @@ h3 {
 		height: 170px;
 	}
 	#research-bar:hover ul, #research-bar:active ul {
-		height: 289px;
+		height: 328px;
 	}
 
 	#people-bar:hover ul, #people-bar:active ul {
 		height: 107px;
+	}
+
+	.follow-img {
+		width: 4.9%;
+		left: -5%;
+	}
+
+	.facebook-logo {
+		width: 5%;
+	}
+
+	.facebook-logo:hover, .facebook-logo:active {
+		top: -8px;
+		left: 8px;
 	}
 }
 /*****end small devices only*****/
@@ -967,7 +998,7 @@ h3 {
 		height: 250px;
 	}
 	#research-bar:hover ul, #research-bar:active ul {
-		height: 289px;
+		height: 330px;
 	}
 
 	#people-bar:hover ul, #people-bar:active ul {
@@ -997,7 +1028,9 @@ h3 {
 		height: 193px;
 	}
 	#research-bar:hover ul, #research-bar:active ul {
-		height: 289px;
+		height: 330px;
+		/*max-height: 500px;*/
+		/*transition: max-heigt 1s;*/
 	}
 
 	#people-bar:hover ul, #people-bar:active ul {

@@ -74,8 +74,8 @@
       					<a href="#" class="Publication" onclick="publicationsPageTransformation('Publication')"><span class="glyphicon glyphicon-book"></span>Publications</a>
       				</li>
       				<li id="research-bar">
-      					<a class="collapsible-a ResearchTransitionToParenthood ResearchMOST ResearchPOWER ResearchMDSI ResearchRiskyDriving ResearchUltraOrthodox ResearchTMT ResearchCovid19"><span class="glyphicon glyphicon-stats"></span>Research</a>
-						<ul class="PurpleBack">
+      					<a class="collapsible-a ResearchTransitionToParenthood ResearchMOST ResearchPOWER ResearchMDSI ResearchRiskyDriving ResearchUltraOrthodox ResearchTMT ResearchCovid19" onmouseover="openResearchOptions()" onmouseleave="closeResearchOptions()"><span class="glyphicon glyphicon-stats"></span>Research</a>
+						<ul id="research-bar-options" class="PurpleBack" onmouseover="openResearchOptions()" onmouseleave="closeResearchOptions()">
 						  <li onclick="ResearchTransitionToParenthoodPageTransformation('ResearchTransitionToParenthood')"><a href="#">Transition to Parenthood and Grandparenthood</a></li>
 						  <li onclick="ResearchMOSTPageTransformation('ResearchMOST')"><a href="#">Mothers of Singletons and Twins (MOST)</a></li>
 						  <li onclick="ResearchPOWERPageTransformation('ResearchPOWER')"><a href="#">Positive Outlook on Women Entering Reproductive treatments (POWER)</a></li>
@@ -84,6 +84,7 @@
 						  <li onclick="ResearchUltraOrthodoxPageTransformation('ResearchUltraOrthodox')"><a href="#">Driving in the Ultra-Orthodox Population in Israel</a></li>
 						  <li onclick="ResearchTMTPageTransformation('ResearchTMT')"><a href="#">Terror Management Theory (TMT) in Everyday Life</a></li>
 						  <li onclick="ResearchCovid19PageTransformation('ResearchCovid19')"><a href="#">Covid-19-related Research</a></li>
+						   <li onclick="window.open('https://faculty.biu.ac.il/~taubman/quest/index.html');"><a href="#">Measures</a></li>
 						</ul>
       				</li>
       				<li>     					

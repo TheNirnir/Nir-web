@@ -182,6 +182,14 @@ function ResearchCovid19PageTransformation (pageName) {
     buildAndShowResearchPage (ResearchCovid19Obj);
 }
 
+function ResearchMeasuresTransformation (pageName) {
+	// mainTitleAudio = new Audio("../audio/covid19Title-audio.mp3");
+    // pageOnChanging(pageName);
+    // HideButton();
+    window.open("https://faculty.biu.ac.il/~taubman/quest/index.html");
+    // buildAndShowResearchPage (ResearchCovid19Obj);
+}
+
 function HomePageTransformation (pageName) {
 	document.getElementById("main-content").style.fontSize = "1em";
 	document.getElementById("big-text-option").style.backgroundImage = "url('../images/x-sign.png')";
@@ -798,6 +806,21 @@ function touchswipeStart () {
 function goToFacebookPage() {
 	window.open("https://www.facebook.com/Positive-Family-Lab-Bar-Ilan-%D7%94%D7%9E%D7%A2%D7%91%D7%93%D7%94-%D7%9C%D7%97%D7%A7%D7%A8-%D7%94%D7%9E%D7%A9%D7%A4%D7%97%D7%94-%D7%91%D7%92%D7%99%D7%A9%D7%AA-%D7%94%D7%A4%D7%A1%D7%99%D7%9B%D7%95%D7%9C%D7%95%D7%92%D7%99%D7%94-%D7%94%D7%97%D7%99%D7%95%D7%91%D7%99%D7%AA-102172228828888", "_blank");	
 }
+
+/////more options bar/////
+function openResearchOptions() {
+	/////screen size must be biiger than extra small
+	/////transition doesn't work
+	// document.getElementById("research-bar-options").style.width = "220px";
+	// document.getElementById("research-bar-options").style.maxHeight = "500px";
+}
+
+function closeResearchOptions() {
+	/////screen size must be biiger than extra small
+	// document.getElementById("research-bar-options").style.width = "0px";
+	// document.getElementById("research-bar-options").style.height = "0";
+}
+//////////////////////////
 
 //////////////////Accessabilty///////////////////
 var fontSize = 1;
